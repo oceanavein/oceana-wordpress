@@ -1,0 +1,28 @@
+/*
+Theme Name: Oceana v1
+Theme URI: http://oceanaveins.com
+Author: Brad Sawicki
+Author URI: http://bradsawicki.com
+Version: 1.0
+Description: Custom theme for Oceana Vein Clinic
+*/
+
+@import "base/reset";
+@import "base/media-queries";
+@import "base/colors";
+@import "base/mixins";
+@import "base/fonts";
+@import "base/typography";
+@import "base/images";
+@import "base/icons";
+@import "base/grid";
+@import "base/layout";
+@import "base/buttons";
+@import "base/forms";
+@import "base/messages";
+
+@import "components/header";
+@import "components/nav";
+@import "components/footer";
+
+@import "pages/home";

@@ -1,0 +1,28 @@
+
+a {
+  transition: all .1s ease-in;
+}
+
+@mixin btn {
+  @include font-size(18px);
+  transition: all .1s ease-in;
+  display: inline-block;
+  padding: 12px 24px;
+  background: none;
+  line-height: 1;
+  text-align: center;
+}
+
+.btn,
+.button {
+  @include btn;
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+  transition: all .1s ease-in;
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+}
