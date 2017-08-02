@@ -1,16 +1,18 @@
+/**
+Class Naming Structure: block__element--modifier
+**/
 
-$sans: Helvetica, arial, sans-serif;
-$serif: Georgia, serif;
+$sans: 'Mark', Helvetica, arial, sans-serif;
 
 $base: 24px;
 
-$weight-light:   300;
-$weight-regular: 400;
-$weight-medium:  500;
-$weight-bold:    700;
+$weight-light:  300;
+$weight-book:   400;
+$weight-bold:   700;
 
 body {
-  font: $weight-regular 1em/1.5em $sans;
+  font: $weight-book 1em/1.5em $sans;
+  color: $dk-grey;
 }
 
 h1,h2,h3,h4,h5 {
@@ -26,24 +28,113 @@ em {
 }
 
 .title__h1 {
-  @include font-size(24px);
+  @include font-size(36px);
 
   @include bp-min-width($medium) {
-    @include font-size(36px);
+    @include font-size(48px);
+    font-weight: $weight-light;
   }
 }
 
 .title__h2 {
-  @include font-size(18px);
+  @include font-size(24px);
+  line-height: 1.25;
 
   @include bp-min-width($medium) {
-    @include font-size(24px);
+    @include font-size(36px);
+    font-weight: $weight-light;
   }
 }
 
 .title__h3 {
+  @include fontUnits(21px, 27px);
+
+  @include bp-min-width($medium) {
+    @include fontUnits(30px, 36px);
+    font-weight: $weight-light;
+  }
+}
+
+.title__h4 {
+  font-weight: $weight-bold;
+
+  @include bp-min-width($medium) {
+    @include font-size(21px);
+  }
+}
+
+.title__h5 {
+  font-weight: $weight-bold;
+  line-height: 1.5;
+}
+
+.page-title {
+  margin-bottom: $base;
+  padding-bottom: 12px;
+  color: $dk-blue;
+  background: $icon-wave no-repeat left bottom;
+}
+
+.page-subtitle {
+  margin-bottom: 12px;
+  color: $coal;
+}
+
+.section-title {
+  margin-bottom: $base;
+  color: $blue;
+}
+
+.section-subtitle {
+  margin-bottom: 12px;
+  color: $blue;
+}
+
+.bg__blue .section-title,
+.bg__blue .section-subtitle {
+  color: #fff;
+}
+
+div + .section-subtitle {
+  padding-top: 36px;
+}
+
+.body-content h2,
+.body-content h3 {
+  @include fontUnits(21px, 27px);
+  color: $blue;
+  margin-bottom: 12px;
+
+  @include bp-min-width($medium) {
+    @include fontUnits(30px, 36px);
+    font-weight: $weight-light;
+  }
+}
+
+.section-content p,
+.section-list {
   @include bp-min-width($medium) {
     @include font-size(18px);
+    line-height: 1.666;
+  }
+}
+
+.section-content p:not(:last-child), {
+  margin-bottom: $base;
+}
+
+.section-list {
+  margin-bottom: $base;
+
+  @include bp-min-width($medium) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.section-list li {
+  @include bp-min-width($medium) {
+    width: 50%;
   }
 }
 
@@ -56,6 +147,17 @@ em {
 .body-content p,
 .body-content ul,
 .body-content ol {
+  line-height: 1.6875;
+}
+
+.body-content ul {
+  @include fontUnits(18px, 30px);
+  color: $coal;
+}
+
+.body-content li {
+  padding-left: 20px;
+  background: $icon-list-arrow no-repeat center left;
 }
 
 .body-content p:not(:last-child),

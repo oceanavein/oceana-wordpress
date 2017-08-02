@@ -1,0 +1,18 @@
+
+.varicose-symptoms .flex-row {
+	align-items: center;
+}
+
+.varicose-symptoms__list ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.varicose-symptoms__list li {
+	@include fontUnits(18px, 27px);
+	width: 50%;
+	margin-bottom: 12px;
+	padding-bottom: 12px;
+	background: $icon-list-wave no-repeat left bottom;
+	font-weight: $weight-bold;
+}

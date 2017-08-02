@@ -56,6 +56,21 @@
   font-size: calculateRem($size);
 }
 
+@function calculateUnitless($size) {
+  $unitSize: $size / 16px;
+  @return $unitSize;
+}
+
+@mixin line-height($size) {
+  line-height: calculateUnitless($size);
+}
+
+@mixin fontUnits($fontSize, $lineHeight) {
+  font-size: calculateRem($fontSize);
+  line-height: $lineHeight / $fontSize;
+}
+
+
 
 // TRIANGLE
 @mixin down-triangle($size, $color) {

@@ -1,0 +1,12 @@
+
+.office-hero .col-span-8 {
+	padding-right: col-span(1);
+
+	@include bp-min-width($medium) {
+		padding-top: 84px
+	}
+}
+
+.office-images {
+	position: relative;
+}

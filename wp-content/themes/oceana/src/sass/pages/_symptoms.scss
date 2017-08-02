@@ -1,0 +1,42 @@
+
+.symptoms-nav .container {
+	max-width: 1000px;
+	padding-top: $base;
+	padding-bottom: 6px;
+}
+
+.symptoms-nav ul {
+	text-align: center;
+}
+
+.symptoms-nav li {
+	display: inline-block;
+	margin: 0 18px 16px;
+}
+
+.symptoms-nav a {
+	display: inline-block;
+	padding-bottom: 1px;
+	color: #fff;
+	font-weight: $weight-bold;
+	border-bottom: 4px solid $md-blue;
+}
+
+.symptoms-nav .is-active,
+.symptoms-nav a:hover {
+	border-color: $dk-blue;
+}
+
+.symptoms__item {
+	display: none;
+}
+
+.symptoms__item.is-visible {
+	display: flex;
+}
+
+.symptoms .body-content {
+	@include bp-min-width($large) {
+		padding-right: 30px;
+	}
+}

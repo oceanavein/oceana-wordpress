@@ -1,0 +1,60 @@
+
+.home-hero__title {
+	@include font-size(42px);
+	margin-bottom: 12px;
+	color: $blue;
+	font-weight: $weight-light;
+
+	@include bp-min-width($medium) {
+    @include font-size(72px);
+		margin-bottom: $base;
+  }
+}
+
+.home-hero__subtitle {
+	margin-bottom: 12px;
+	color: $coal;
+
+	@include bp-min-width($medium) {
+		max-width: 680px;
+		margin-bottom: $base;
+	}
+}
+
+.home-hero__benefits {
+	margin-bottom: 30px;
+	color: $coal;
+
+	@include bp-min-width($medium) {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 560px;
+	}
+}
+
+.home-hero__benefits li {
+	@include bp-min-width($medium) {
+		@include font-size(18px);
+		width: 50%;
+		line-height: 1.666;
+	}
+}
+
+.home-doctor__image {
+	@include bp-min-width($large) {
+		order: -1;
+	}
+}
+
+.home-location {
+	background-color: $blue;
+}
+
+.home-map {
+	background: $home-map $lt-blue no-repeat center center;
+	background-size: cover;
+}
+
+.home-map .container {
+	height: 588px;
+}

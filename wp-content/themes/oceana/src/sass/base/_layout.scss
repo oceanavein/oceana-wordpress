@@ -1,18 +1,48 @@
 
-.js-no-scroll {
-  overflow: hidden;
-}
-
 .container {
-  max-width: 1208px;
+  width: 100%;
+  max-width: 1232px;
   margin: 0 auto;
 
-  @include bp-max-width($large) {
-    padding-left: 20px;
-    padding-right: 20px;
+  @include bp-max-width($medium) {
+    padding: $base 20px;
   }
 
-  @include bp-min-width($large) {
+  @include bp-min-width($medium) {
     width: 94%;
+    padding-top: $base*4;
+    padding-bottom: $base*4;
+  }
+}
+
+.bg__blue {
+  background: $blue;
+  color: #fff;
+}
+
+.bg__md-blue {
+  background: $md-blue;
+}
+
+.bg__pale-blue {
+  background: $pale-blue;
+}
+
+@mixin is-hidden {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+.is-hidden {
+  @include is-hidden;
+}
+
+.mobile-is-hidden {
+  @include bp-max-width($medium) {
+    @include is-hidden;
   }
 }

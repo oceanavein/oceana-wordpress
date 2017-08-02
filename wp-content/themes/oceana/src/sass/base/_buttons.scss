@@ -1,28 +1,86 @@
 
 a {
-  transition: all .1s ease-in;
+  @include global-transition(.1s);
+
+	&:hover {
+	}
 }
 
 @mixin btn {
   @include font-size(18px);
-  transition: all .1s ease-in;
   display: inline-block;
-  padding: 12px 24px;
-  background: none;
-  line-height: 1;
-  text-align: center;
+  padding: 1.125rem 2rem;
+  background: $blue;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: $weight-bold;
 }
 
-.btn,
-.button {
+@mixin btn--dk-blue {
+  background: $dk-blue;
+
+  &:hover {
+    background-color: $blue;
+  }
+}
+
+@mixin btn--outline {
+  background: #fff;
+  border: 1px solid $dk-blue;
+  color: $dk-blue;
+
+  &:hover {
+    background: $dk-blue;
+    color: #fff;
+  }
+}
+
+@mixin btn--mobile-full-width {
+  @include bp-max-width($small) {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-align: center;
+  }
+}
+
+@mixin cta-link {
+  font-weight: $weight-bold;
+  color: $coal;
+  border-bottom: 4px solid $lt-blue;
+
+  &:hover {
+    color: $blue;
+    border-color: $blue;
+  }
+}
+
+.btn {
   @include btn;
 }
+
+.btn--dk-blue {
+  @include btn--dk-blue;
+}
+
+.btn--outline {
+  @include btn--outline;
+}
+
+.btn--mobile-full-width {
+  @include btn--mobile-full-width;
+}
+
+.cta-link {
+  @include cta-link;
+}
+
 
 input[type="submit"],
 input[type="button"],
 button {
-  transition: all .1s ease-in;
-  margin: 0;
+  @include global-transition(.1s);
+  border: none;
   outline: none;
   cursor: pointer;
 }

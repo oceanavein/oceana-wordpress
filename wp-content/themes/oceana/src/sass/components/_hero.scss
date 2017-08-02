@@ -1,0 +1,15 @@
+
+.page-hero .section-content p:last-child:not(:first-child) {
+	font-weight: $weight-bold;
+	color: $coal;
+}
+
+.page-hero .section-content p {
+	@include bp-min-width($xlarge) {
+		padding-right: 30px;
+	}
+}
+
+.page-hero .section-content a {
+	@include cta-link;
+}

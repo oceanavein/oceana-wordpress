@@ -1,11 +1,59 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3386520, 2017-05-09T12:04:06-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: FF Mark Web Bold by FontFont
+ * URL: http://www.myfonts.com/fonts/fontfont/mark/ot-bold/
+ *
+ * Webfont: FF Mark Web Book by FontFont
+ * URL: http://www.myfonts.com/fonts/fontfont/mark/ot-book/
+ *
+ * Webfont: FF Mark Web Light by FontFont
+ * URL: http://www.myfonts.com/fonts/fontfont/mark/ot-light/
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3386520
+ * Licensed pageviews: 50,000
+ * Webfonts copyright: 2013 published by FontShop International GmbH
+ *
+ * © 2017 MyFonts Inc
+*/
 
-// $font-url: 'dist/fonts/';
-//
-// @font-face {
-//   font-family: 'Euclid';
-//   src: url('#{$font-url}EuclidFlex-Regular-WebS.woff2') format('woff2'),
-//        url('#{$font-url}EuclidFlex-Regular-WebS.woff') format('woff'),
-//        url('#{$font-url}EuclidFlex-Regular-WebS.ttf') format('truetype');
-//   font-style: normal;
-//  	font-weight: 400;
-// }
+/* @import must be at top of file, otherwise CSS will not work */
+// @import url("//hello.myfonts.net/count/33ac98");
+
+@font-face {
+  font-family: 'Mark';
+  font-weight: 700;
+  src: url('/wp-content/themes/oceana/dist/fonts/33AC98_0_0.eot');
+  src: url('/wp-content/themes/oceana/dist/fonts/33AC98_0_0.eot?#iefix') format('embedded-opentype'),
+       url('/wp-content/themes/oceana/dist/fonts/33AC98_0_0.woff2') format('woff2'),
+       url('/wp-content/themes/oceana/dist/fonts/33AC98_0_0.woff') format('woff'),
+       url('/wp-content/themes/oceana/dist/fonts/33AC98_0_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mark';
+  font-weight: 400;
+  src: url('/wp-content/themes/oceana/dist/fonts/33AC98_1_0.eot');
+  src: url('/wp-content/themes/oceana/dist/fonts/33AC98_1_0.eot?#iefix') format('embedded-opentype'),
+       url('/wp-content/themes/oceana/dist/fonts/33AC98_1_0.woff2') format('woff2'),
+       url('/wp-content/themes/oceana/dist/fonts/33AC98_1_0.woff') format('woff'),
+       url('/wp-content/themes/oceana/dist/fonts/33AC98_1_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mark';
+  font-weight: 300;
+  src: url('/wp-content/themes/oceana/dist/fonts/33AC98_2_0.eot');
+  src: url('/wp-content/themes/oceana/dist/fonts/33AC98_2_0.eot?#iefix') format('embedded-opentype'),
+       url('/wp-content/themes/oceana/dist/fonts/33AC98_2_0.woff2') format('woff2'),
+       url('/wp-content/themes/oceana/dist/fonts/33AC98_2_0.woff') format('woff'),
+       url('/wp-content/themes/oceana/dist/fonts/33AC98_2_0.ttf') format('truetype');
+}

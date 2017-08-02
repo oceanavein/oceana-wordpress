@@ -1,4 +1,63 @@
 
-.header {
-	background: $blue;
+.top-banner {
+	padding: 6px;
+	background: $dk-blue;
+	color: white;
+	text-align: center;
+
+	@include bp-min-width($small) {
+		padding: 12px;
+	}
+}
+
+.top-banner__label {
+	font-weight: $weight-bold;
+	vertical-align: middle;
+
+	@include bp-min-width($medium) {
+		@include font-size(18px);
+	}
+}
+
+.top-banner__phone {
+	@include font-size(21px);
+	font-weight: $weight-light;
+	vertical-align: middle;
+
+	@include bp-min-width($medium) {
+		@include font-size(30px);
+	}
+}
+
+.top-banner p {
+	display: inline-block;
+	margin: 0 15px;
+}
+
+.header .container {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: $base;
+	padding-bottom: 0;
+
+	@include bp-max-width($xlarge) {
+		padding-bottom: $base;
+	}
+
+	@include bp-max-width($small) {
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+
+	@include bp-min-width($xlarge) {
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+}
+
+.header .logo img {
+	@include bp-max-width($medium) {
+		height: 36px;
+	}
 }

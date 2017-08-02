@@ -11,18 +11,26 @@ Description: Custom theme for Oceana Vein Clinic
 @import "base/media-queries";
 @import "base/colors";
 @import "base/mixins";
-@import "base/fonts";
-@import "base/typography";
 @import "base/images";
 @import "base/icons";
+@import "base/fonts";
+@import "base/typography";
 @import "base/grid";
 @import "base/layout";
 @import "base/buttons";
 @import "base/forms";
-@import "base/messages";
 
 @import "components/header";
 @import "components/nav";
 @import "components/footer";
+@import "components/appt-form";
+@import "components/cta-section";
+@import "components/hero";
+@import "components/section-header";
+@import "components/slider";
 
 @import "pages/home";
+@import "pages/office";
+@import "pages/education";
+@import "pages/symptoms";
+@import "pages/treatments";

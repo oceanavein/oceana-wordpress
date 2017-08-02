@@ -1,0 +1,35 @@
+
+.cta-section {
+	text-align: center;
+}
+
+.cta-section .section-title {
+	@include bp-min-width($medium) {
+		margin-bottom: $base*2;
+	}
+}
+
+.cta-section ul {
+	@include bp-min-width($medium) {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.cta-section li:first-child {
+	@include bp-max-width($medium) {
+		margin-bottom: $base;
+	}
+
+	@include bp-min-width($medium) {
+		margin-right: 100px;
+	}
+}
+
+.cta-section .btn {
+	width: 100%;
+
+	@include bp-min-width($medium) {
+		width: 220px;
+	}
+}

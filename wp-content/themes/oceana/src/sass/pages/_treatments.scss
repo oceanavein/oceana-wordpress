@@ -1,0 +1,58 @@
+
+.treatments-hero .container {
+	position: relative;
+	padding-bottom: $base*6;
+}
+
+.anchor-link {
+	@include horizontal-center;
+	bottom: $base;
+	text-align: center;
+}
+
+.anchor-link a {
+	@include font-size(18px);
+	display: inline-block;
+	color: $coal;
+	font-weight: $weight-bold;
+}
+
+.anchor-link__label {
+	display: block;
+}
+
+.anchor-link svg {
+	width: 14px;
+	height: 24px;
+	fill: $blue;
+}
+
+.treatments-grid .col-span-6 {
+	margin-bottom: $base*2;
+}
+
+.treatments-grid h2 {
+	margin-bottom: 12px;
+	color: $blue;
+}
+
+.treatments-grid p:not(:last-child) {
+	margin-bottom: $base;
+}
+
+.treatments-grid p:last-child {
+	@include font-size(18px);
+}
+
+.payment-grid__logo {
+	height: 40px;
+	margin-bottom: $base;
+}
+
+.payment-grid--care-credit img {
+	height: 30px;
+}
+
+.payment-grid--prosper img {
+	height: 40px;
+}

@@ -1,4 +1,223 @@
 
-.main-nav a {
+.language-nav {
+  @include font-size(14px);
+  position: absolute;
+  top: 18px;
+  right: 0;
+  color: $md-grey;
+
+  @include bp-max-width($large) {
+    transform: translateY(-50%);
+    top: 50%;
+    right: 80px;
+    text-transform: uppercase;
+  }
+
+  @include bp-max-width($medium) {
+    right: 100px;
+  }
+}
+
+.language-nav a {
+  color: $md-grey;
+}
+
+.language-nav .current {
+  color: $dk-grey;
+}
+
+.main-nav {
+  @include bp-max-width($xlarge) {
+    width: 100%;
+  }
+
+  @include bp-min-width($large) {
+    padding-top: 30px;
+  }
+}
+
+.mobile-btn {
+  @include font-size(14px);
+  transform: translateY(-50%);
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  padding: 6px 12px;
+  font-weight: $weight-book;
+
+  @include bp-max-width($medium) {
+    right: 20px;
+  }
+
+  @include bp-max-width($large) {
+    display: inline-block;
+  }
+}
+
+.mobile-btn.js-is-active {
+  transform: translateY(0);
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  background: none;
+  border-color: #fff;
+}
+
+.mobile-btn__label.js-is-hidden {
+  display: none;
+}
+
+.main-nav .menu {
+  @include bp-max-width($large) {
+    display: none;
+    background: $blue;
+  }
+
+  @include bp-min-width($large) {
+    position: relative;
+    display: flex;
+  }
+
+  @include bp-max-width($xlarge) {
+    justify-content: center;
+  }
+}
+
+.main-nav .menu.js-is-visible {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-nav .menu > li {
+  @include bp-min-width($large) {
+    margin-left: 40px;
+  }
+}
+
+.main-nav .menu > li > a {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  padding-bottom: 18px;
+  color: $blue;
+
+  @include bp-max-width($large) {
+    @include font-size(24px);
+    color: #fff;
+  }
+}
+
+.main-nav .menu > li > a:hover {
+  @include bp-min-width($large) {
+    color: $dk-blue;
+  }
+}
+
+.main-nav .menu > li > a:after {
+  transition: bottom .15s ease-in;
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: $blue;
+}
+
+.main-nav .menu > li > a:hover:after {
+  bottom: 0;
+}
+
+
+// Drop down
+
+.main-nav .sub-menu {
+  transition: opacity .2s .1s ease-in, visibility .2s 0s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 40px;
+  min-width: 220px;
+  padding: 12px 0;
+  background: $dk-blue;
+}
+
+.main-nav .menu > li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.main-nav .sub-menu a {
+  display: block;
+  padding: 4px 30px;
+  color: $pale-blue;
+}
+
+.main-nav .sub-menu a:hover {
   color: #fff;
+  background: $blue;
+}
+
+
+// Mobile Nav
+
+.mobile-nav-btn {
+  @include bp-min-width($xlarge) {
+    display: none;
+  }
+}
+
+.mobile-nav-btn--bar {
+  @include global-transition(0.1s);
+  display: block;
+  width: 30px;
+  height: 2px;
+}
+
+.mobile-nav-btn--bar:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.mobile-nav-btn--bar:nth-child(1) {
+  transform: rotate(0);
+}
+
+.mobile-nav-btn--bar:nth-child(2) {
+  transform: rotate(0);
+}
+
+.mobile-nav-btn--bar:nth-child(3) {
+  opacity: 1;
+}
+
+.is-active .mobile-nav-btn--bar {
+  position: absolute;
+  top: 15px;
+  left: 0;
+
+  &:nth-child(1) {
+    transform: rotate(45deg);
+  }
+
+  &:nth-child(2) {
+    transform: rotate(-45deg);
+  }
+
+  &:nth-child(3) {
+    opacity: 0;
+  }
 }

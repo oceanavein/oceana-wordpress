@@ -98,4 +98,9 @@
 
 <?php get_template_part('partials/cta-section'); ?>
 
+<section class="home-map">
+	<div class="container">
+	</div>
+</div>
+
 <?php get_footer(); ?>
