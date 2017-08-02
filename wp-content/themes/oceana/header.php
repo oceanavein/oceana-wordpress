@@ -12,6 +12,8 @@
 	<header class="header">
 		<div class="container">
 
+			<a href="/">Oceana</a>
+
 			<nav class="main-nav">
 				<a href="" class="hamburger">
 					<span class="hamburger--bar"></span>

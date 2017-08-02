@@ -1,5 +1,48 @@
 
 .footer {
-	background: #000;
+	background: $dk-blue;
 	color: #fff;
+}
+
+.footer a {
+	color: #fff;
+}
+
+.footer .menu > li:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+.footer .menu > li > a {
+	font-weight: $weight-bold;
+	line-height: 1.875;
+}
+
+.footer .sub-menu a {
+	@include font-size(15px);
+	line-height: 2;
+}
+
+.footer-contact {
+	@include font-size(15px);
+	margin-bottom: 12px;
+	line-height: 1.8;
+}
+
+.footer-social {
+	display: flex;
+	margin-bottom: 36px;
+}
+
+.footer-social li {
+	margin-right: 12px;
+}
+
+.footer-social svg {
+	fill: #fff;
+	width: 24px;
+	height: 24px;
+}
+
+.footer-copyright {
+	@include font-size(13px);
 }
