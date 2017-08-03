@@ -6,7 +6,7 @@
             "key": "field_5980da6247327",
             "label": "Hero Content",
             "name": "hero_content",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,10 +16,10 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
         },
         {
             "key": "field_5980da6f47328",
@@ -148,5 +148,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1501616898
+    "modified": 1501784313
 }
