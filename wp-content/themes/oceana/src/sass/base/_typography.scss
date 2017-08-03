@@ -111,6 +111,16 @@ div + .section-subtitle {
   }
 }
 
+.body-content h4 {
+  @include font-size(18px);
+  color: $coal;
+  font-weight: $weight-bold;
+
+  @include bp-min-width($medium) {
+    line-height: 1.666;
+  }
+}
+
 .section-content p,
 .section-list {
   @include bp-min-width($medium) {
@@ -168,4 +178,14 @@ div + .section-subtitle {
 }
 
 .body-content blockquote {
+}
+
+.body-content a {
+  color: $blue;
+  border-bottom: 1px solid white;
+
+  &:hover {
+    color: $dk-blue;
+    border-color: $dk-blue;
+  }
 }

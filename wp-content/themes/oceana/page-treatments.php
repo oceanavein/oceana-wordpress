@@ -58,31 +58,24 @@
   <div class="container">
 
     <header class="section-header">
-      <h3 class="title__h2">Payment Plan Options</h3>
-      <p>We understand that individual financial situations may make it prohibitive to receive treatment for their venous disease. We accept flexible payment plans through third party vendors such as Care Credit and Prosper Healthcare Lending.</p>
+      <h3 class="title__h2"><?php the_field('payment_section_title'); ?></h3>
+      <p><?php the_field('payment_section_content'); ?></p>
     </header>
 
-    <div class="flex-grid payment-grid">
-      <div class="col-span-6 payment-grid--care-credit">
-        <div class="payment-grid__logo">
-          <img src="/dist/images/logo-carecredit.svg" alt="" />
-        </div>
-        <div class="body-content">
-          <p>Care Credit gives you flexibility and convenience to manage out of pocket expenses. It may be used for dental care, cosmetic treatment, and vein procedures. Oceana Vein Specialists is offering 12 months with no interest if paid in full by the term date. Once you apply online or over the phone, you will receive an answer almost immediately. You may begin treatment even before you get your medical credit card. You’ll just need to have the number given to you by Care Credit on hand.</p>
-          <p>To apply for Care Credit, please click here and follow the directions when prompted or call 1-800-365-8295.</p>
-        </div>
-      </div>
-
-      <div class="col-span-6">
-        <div class="payment-grid__logo payment-grid--prosper">
-          <img src="/dist/images/logo-prosper.png" alt="" />
-        </div>
-        <div class="body-content">
-          <p>Prosper Healthcare Lending is a medical loan company that helps patients afford medical services. Prosper offers loans with an APR range from 7%-20% depending on your credit score. It has an easy step-by-step process and you are able to choose terms up to 84 months. Once you are approved for the loan, the funds are provided to you in your own bank account to use for health expenses.</p>
-          <p>To apply online, click here or call 1.800.625.7412 ext. 2</p>
-        </div>
-      </div>
-    </div>
+		<?php if( have_rows('payment_options') ): ?>
+			<div class="flex-grid payment-grid">
+		    <?php while ( have_rows('payment_options') ) : the_row(); ?>
+					<div class="col-span-6">
+						<div class="payment-grid__logo">
+							img
+		        </div>
+		        <div class="body-content">
+		          <?php the_sub_field('description'); ?>
+		        </div>
+		      </div>
+		    <?php endwhile; ?>
+			</div>
+		<?php endif; ?>
 
   </div>
 </section>
