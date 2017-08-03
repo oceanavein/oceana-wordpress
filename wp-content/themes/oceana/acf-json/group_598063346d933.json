@@ -3,9 +3,9 @@
     "title": "Our Practice",
     "fields": [
         {
-            "key": "field_598063390fc93",
-            "label": "Hero Content",
-            "name": "hero_content",
+            "key": "field_59832b1159411",
+            "label": "Hero Subtitle",
+            "name": "hero_subtitle",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -20,6 +20,25 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_598063390fc93",
+            "label": "Hero Content",
+            "name": "hero_content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
         },
         {
             "key": "field_598063800fc94",
@@ -57,7 +76,7 @@
             "placeholder": "",
             "maxlength": "",
             "rows": 4,
-            "new_lines": ""
+            "new_lines": "wpautop"
         },
         {
             "key": "field_598063940fc96",
@@ -133,7 +152,7 @@
             "placeholder": "",
             "maxlength": "",
             "rows": "",
-            "new_lines": ""
+            "new_lines": "wpautop"
         },
         {
             "key": "field_5980652d0fc9a",
@@ -171,7 +190,7 @@
             "placeholder": "",
             "maxlength": "",
             "rows": "",
-            "new_lines": ""
+            "new_lines": "wpautop"
         }
     ],
     "location": [
@@ -193,5 +212,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1501586759
+    "modified": 1501774683
 }

@@ -137,7 +137,8 @@
   background: $blue;
 }
 
-.main-nav .menu > li > a:hover:after {
+.main-nav .menu > li > a:hover:after,
+.main-nav .menu > .current_page_item > a:after {
   bottom: 0;
 }
 

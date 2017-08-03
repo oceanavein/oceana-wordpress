@@ -1,129 +1,54 @@
 jQuery(document).ready(function($) {
 
-  var stickyHeader = function() {
-    var body = $('body');
-    var header = $('.header');
-    var headerPos = header.offset();
-    var headerTopPos = headerPos.top;
 
-    $(window).on('scroll', function(e) {
-      var topPos = $(window).scrollTop();
-      if(topPos >= headerTopPos) {
-        header.addClass('js-is-sticky');
-        body.addClass('js-sticky-header');
-      } else {
-        header.removeClass('js-is-sticky');
-        body.removeClass('js-sticky-header');
-      }
-    });
-  };
+  console.log('party');
 
   var mobileNav = function() {
-    var body = $('body');
-    var windowWidth = $(window).width();
-    var header = $('.header');
-    var mobileNavTrigger = $('.hamburger');
+    var mobileNavTrigger = $('.mobile-btn');
     var mobileNavContainer = $('.menu');
-    var mobileNavParentItem = $('.main-nav .menu > li > a');
+    var mobileNavBtnLabel = $('.mobile-btn__label');
 
-    mobileNavTrigger.bind('click', function(e){
+    mobileNavTrigger.bind('click', function(e) {
       e.preventDefault();
       $(this).toggleClass('js-is-active');
-      body.toggleClass('js-no-scroll');
-      header.toggleClass('js-is-sticky');
       mobileNavContainer.toggleClass('js-is-visible');
-    });
-
-    if(windowWidth < 1000) {
-      mobileNavParentItem.bind('click', function(e){
-        e.preventDefault();
-        $(this).parent().find('.sub-menu').slideToggle();
-        $(this).parent().toggleClass('js-is-active');
-      });
-    }
-  }
-
-  var mobileSearch = function() {
-    var mobileSearchTrigger = $('.header-search--trigger');
-    var mobileSearchForm = $('.mobile-search');
-
-    mobileSearchTrigger.bind('click', function(e){
-      e.preventDefault();
-      $(this).toggleClass('js-is-active');
-      mobileSearchForm.toggleClass('js-is-visible');
+      mobileNavBtnLabel.toggleClass('js-is-hidden');
     });
   }
 
-  var cartDrawerToggle = function() {
-    var body = $('body');
-    var cartDrawer = $('.cart-drawer');
-    var cartLink = $('.header-cart-link');
-    var cartOverlay = $('.cart-overlay');
-    var continueShoppingBtn = $('.continue-shopping-btn');
+  var symptomsNav = function() {
+    var navLink = $('.symptoms-nav a');
+    var contentSection = $('.symptoms__item');
 
-    cartLink.bind('click', function(e){
+    console.log(navLink);
+
+    navLink.bind('click', function(e) {
       e.preventDefault();
-      body.addClass('js-no-scroll');
-      cartOverlay.addClass('js-is-visible');
-      cartDrawer.addClass('js-is-open');
-    });
+      var navLinkID = $(this).attr('href');
 
-    cartOverlay.bind('click', function(e){
-      e.preventDefault();
-      body.removeClass('js-no-scroll');
-      cartOverlay.removeClass('js-is-visible');
-      cartDrawer.removeClass('js-is-open');
-    });
+      console.log(navLinkID);
 
-    continueShoppingBtn.bind('click', function(e){
-      e.preventDefault();
-      body.removeClass('js-no-scroll');
-      cartOverlay.removeClass('js-is-visible');
-      cartDrawer.removeClass('js-is-open');
-    });
-  }
-
-  var productFilterToggle = function() {
-    var productFilterTrigger = $('.product-filter-toggle');
-    var productFilterCategories = $('.product-filter-categories');
-
-    productFilterTrigger.bind('click', function(e){
-      e.preventDefault();
-      $(this).parent().find(productFilterCategories).slideToggle();
-    });
-  }
-
-  var productThumbToggle = function() {
-    var productThumbLink = $('.product-images--thumb');
-    var productMainImage = $('.product-images--main .wp-post-image');
-    var productMainImageLink = $('.product-images--main');
-
-    productMainImageLink.bind('click', function(e){
-      e.preventDefault();
-    });
-
-    productThumbLink.bind('click', function(e){
-      e.preventDefault();
-      var searchSrc = /(-?)([\d]{2,4})((\s*)(x)(\s*))([\d]{2,4})/;
-
-      var img = $(this).find('img');
-      var src = img.attr('src');
-      var srcset = img.attr('srcset');
-      var srcUrl = src.replace(searchSrc, '');
-
-      productMainImage.attr('src', srcUrl);
-      productMainImage.attr('srcset', '');
-      productThumbLink.removeClass('is-active');
+      navLink.removeClass('is-active');
       $(this).addClass('is-active');
-    });
 
+      contentSection.removeClass('is-visible');
+      $(navLinkID).addClass('is-visible');
+
+    });
   }
 
-  stickyHeader();
+  // $('.office-slider').slick({
+  //   infinite: true,
+  //   speed: 500,
+  //   fade: true,
+  //   cssEase: 'linear',
+  //   prevArrow: '<button class="slick-arrow slick-prev"><svg class="icon-arrow-prev"><use xlink:href="#icon-arrow-prev"></use></svg></button>',
+  //   nextArrow: '<button class="slick-arrow slick-next"><svg class="icon-arrow-next"><use xlink:href="#icon-arrow-next"></use></svg></button>'
+  // });
+
+  // $(".body-content").fitVids();
+
   mobileNav();
-  mobileSearch();
-  // cartDrawerToggle();
-  productFilterToggle();
-  productThumbToggle();
+  symptomsNav();
 
 });

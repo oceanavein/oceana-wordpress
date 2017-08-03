@@ -1,49 +1,53 @@
 jQuery(document).ready(function($) {
 
-  var stickyHeader = function() {
-    var body = $('body');
-    var header = $('.header');
-    var headerPos = header.offset();
-    var headerTopPos = headerPos.top;
-
-    $(window).on('scroll', function(e) {
-      var topPos = $(window).scrollTop();
-      if(topPos >= headerTopPos) {
-        header.addClass('js-is-sticky');
-        body.addClass('js-sticky-header');
-      } else {
-        header.removeClass('js-is-sticky');
-        body.removeClass('js-sticky-header');
-      }
-    });
-  };
+  console.log('party');
 
   var mobileNav = function() {
-    var body = $('body');
-    var windowWidth = $(window).width();
-    var header = $('.header');
-    var mobileNavTrigger = $('.hamburger');
+    var mobileNavTrigger = $('.mobile-btn');
     var mobileNavContainer = $('.menu');
-    var mobileNavParentItem = $('.main-nav .menu > li > a');
+    var mobileNavBtnLabel = $('.mobile-btn__label');
 
-    mobileNavTrigger.bind('click', function(e){
+    mobileNavTrigger.bind('click', function(e) {
       e.preventDefault();
       $(this).toggleClass('js-is-active');
-      body.toggleClass('js-no-scroll');
-      header.toggleClass('js-is-sticky');
       mobileNavContainer.toggleClass('js-is-visible');
+      mobileNavBtnLabel.toggleClass('js-is-hidden');
     });
-
-    if(windowWidth < 1000) {
-      mobileNavParentItem.bind('click', function(e){
-        e.preventDefault();
-        $(this).parent().find('.sub-menu').slideToggle();
-        $(this).parent().toggleClass('js-is-active');
-      });
-    }
   }
 
-  // stickyHeader();
-  // mobileNav();
+  var symptomsNav = function() {
+    var navLink = $('.symptoms-nav a');
+    var contentSection = $('.symptoms__item');
+
+    console.log(navLink);
+
+    navLink.bind('click', function(e) {
+      e.preventDefault();
+      var navLinkID = $(this).attr('href');
+
+      console.log(navLinkID);
+
+      navLink.removeClass('is-active');
+      $(this).addClass('is-active');
+
+      contentSection.removeClass('is-visible');
+      $(navLinkID).addClass('is-visible');
+
+    });
+  }
+
+  // $('.office-slider').slick({
+  //   infinite: true,
+  //   speed: 500,
+  //   fade: true,
+  //   cssEase: 'linear',
+  //   prevArrow: '<button class="slick-arrow slick-prev"><svg class="icon-arrow-prev"><use xlink:href="#icon-arrow-prev"></use></svg></button>',
+  //   nextArrow: '<button class="slick-arrow slick-next"><svg class="icon-arrow-next"><use xlink:href="#icon-arrow-next"></use></svg></button>'
+  // });
+
+  // $(".body-content").fitVids();
+
+  mobileNav();
+  symptomsNav();
 
 });
