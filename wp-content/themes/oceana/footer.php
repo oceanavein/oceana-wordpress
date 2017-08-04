@@ -5,35 +5,35 @@
 
 			<div class="col-span-3">
 				<h5 class="title__h5">Ocean Vein Specialists</h5>
-				<p class="footer-contact">601 S Coast Hwy<br />
-					Oceanside, CA 92054<br />
-					p 555-234-2342<br />
-					f 555-234-2322</p>
+				<p class="footer-contact"><?php the_field('office_address', 'option'); ?><br />
+					<?php the_field('office_city', 'option'); ?>, <?php the_field('office_state', 'option'); ?> <?php the_field('office_zip', 'option'); ?><br />
+					p <?php the_field('phone_number', 'option'); ?><br />
+					f <?php the_field('fax_number', 'option'); ?></p>
 				<ul class="footer-social">
 					<li>
-						<a href="">
+						<a href="<?php the_field('facebook_link', 'option'); ?>">
 							<svg class="icon-facebook-circle">
 								<use xlink:href="#icon-facebook-circle"></use>
 							</svg>
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="<?php the_field('twitter_link', 'option'); ?>">
 							<svg class="icon-twitter-circle">
 								<use xlink:href="#icon-twitter-circle"></use>
 							</svg>
 						</a>
 					</li>
 					<li>
-						<a href="">
-							<svg class="icon-facebook-circle">
-								<use xlink:href="#icon-facebook-circle"></use>
+						<a href="<?php the_field('youtube_link', 'option'); ?>">
+							<svg class="icon-youtube-circle">
+								<use xlink:href="#icon-youtube-circle"></use>
 							</svg>
 						</a>
 					</li>
 				</ul>
 				<p class="footer-copyright">&copy;<?php echo date('Y'); ?> Ocean Vein Specialists<br />
-					<a href="">Privacy Policy</a> | <a href="">Terms of Use</a><br />
+					<a href="/privacy-policy/">Privacy Policy</a> | <a href="/terms-use/">Terms of Use</a><br />
 					Web design: <a href="http://bradsawicki.com" target="_blank">Brad Sawicki</a></p>
 			</div>
 

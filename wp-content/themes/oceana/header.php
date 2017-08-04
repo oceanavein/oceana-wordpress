@@ -11,7 +11,7 @@
 
 	<div class="top-banner">
 		<p class="top-banner__label">Schedule an Appointment</p>
-		<p class="top-banner__phone">555-234-2342</p>
+		<p class="top-banner__phone"><?php the_field('phone_number', 'option'); ?></p>
 	</div>
 
 	<header class="header">
