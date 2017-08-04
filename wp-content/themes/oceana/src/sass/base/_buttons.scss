@@ -74,13 +74,3 @@ a {
 .cta-link {
   @include cta-link;
 }
-
-
-input[type="submit"],
-input[type="button"],
-button {
-  @include global-transition(.1s);
-  border: none;
-  outline: none;
-  cursor: pointer;
-}

@@ -1,10 +1,11 @@
 
-.form-item {
+.form-item,
+.nf-field-container {
   margin-bottom: 12px;
+}
 
-  &:last-of-type {
-    margin-bottom: 0;
-  }
+.submit-container {
+  margin-bottom: 0;
 }
 
 .form-two-col {
@@ -17,11 +18,10 @@
   padding: 0 10px;
 }
 
-input:not([type="submit"]) {
+input:not([type="submit"]):not([type="button"]) {
   width: 100%;
   height: 42px;
   padding: 0 16px;
-  border: 1px solid $grey;
   outline: none;
   color: $coal;
   font-family: $sans;
@@ -31,7 +31,7 @@ input:not([type="submit"]) {
 
 textarea {
   width: 100%;
-  height: $base*4;
+  height: $base*6;
   padding: 12px 16px;
   border: 1px solid $grey;
   outline: none;
@@ -42,6 +42,15 @@ textarea {
 
 ::placeholder {
   color: rgba(#000, .333);
+}
+
+.body-content input:not([type="submit"]):not([type="button"]) {
+  max-width: 440px;
+  border: 1px solid $grey;
+}
+
+.body-content textarea {
+  max-width: 600px;
 }
 
 
@@ -90,7 +99,30 @@ select::-ms-expand {
   display: none;
 }
 
+/** Buttons ============**/
+
+input[type="submit"],
+input[type="button"],
+button {
+  @include global-transition(.1s);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 
 /** Errors ============**/
 
-.form-error {}
+.ninja-forms-req-symbol {
+  display: none;
+}
+
+.nf-error-msg {
+  @include font-size(13px);
+  color: red;
+}
+
+.nf-form-hp {
+  position: absolute;
+  visibility: hidden;
+}

@@ -104,8 +104,11 @@ if( function_exists('acf_add_options_page') ) {
 
 
 // add editor the privilege to edit theme
-
-// get the the role object
 $role_object = get_role( 'editor' );
-// add $cap capability to this role object
 $role_object->add_cap( 'edit_theme_options' );
+
+// Remove ninja form stylesheets
+function wpgood_nf_display_enqueue_scripts(){
+  wp_dequeue_style( 'nf-display' );
+}
+add_action( 'nf_display_enqueue_scripts', 'wpgood_nf_display_enqueue_scripts');

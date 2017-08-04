@@ -1,7 +1,9 @@
 <div class="appt-form">
-	<h3 class="title__h4">Request an Appointment</h3>
-	<p>Request an appointment and we'll call you within 48 business hours to schedule your appointment.</p>
-	<form>
+	<h3 class="title__h4"><?php the_field('appointment_form_block_title', 'option'); ?></h3>
+	<p><?php the_field('appointment_form_block_content', 'option'); ?></p>
+	<?php Ninja_Forms()->display( 2 ); ?>
+
+	<!-- <form>
 		<div class="form-item">
 			<label for="">Name</label>
 			<input type="text" placeholder="Name" />
@@ -23,5 +25,5 @@
 		<div class="form-item">
 			<input type="submit" value="Send Request" class="btn btn--dk-blue btn__appt-form" />
 		</div>
-	</form>
+	</form> -->
 </div>

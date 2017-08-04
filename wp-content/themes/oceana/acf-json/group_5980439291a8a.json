@@ -3,6 +3,44 @@
     "title": "Global",
     "fields": [
         {
+            "key": "field_598434eb3a4fc",
+            "label": "Appointment Form Block Title",
+            "name": "appointment_form_block_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_598435013a4fd",
+            "label": "Appointment Form Block Content",
+            "name": "appointment_form_block_content",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_59804d91d46ae",
             "label": "CTA Section Title",
             "name": "cta_section_title",
@@ -201,5 +239,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1501580699
+    "modified": 1501836565
 }
