@@ -1,7 +1,5 @@
 jQuery(document).ready(function($) {
 
-  console.log('party');
-
   var mobileNav = function() {
     var mobileNavTrigger = $('.mobile-btn');
     var mobileNavContainer = $('.menu');
@@ -19,13 +17,9 @@ jQuery(document).ready(function($) {
     var navLink = $('.symptoms-nav a');
     var contentSection = $('.symptoms__item');
 
-    console.log(navLink);
-
     navLink.bind('click', function(e) {
       e.preventDefault();
       var navLinkID = $(this).attr('href');
-
-      console.log(navLinkID);
 
       navLink.removeClass('is-active');
       $(this).addClass('is-active');
