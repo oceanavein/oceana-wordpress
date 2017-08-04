@@ -1,6 +1,5 @@
 jQuery(document).ready(function($) {
 
-
   console.log('party');
 
   var mobileNav = function() {
@@ -37,16 +36,16 @@ jQuery(document).ready(function($) {
     });
   }
 
-  // $('.office-slider').slick({
-  //   infinite: true,
-  //   speed: 500,
-  //   fade: true,
-  //   cssEase: 'linear',
-  //   prevArrow: '<button class="slick-arrow slick-prev"><svg class="icon-arrow-prev"><use xlink:href="#icon-arrow-prev"></use></svg></button>',
-  //   nextArrow: '<button class="slick-arrow slick-next"><svg class="icon-arrow-next"><use xlink:href="#icon-arrow-next"></use></svg></button>'
-  // });
+  $('.office-slider').slick({
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    prevArrow: '<button class="slick-arrow slick-prev"><svg class="icon-arrow-prev"><use xlink:href="#icon-arrow-prev"></use></svg></button>',
+    nextArrow: '<button class="slick-arrow slick-next"><svg class="icon-arrow-next"><use xlink:href="#icon-arrow-next"></use></svg></button>'
+  });
 
-  // $(".body-content").fitVids();
+  $(".body-content").fitVids();
 
   mobileNav();
   symptomsNav();

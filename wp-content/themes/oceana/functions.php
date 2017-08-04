@@ -36,6 +36,15 @@ function tlc_load_scripts() {
 	);
 	wp_enqueue_script('fitvids');
 
+	// fitvids
+	wp_register_script('slick',
+		get_bloginfo('template_url') . '/dist/js/slick.min.js',
+		array(),
+		ENQUEUE_VERSION,
+		true
+	);
+	wp_enqueue_script('slick');
+
 	// main js
 	wp_register_script('main-js',
 		get_bloginfo('template_url') . '/dist/js/main.js',
@@ -82,7 +91,8 @@ function post_navigation() {
 
 
 // Image Sizes
-add_image_size( 'post-grid-thumb', 410, 300, true );
+add_image_size( 'full-width-image', 1000, 360, true );
+add_image_size( 'full-width-image-2x', 2000, 720, true );
 
 
 // Default blog image
