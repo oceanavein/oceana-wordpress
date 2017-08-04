@@ -139,7 +139,8 @@
 }
 
 .main-nav .menu > li > a:hover:after,
-.main-nav .menu > .current_page_item > a:after {
+.main-nav .menu > .current_page_item > a:after,
+.main-nav .menu > .current-page-ancestor > a:after {
   bottom: 0;
 }
 

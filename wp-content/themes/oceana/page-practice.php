@@ -88,7 +88,7 @@
         </div>
       </div>
       <div class="practice-finances__form col-span-5 flex-end">
-				<?php get_template_part('partials/appointment-form'); ?>
+				<?php get_template_part('partials/appointment-form-2'); ?>
       </div>
     </div>
 
