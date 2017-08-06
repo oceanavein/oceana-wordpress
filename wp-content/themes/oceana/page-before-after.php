@@ -21,4 +21,38 @@
 	</div>
 </section>
 
+<section class="before-after-section">
+	<div class="container">
+
+		<?php if( have_rows('images') ): ?>
+			<div class="before-after">
+				<?php while ( have_rows('images') ) : the_row(); ?>
+					<div class="before-after__item">
+						<h2 class="before-after__title title__h3"><?php the_sub_field('title'); ?></h2>
+						<p class="before-after__description"><?php the_sub_field('description'); ?></p>
+						<div class="before-after__grid flex-grid">
+							<div class="before-image col-span-6">
+								<?php $before_image = get_sub_field('before_image'); ?>
+								<img src="<?php echo $before_image["sizes"]['before-after-image']; ?>" srcset="<?php echo $before_image["sizes"]['before-after-image']; ?> 586w, <?php echo $before_image["sizes"]['before-after-image-2x']; ?> 1172w" alt="Oceana Vein Clinic Office - Before Image" />
+							</div>
+							<div class="before-after__arrow">
+								<svg class="icon-arrow-next">
+									<use xlink:href="#icon-arrow-next"></use>
+								</svg>
+							</div>
+							<div class="after-image col-span-6">
+								<?php $after_image = get_sub_field('after_image'); ?>
+								<img src="<?php echo $after_image["sizes"]['before-after-image']; ?>" srcset="<?php echo $after_image["sizes"]['before-after-image']; ?> 586w, <?php echo $after_image["sizes"]['before-after-image-2x']; ?> 1172w" alt="Oceana Vein Clinic Office - Before Image" />
+							</div>
+						</div>
+					</div>
+				<?php endwhile; ?>
+			</div>
+		<?php endif; ?>
+
+	</div>
+</section>
+
+<?php get_template_part('partials/cta-section'); ?>
+
 <?php get_footer(); ?>

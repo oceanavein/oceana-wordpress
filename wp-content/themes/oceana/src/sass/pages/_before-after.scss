@@ -1,0 +1,42 @@
+
+.before-after__item:not(:last-child) {
+	margin-bottom: $base*2;
+}
+
+.before-after__title {
+	color: $blue;
+}
+
+.before-after__description {
+	max-width: 580px;
+	margin-bottom: $base;
+}
+
+.before-after__grid {
+	position: relative;
+}
+
+.before-image.col-span-6 {
+	margin-bottom: 0;
+}
+
+.before-after__arrow {
+	text-align: center;
+
+	@include bp-min-width($medium) {
+		@include absolute-center;
+	}
+}
+
+.before-after__arrow svg {
+	fill: $dk-blue;
+	width: 24px;
+	height: 45px;
+	margin-right: -2px;
+
+	@include bp-max-width($medium) {
+		transform: rotate(90deg);
+		width: 18px;
+		height: 33px;
+	}
+}

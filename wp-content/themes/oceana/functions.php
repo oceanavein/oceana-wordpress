@@ -94,6 +94,9 @@ function post_navigation() {
 add_image_size( 'full-width-image', 1000, 360, true );
 add_image_size( 'full-width-image-2x', 2000, 720, true );
 
+add_image_size( 'before-after-image', 586, 396, true );
+add_image_size( 'before-after-image-2x', 1172, 792, true );
+
 
 // Default blog image
 function get_default_blog_image($size=null){
