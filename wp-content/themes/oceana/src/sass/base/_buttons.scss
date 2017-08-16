@@ -1,9 +1,6 @@
 
 a {
   @include global-transition(.1s);
-
-	&:hover {
-	}
 }
 
 @mixin btn {

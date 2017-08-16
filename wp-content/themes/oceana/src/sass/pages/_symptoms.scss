@@ -40,3 +40,7 @@
 		padding-right: 30px;
 	}
 }
+
+.symptoms .body-content a {
+	@include cta-link;
+}
