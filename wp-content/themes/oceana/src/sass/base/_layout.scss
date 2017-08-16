@@ -15,6 +15,12 @@
   }
 }
 
+.page-content {
+  @include bp-min-width($large) {
+    padding-right: 40px;
+  }
+}
+
 .bg__blue {
   background: $blue;
   color: #fff;
@@ -29,12 +35,12 @@
 }
 
 @mixin is-hidden {
-  position:absolute;
-  left:-10000px;
-  top:auto;
-  width:1px;
-  height:1px;
-  overflow:hidden;
+  overflow: hidden;
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
 }
 
 .is-hidden {

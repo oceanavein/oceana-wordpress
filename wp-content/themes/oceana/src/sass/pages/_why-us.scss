@@ -1,0 +1,17 @@
+
+.why-questions .section-title {
+	text-align: center;
+
+	@include bp-min-width($medium) {
+		margin-bottom: $base*3;
+	}
+
+	@include bp-min-width($large) {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+.why-questions .container {
+	@include max-col-span(8);
+}
