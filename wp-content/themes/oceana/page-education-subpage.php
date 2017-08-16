@@ -30,7 +30,7 @@
       <div class="education-causes__content col-span-6">
         <h2 class="title__h2 section-title"><?php the_field('causes_section_title'); ?></h2>
         <div class="section-content">
-					<?php the_field('causes_section_content'); ?>
+					<p><?php the_field('causes_section_content'); ?></p>
         </div>
       </div>
     </div>
@@ -45,7 +45,7 @@
       <div class="education-symptoms__content col-span-5">
         <h2 class="title__h3 section-title"><?php the_field('symptoms_section_title'); ?></h2>
         <div class="section-content">
-					<?php the_field('symptoms_section_content'); ?>
+					<p><?php the_field('symptoms_section_content'); ?></p>
         </div>
       </div>
       <div class="education-symptoms__list col-span-6">

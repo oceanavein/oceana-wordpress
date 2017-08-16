@@ -82,7 +82,7 @@
 
     <div class="flex-row">
       <div class="practice-finances__content col-span-7">
-				<h2 class="title__h2 section-title"><?php the_field('section_4_title'); ?></h2>
+				<h2 class="title__h3 section-title"><?php the_field('section_4_title'); ?></h2>
         <div class="section-content">
 					<?php the_field('section_4_content'); ?>
         </div>

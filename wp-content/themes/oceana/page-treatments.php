@@ -58,25 +58,27 @@
 <section class="payment-options bg__pale-blue">
   <div class="container">
 
-    <header class="section-header">
-      <h3 class="title__h2"><?php the_field('payment_section_title'); ?></h3>
-      <p><?php the_field('payment_section_content'); ?></p>
-    </header>
+		<div class="flex-grid payment-grid">
+			<div class="col-span-6">
+				<h3 class="section-title title__h2"><?php the_field('payment_section_title'); ?></h3>
+				<div class="body-content">
+		      <p><?php the_field('payment_section_content'); ?></p>
+				</div>
+			</div>
 
-		<?php if( have_rows('payment_options') ): ?>
-			<div class="flex-grid payment-grid">
+			<?php if( have_rows('payment_options') ): ?>
 		    <?php while ( have_rows('payment_options') ) : the_row(); ?>
 					<div class="col-span-6">
 						<div class="payment-grid__logo">
-							img
+							<img src="<?php the_sub_field('logo'); ?>" alt="" />
 		        </div>
 		        <div class="body-content">
 		          <?php the_sub_field('description'); ?>
 		        </div>
 		      </div>
 		    <?php endwhile; ?>
-			</div>
-		<?php endif; ?>
+			<?php endif; ?>
+		</div>
 
   </div>
 </section>

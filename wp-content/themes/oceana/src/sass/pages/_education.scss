@@ -16,3 +16,7 @@
 	background: $icon-list-wave no-repeat left bottom;
 	font-weight: $weight-bold;
 }
+
+.education-treatments__content .body-content h3 {
+	@include title__h3;
+}

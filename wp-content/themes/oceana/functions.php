@@ -120,8 +120,17 @@ if( function_exists('acf_add_options_page') ) {
 $role_object = get_role( 'editor' );
 $role_object->add_cap( 'edit_theme_options' );
 
+
 // Remove ninja form stylesheets
 function wpgood_nf_display_enqueue_scripts(){
   wp_dequeue_style( 'nf-display' );
 }
 add_action( 'nf_display_enqueue_scripts', 'wpgood_nf_display_enqueue_scripts');
+
+// SVG Uploads
+function custom_mtypes( $m ){
+    $m['svg'] = 'image/svg+xml';
+    $m['svgz'] = 'image/svg+xml';
+    return $m;
+}
+add_filter( 'upload_mimes', 'custom_mtypes' );
