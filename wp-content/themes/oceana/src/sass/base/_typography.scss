@@ -166,13 +166,14 @@ div + .section-subtitle {
 }
 
 .body-content ul {
-  @include fontUnits(18px, 30px);
+  @include fontUnits(18px, 24px);
   color: $coal;
 }
 
 .body-content li {
+  margin-bottom: 12px;
   padding-left: 20px;
-  background: $icon-list-arrow no-repeat center left;
+  background: $icon-list-arrow no-repeat 0 2px;
 }
 
 .body-content p:not(:last-child),
