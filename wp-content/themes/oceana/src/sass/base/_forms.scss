@@ -110,9 +110,19 @@ button {
   cursor: pointer;
 }
 
+.submit-wrap input {
+	@include btn;
+	@include btn__dk-blue;
+	height: 48px;
+	padding: 0 30px;
+	font-size: 1rem;
+}
+
 
 /** Errors ============**/
 
+
+.nf-form-fields-required,
 .ninja-forms-req-symbol {
   display: none;
 }

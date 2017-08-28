@@ -66,17 +66,8 @@
 	border: none;
 }
 
-.submit-wrap input {
-	@include btn;
-	@include btn__dk-blue;
+.appt-form  .submit-wrap input {
 	width: 100%;
-	height: 48px;
-	padding: 0;
-	font-size: 1rem;
-}
-
-.nf-form-fields-required {
-	display: none;
 }
 
 .appt-form .nf-error-msg {
