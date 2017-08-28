@@ -98,6 +98,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_59a3fecdd8db1",
+            "label": "Email Address",
+            "name": "email_address",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_59804d324d30f",
             "label": "Office Address",
             "name": "office_address",
@@ -239,5 +258,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1501836565
+    "modified": 1503919835
 }

@@ -1,0 +1,17 @@
+
+.sidebar-contact p {
+	line-height: 1.5;
+
+	@include bp-min-width($medium) {
+		@include font-size(18px);
+	}
+}
+
+.sidebar-contact__title {
+	color: $blue;
+	line-height: 1.5;
+}
+
+.sidebar-contact__directions {
+	margin-bottom: $base;
+}
