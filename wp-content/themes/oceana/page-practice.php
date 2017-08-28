@@ -33,7 +33,12 @@
         </div>
       </div>
       <div class="practice-venous__form col-span-6 flex-end">
-        img
+				<?php
+					$image_id = get_field('section_1_image');
+					$src = wp_get_attachment_image_src($image_id, 'section-image');
+					$srcset = wp_get_attachment_image_srcset($image_id, 'section-image');
+				?>
+				<img src="<?=$src[0]?>" srcset="<?=$srcset?>" alt="<?php the_field('section_1_title'); ?>" />
       </div>
     </div>
 
@@ -45,7 +50,12 @@
 
     <div class="flex-row">
       <div class="practice-doctor__image col-span-5">
-        img
+				<?php
+					$image_id = get_field('section_2_image');
+					$src = wp_get_attachment_image_src($image_id, 'head-shot');
+					$srcset = wp_get_attachment_image_srcset($image_id, 'head-shot');
+				?>
+				<img src="<?=$src[0]?>" srcset="<?=$srcset?>" alt="Dr. Adam Isadore" />
       </div>
       <div class="practice-doctor__content col-span-7">
 				<h2 class="title__h2 section-title"><?php the_field('section_2_title'); ?></h2>
@@ -70,7 +80,18 @@
         </div>
       </div>
       <div class="practice-venous__image col-span-6 flex-end">
-        img
+				<?php if( have_rows('section_3_images') ): ?>
+					<div class="practice-venous__slider">
+				    <?php while ( have_rows('section_3_images') ) : the_row(); ?>
+							<?php
+								$image_id = get_sub_field('image');
+								$src = wp_get_attachment_image_src($image_id, 'section-image');
+								$srcset = wp_get_attachment_image_srcset($image_id, 'section-image');
+							?>
+							<img src="<?=$src[0]?>" srcset="<?=$srcset?>" alt="<?php the_field('section_3_title'); ?>" />
+				    <?php endwhile; ?>
+					</div>
+				<?php endif; ?>
       </div>
     </div>
 

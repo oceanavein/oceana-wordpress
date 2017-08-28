@@ -97,6 +97,21 @@ add_image_size( 'full-width-image-2x', 2000, 720, true );
 add_image_size( 'before-after-image', 586, 396, true );
 add_image_size( 'before-after-image-2x', 1172, 792, true );
 
+add_image_size( 'home-hero', 754, 456, true );
+add_image_size( 'home-hero-2x', 1508, 912, true );
+
+add_image_size( 'head-shot', 380, 532, true );
+add_image_size( 'head-shot-2x', 760, 1064, true );
+
+add_image_size( 'symptoms-image', 482, 432, true );
+add_image_size( 'symptoms-image-2x', 964, 864, true );
+
+add_image_size( 'section-image', 586, 432, true );
+add_image_size( 'section-image-2x', 1172, 864, true );
+
+add_image_size( 'section-vertical-image', 482, 624, true );
+add_image_size( 'section-vertical-image-2x', 964, 1248, true );
+
 
 // Default blog image
 function get_default_blog_image($size=null){
