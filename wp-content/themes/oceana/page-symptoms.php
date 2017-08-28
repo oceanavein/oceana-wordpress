@@ -49,10 +49,14 @@
 							</div>
 						</div>
 						<div class="symptoms__image col-span-5">
-							img
-			        <!-- <img src="/dist/images/symptoms-fpo-01.jpg" alt="" /> -->
+							<?php
+								$image_id = get_sub_field('image');
+								$src = wp_get_attachment_image_src($image_id, 'symptoms-image');
+								$srcset = wp_get_attachment_image_srcset($image_id, 'symptoms-image');
+							?>
+							<img src="<?=$src[0]?>" srcset="<?=$srcset?>" alt="<?php the_sub_field('title'); ?>" />
 			      </div>
-					</div><!-- .symptoms__item -->
+					</div>
 				<?php $count++; ?>
 		    <?php endwhile; ?>
 		<?php endif; ?>

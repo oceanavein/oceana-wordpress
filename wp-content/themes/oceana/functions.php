@@ -112,6 +112,9 @@ add_image_size( 'section-image-2x', 1172, 864, true );
 add_image_size( 'section-vertical-image', 482, 624, true );
 add_image_size( 'section-vertical-image-2x', 964, 1248, true );
 
+add_image_size( 'treatment-image', 516, 516 );
+add_image_size( 'treatment-image-2x', 1032, 1032 );
+
 
 // Default blog image
 function get_default_blog_image($size=null){

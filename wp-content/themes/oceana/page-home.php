@@ -87,7 +87,12 @@
 				</div>
 			</div>
 			<div class="home-veins__image col-span-6">
-				img
+				<?php
+					$image_id = get_field('section_3_image');
+					$src = wp_get_attachment_image_src($image_id, 'treatment-image');
+					$srcset = wp_get_attachment_image_srcset($image_id, 'treatment-image');
+				?>
+				<img src="<?=$src[0]?>" srcset="<?=$srcset?>" alt="<?php the_field('section_3_title'); ?>" />
 			</div>
 		</div>
 
