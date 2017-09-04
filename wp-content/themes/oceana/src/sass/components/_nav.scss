@@ -167,9 +167,13 @@
   visibility: visible;
 }
 
+.main-nav .sub-menu li {
+  line-height: 1;
+}
+
 .main-nav .sub-menu a {
   display: block;
-  padding: 4px 30px;
+  padding: 8px 30px;
   color: $pale-blue;
 }
 
