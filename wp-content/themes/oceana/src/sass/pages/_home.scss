@@ -1,4 +1,28 @@
 
+.home-hero {
+	overflow: hidden;
+	position: relative;
+}
+
+.home-hero .container {
+	padding-bottom: 0;
+
+	@include bp-min-width($medium) {
+		position: relative;
+		padding-top: $base*5;
+		padding-bottom: $base*5;
+	}
+}
+
+.home-hero__content {
+	position: relative;
+	z-index: 10;
+
+	@include bp-max-width($medium) {
+		margin-bottom: $base;
+	}
+}
+
 .home-hero__title {
 	@include font-size(42px);
 	margin-bottom: 12px;
@@ -40,9 +64,44 @@
 	}
 }
 
-.home-doctor__image {
+.home-hero__image {
+	@include bp-max-width($medium) {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	@include bp-min-width($medium) {
+		@include vertical-center;
+		right: -40px;
+		max-width: 754px;
+	}
+}
+
+.home-hero__image img {
+	@include bp-min-width($medium) {
+		@include img-shadow;
+	}
+}
+
+.home-doctor-grid {
 	@include bp-min-width($large) {
+		align-items: center;
+	}
+}
+
+.home-doctor__image {
+	text-align: center;
+
+	@include bp-min-width($medium) {
 		order: -1;
+	}
+}
+
+.home-doctor__image img {
+	@include img-shadow;
+
+	@include bp-min-width($large) {
+		max-width: 380px;
 	}
 }
 
@@ -51,10 +110,28 @@
 }
 
 .home-map {
-	background: $home-map $lt-blue no-repeat center center;
+	position: relative;
+	background: $home-map $lt-blue no-repeat center top;
 	background-size: cover;
+
+	@include bp-min-width($large) {
+		background-position: center center;
+	}
 }
 
 .home-map .container {
-	height: 588px;
+	height: 800px;
+
+	@include bp-min-width($large) {
+		height: 588px;
+	}
+}
+
+.home-map .appt-form {
+	@include bp-max-width($large) {
+		position: absolute;
+		right: 20px;
+		bottom: 0;
+		left: 20px;
+	}
 }

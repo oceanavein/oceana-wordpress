@@ -4,16 +4,19 @@
 
 <section class="hero home-hero bg__pale-blue">
 	<div class="container">
-		<h1 class="home-hero__title"><?php the_field('hero_title'); ?></h1>
-		<h2 class="home-hero__subtitle title__h3"><?php the_field('hero_subtitle'); ?></h2>
-		<?php if( have_rows('hero_benefits') ): ?>
-			<ul class="home-hero__benefits">
-		    <?php while ( have_rows('hero_benefits') ) : the_row(); ?>
-		      <li><?php the_sub_field('benefit'); ?></li>
-		    <?php endwhile; ?>
-			</ul>
-		<?php endif; ?>
-		<p><a href="" class="btn btn--mobile-full-width">Schedule a Free Consultation</a></p>
+
+		<div class="home-hero__content">
+			<h1 class="home-hero__title"><?php the_field('hero_title'); ?></h1>
+			<h2 class="home-hero__subtitle title__h3"><?php the_field('hero_subtitle'); ?></h2>
+			<?php if( have_rows('hero_benefits') ): ?>
+				<ul class="home-hero__benefits">
+			    <?php while ( have_rows('hero_benefits') ) : the_row(); ?>
+			      <li><?php the_sub_field('benefit'); ?></li>
+			    <?php endwhile; ?>
+				</ul>
+			<?php endif; ?>
+			<p><a href="" class="btn btn--mobile-full-width">Schedule a Free Consultation</a></p>
+		</div>
 
 		<div class="home-hero__image">
 			<?php
@@ -48,7 +51,7 @@
 <section class="home-doctor">
 	<div class="container">
 
-		<div class="flex-row">
+		<div class="home-doctor-grid flex-row">
 			<div class="home-doctor__content col-span-7">
 				<h2 class="title__h2 section-title"><?php the_field('section_2_title'); ?></h2>
 				<div class="section-content">
