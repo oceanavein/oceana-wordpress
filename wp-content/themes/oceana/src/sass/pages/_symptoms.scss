@@ -32,7 +32,11 @@
 }
 
 .symptoms__item.is-visible {
-	display: flex;
+	display: block;
+
+	@include bp-min-width($medium) {
+		display: flex;
+	}
 }
 
 .symptoms .body-content {

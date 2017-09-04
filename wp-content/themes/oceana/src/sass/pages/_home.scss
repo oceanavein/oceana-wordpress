@@ -111,18 +111,19 @@
 
 .home-map {
 	position: relative;
-	background: $home-map $lt-blue no-repeat center top;
-	background-size: cover;
+	background: $home-map $lt-blue no-repeat 75% -20px;
+	background-size: 1200px;
 
-	@include bp-min-width($large) {
+	@include bp-min-width($medium) {
 		background-position: center center;
+		background-size: cover;
 	}
 }
 
 .home-map .container {
-	height: 800px;
+	height: 640px;
 
-	@include bp-min-width($large) {
+	@include bp-min-width($medium) {
 		height: 588px;
 	}
 }
@@ -130,12 +131,13 @@
 .home-map .appt-form {
 	background: white;
 	color: $md-grey;
+	margin: 0;
 
-	@include bp-max-width($large) {
+	@include bp-max-width($medium) {
 		position: absolute;
-		right: 20px;
+		right: 0;
 		bottom: 0;
-		left: 20px;
+		left: 0;
 	}
 }
 
@@ -143,7 +145,7 @@
 	color: $blue;
 }
 
-.home-map .appt-form input {
+.home-map .appt-form input:not([type="button"]) {
 	border: 1px solid $md-grey;
 }
 

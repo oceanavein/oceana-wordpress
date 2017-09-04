@@ -12,6 +12,9 @@
 
 	@include bp-min-width($medium) {
 		@include max-col-span(4);
+	}
+
+	@include bp-min-width($large) {
 		padding: 30px;
 	}
 }
