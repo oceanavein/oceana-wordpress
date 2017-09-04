@@ -128,10 +128,25 @@
 }
 
 .home-map .appt-form {
+	background: white;
+	color: $grey;
+
 	@include bp-max-width($large) {
 		position: absolute;
 		right: 20px;
 		bottom: 0;
 		left: 20px;
 	}
+}
+
+.home-map .appt-form .title__h4 {
+	color: $blue;
+}
+
+.home-map .appt-form input {
+	border: 1px solid $grey;
+}
+
+.home-map .appt-form .nf-error-msg {
+	color: red;
 }
