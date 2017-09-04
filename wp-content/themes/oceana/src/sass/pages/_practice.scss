@@ -1,0 +1,53 @@
+
+.practice-doctor__image {
+	text-align: center;
+}
+
+.practice-doctor__image img {
+	@include img-shadow;
+
+	@include bp-min-width($large) {
+		max-width: 380px;
+	}
+}
+
+.practice-office .container {
+	@include bp-max-width($medium) {
+		padding-bottom: 0;
+	}
+}
+
+.practice-office__content {
+	@include bp-min-width($medium) {
+		padding-right: 60px;
+	}
+}
+
+.practice-office__image {
+	@include bp-max-width($medium) {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+}
+
+.practice-office .slick-arrow svg {
+	fill: white;
+	width: 16px;
+	height: 30px;
+}
+
+.practice-office .slick-prev {
+	left: 10px;
+
+	@include bp-min-width($medium) {
+		left: -30px;
+	}
+}
+
+.practice-office .slick-next {
+	right: 10px;
+
+	@include bp-min-width($medium) {
+		right: -30px;
+	}
+}

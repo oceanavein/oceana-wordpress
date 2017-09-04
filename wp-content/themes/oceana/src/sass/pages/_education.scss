@@ -1,20 +1,21 @@
 
-.education-symptoms .flex-row {
-	align-items: center;
-}
-
 .education-symptoms__list ul {
-	display: flex;
-	flex-wrap: wrap;
+	@include bp-min-width($medium) {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 
 .education-symptoms__list li {
 	@include fontUnits(18px, 27px);
-	width: 50%;
 	margin-bottom: 12px;
 	padding-bottom: 12px;
 	background: $icon-list-wave no-repeat left bottom;
 	font-weight: $weight-bold;
+
+	@include bp-min-width($medium) {
+		width: 50%;
+	}
 }
 
 .education-treatments__content .body-content h3 {

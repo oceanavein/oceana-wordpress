@@ -107,8 +107,15 @@
 }
 
 .slick-arrow svg {
-  width: 24px;
-  height: 45px;
+  fill: white;
+	width: 16px;
+	height: 30px;
+
+  @include bp-min-width($medium) {
+    fill: $dk-blue;
+    width: 24px;
+    height: 45px;
+  }
 }
 
 .slick-prev {

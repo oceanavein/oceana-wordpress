@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
     });
   }
 
-  $('.office-slider').slick({
+  $('.office-slider, .practice-office__slider').slick({
     infinite: true,
     speed: 500,
     fade: true,

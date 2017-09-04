@@ -129,7 +129,7 @@
 
 .home-map .appt-form {
 	background: white;
-	color: $grey;
+	color: $md-grey;
 
 	@include bp-max-width($large) {
 		position: absolute;
@@ -144,7 +144,7 @@
 }
 
 .home-map .appt-form input {
-	border: 1px solid $grey;
+	border: 1px solid $md-grey;
 }
 
 .home-map .appt-form .nf-error-msg {

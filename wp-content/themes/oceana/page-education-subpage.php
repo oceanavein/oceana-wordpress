@@ -46,7 +46,7 @@
 <section class="education-symptoms bg__blue">
   <div class="container">
 
-    <div class="flex-row">
+    <div class="flex-row flex-row__center">
       <div class="education-symptoms__content col-span-5">
         <h2 class="title__h3 section-title"><?php the_field('symptoms_section_title'); ?></h2>
         <div class="section-content">

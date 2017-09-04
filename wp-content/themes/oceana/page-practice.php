@@ -25,7 +25,7 @@
 <section class="practice-venous bg__blue">
   <div class="container">
 
-    <div class="flex-row">
+    <div class="flex-row flex-row__center">
       <div class="practice-venous__content col-span-6">
         <h2 class="title__h2 section-title"><?php the_field('section_1_title'); ?></h2>
         <div class="section-content">
@@ -48,7 +48,7 @@
 <section class="practice-doctor">
   <div class="container">
 
-    <div class="flex-row">
+    <div class="flex-row flex-row__center">
       <div class="practice-doctor__image col-span-5">
 				<?php
 					$image_id = get_field('section_2_image');
@@ -69,26 +69,28 @@
   </div>
 </section>
 
-<section class="practice-venous bg__blue">
+<section class="practice-office bg__blue">
   <div class="container">
 
-    <div class="flex-row">
-      <div class="practice-venous__content col-span-6">
+    <div class="flex-row flex-row__center">
+      <div class="practice-office__content col-span-6">
 				<h2 class="title__h2 section-title"><?php the_field('section_3_title'); ?></h2>
         <div class="section-content">
 					<?php the_field('section_3_content'); ?>
         </div>
       </div>
-      <div class="practice-venous__image col-span-6 flex-end">
+      <div class="practice-office__image col-span-6">
 				<?php if( have_rows('section_3_images') ): ?>
-					<div class="practice-venous__slider">
+					<div class="practice-office__slider">
 				    <?php while ( have_rows('section_3_images') ) : the_row(); ?>
-							<?php
-								$image_id = get_sub_field('image');
-								$src = wp_get_attachment_image_src($image_id, 'section-image');
-								$srcset = wp_get_attachment_image_srcset($image_id, 'section-image');
-							?>
-							<img src="<?=$src[0]?>" srcset="<?=$srcset?>" alt="<?php the_field('section_3_title'); ?>" />
+							<div class="practice-office__slider-item">
+								<?php
+									$image_id = get_sub_field('image');
+									$src = wp_get_attachment_image_src($image_id, 'section-image');
+									$srcset = wp_get_attachment_image_srcset($image_id, 'section-image');
+								?>
+								<img src="<?=$src[0]?>" srcset="<?=$srcset?>" alt="" />
+							</div>
 				    <?php endwhile; ?>
 					</div>
 				<?php endif; ?>
@@ -101,7 +103,7 @@
 <section class="practice-finances">
   <div class="container">
 
-    <div class="flex-row">
+    <div class="flex-row flex-row__center">
       <div class="practice-finances__content col-span-7">
 				<h2 class="title__h3 section-title"><?php the_field('section_4_title'); ?></h2>
         <div class="section-content">

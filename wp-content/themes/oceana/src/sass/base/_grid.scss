@@ -30,6 +30,12 @@ $col:    66px;
   }
 }
 
+.flex-row__center {
+  @include bp-min-width($medium) {
+    align-items: center;
+  }
+}
+
 .flex-end {
   justify-content: flex-end;
 }
@@ -39,10 +45,6 @@ $col:    66px;
 }
 
 [class*='col-'] {
-  @include bp-max-width($medium) {
-    width: 100%;
-  }
-
   @include bp-min-width($medium) {
     padding-left: 20px;
     padding-right: 20px;
