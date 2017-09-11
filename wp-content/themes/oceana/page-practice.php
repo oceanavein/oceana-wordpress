@@ -32,7 +32,7 @@
 					<?php the_field('section_1_content'); ?>
         </div>
       </div>
-      <div class="practice-venous__form col-span-6 flex-end">
+      <div class="practice-venous__form col-span-6">
 				<?php
 					$image_id = get_field('section_1_image');
 					$src = wp_get_attachment_image_src($image_id, 'section-image');

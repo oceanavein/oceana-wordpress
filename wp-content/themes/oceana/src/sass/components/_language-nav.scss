@@ -1,0 +1,35 @@
+
+.language-nav {
+  @include font-size(14px);
+  position: absolute;
+  top: 18px;
+  right: 0;
+  color: $md-grey;
+
+  @include bp-max-width($large) {
+    transform: translateY(-50%);
+    top: 50%;
+    right: 80px;
+    text-transform: uppercase;
+  }
+
+  @include bp-max-width($medium) {
+    right: 100px;
+  }
+}
+
+.language-nav ul {
+  display: flex;
+}
+
+.language-nav li {
+  margin-left: 20px;
+}
+
+.language-nav a {
+  color: $md-grey;
+}
+
+.language-nav .current-lang a {
+  color: $dk-grey;
+}

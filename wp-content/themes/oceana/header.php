@@ -17,11 +17,13 @@
 	<header class="header">
 		<div class="container">
 			<div class="logo">
-				<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.svg" alt="Oceana Vein Clinic" /></a>
+				<a href="<?php echo pll_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.svg" alt="Oceana Vein Clinic" /></a>
 			</div>
-			<!-- <nav class="language-nav">
-				<a href="" class="current">En<span class="mobile-is-hidden">glish</span></a> / <a href="">Es<span class="mobile-is-hidden">pa&ntilde;ol</span></a>
-			</nav> -->
+			<nav class="language-nav">
+				<ul>
+					<?php pll_the_languages();?>
+				</ul>
+			</nav>
 			<nav class="main-nav">
 				<button class="mobile-btn btn btn--outline">
 					<span class="mobile-btn__label">Menu</span>
