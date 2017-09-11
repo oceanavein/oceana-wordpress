@@ -32,7 +32,7 @@
 					<?php the_field('section_1_content'); ?>
         </div>
       </div>
-      <div class="practice-venous__form col-span-6">
+      <div class="practice-venous__form col-span-6 shadow-image">
 				<?php
 					$image_id = get_field('section_1_image');
 					$src = wp_get_attachment_image_src($image_id, 'section-image');
@@ -49,7 +49,7 @@
   <div class="container">
 
     <div class="flex-row flex-row__center">
-      <div class="practice-doctor__image col-span-5">
+      <div class="practice-doctor__image col-span-5 shadow-image">
 				<?php
 					$image_id = get_field('section_2_image');
 					$src = wp_get_attachment_image_src($image_id, 'head-shot');

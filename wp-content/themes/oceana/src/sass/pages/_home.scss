@@ -98,8 +98,6 @@
 }
 
 .home-doctor__image img {
-	@include img-shadow;
-
 	@include bp-min-width($large) {
 		max-width: 380px;
 	}

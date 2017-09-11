@@ -24,7 +24,7 @@
   <div class="container">
 
     <div class="flex-row">
-      <div class="education-causes__image col-span-6">
+      <div class="education-causes__image col-span-6 shadow-image">
 				<?php
 					$image_id = get_field('causes_section_image');
 					$src = wp_get_attachment_image_src($image_id, 'treatment-image');

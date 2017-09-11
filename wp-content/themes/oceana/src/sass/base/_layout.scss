@@ -52,3 +52,7 @@
     @include is-hidden;
   }
 }
+
+.shadow-image img {
+	@include img-shadow;
+}

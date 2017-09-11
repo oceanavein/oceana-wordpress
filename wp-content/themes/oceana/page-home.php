@@ -58,7 +58,7 @@
 					<?php the_field('section_2_content'); ?>
 				</div>
 			</div>
-			<div class="home-doctor__image col-span-5">
+			<div class="home-doctor__image col-span-5 shadow-image">
 				<?php
 					$image_id = get_field('section_2_image');
 					$src = wp_get_attachment_image_src($image_id, 'head-shot');
@@ -89,7 +89,7 @@
 					<p><a href="" class="cta-link">Schedule a Free Consultation</a></p>
 				</div>
 			</div>
-			<div class="home-veins__image col-span-6">
+			<div class="home-veins__image col-span-6 shadow-image">
 				<?php
 					$image_id = get_field('section_3_image');
 					$src = wp_get_attachment_image_src($image_id, 'treatment-image');
@@ -106,7 +106,7 @@
 	<div class="container">
 
 		<div class="flex-row">
-			<div class="home-payment__image col-span-5">
+			<div class="home-payment__image col-span-5 shadow-image">
 				<?php
 					$image_id = get_field('section_4_image');
 					$src = wp_get_attachment_image_src($image_id, 'section-vertical-image');

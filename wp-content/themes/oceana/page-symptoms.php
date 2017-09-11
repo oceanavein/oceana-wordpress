@@ -48,7 +48,7 @@
 								<?php the_sub_field('description'); ?>
 							</div>
 						</div>
-						<div class="symptoms__image col-span-5">
+						<div class="symptoms__image col-span-5 shadow-image">
 							<?php
 								$image_id = get_sub_field('image');
 								$src = wp_get_attachment_image_src($image_id, 'symptoms-image');

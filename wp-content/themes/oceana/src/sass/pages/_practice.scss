@@ -30,6 +30,12 @@
 	}
 }
 
+.practice-office__image img {
+	@include bp-min-width($medium) {
+		@include img-shadow;
+	}
+}
+
 .practice-office .slick-arrow svg {
 	fill: white;
 	width: 16px;
