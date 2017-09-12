@@ -19,7 +19,7 @@
 		</div>
 
 		<div class="anchor-link">
-			<a href="#treatments">
+			<a href="#treatments-list" id="treatments-scroll">
 				<span class="anchor-link__label">View Treatments</span>
 				<svg class="icon-arrow-down">
 					<use xlink:href="#icon-arrow-down"></use>
@@ -35,7 +35,7 @@
 	<img src="<?php echo $image["sizes"]['full-width-image']; ?>" srcset="<?php echo $image["sizes"]['full-width-image']; ?> 1000w, <?php echo $image["sizes"]['full-width-image-2x']; ?> 2000w" alt="Oceana Vein Clinic Office" />
 </section>
 
-<section class="treatments-list">
+<section id="treatments-list" class="treatments-list">
   <div class="container">
 
 		<?php if( have_rows('treatments') ): ?>

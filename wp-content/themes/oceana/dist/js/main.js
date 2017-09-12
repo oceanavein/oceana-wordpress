@@ -30,6 +30,19 @@ jQuery(document).ready(function($) {
     });
   }
 
+  var treatmentsScroll = function() {
+    var scrollBtn = $('#treatments-scroll');
+    var treatmentsList = $('#treatments-list');
+
+    scrollBtn.bind('click', function(e) {
+      e.preventDefault();
+      $("html, body").animate({
+        scrollTop: treatmentsList.offset().top
+      }, "slow");
+      return false;
+    });
+  }
+
   $('.office-slider, .practice-office__slider').slick({
     infinite: true,
     speed: 500,
@@ -43,5 +56,6 @@ jQuery(document).ready(function($) {
 
   mobileNav();
   symptomsNav();
+  treatmentsScroll();
 
 });
