@@ -22,7 +22,8 @@
 					</div>
 					<div class="sidebar-contact sidebar-block">
 						<h4 class="sidebar-contact__title title__h4">Oceana Vein Clinic</h4>
-						<p class="sidebar-contact__address"><?php the_field('office_city', 'option'); ?>, <?php the_field('office_state', 'option'); ?> <?php the_field('office_zip', 'option'); ?></p>
+						<p class="sidebar-contact__address"><?php the_field('office_address', 'option'); ?><br />
+							<?php the_field('office_city', 'option'); ?>, <?php the_field('office_state', 'option'); ?> <?php the_field('office_zip', 'option'); ?></p>
 						<p class="sidebar-contact__directions"><a href="">Directions</a></p>
 						<p class="sidebar-contact__phone"><?php the_field('phone_number', 'option'); ?><br />
 						<?php the_field('email_address', 'option'); ?></p>
