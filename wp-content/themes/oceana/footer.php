@@ -8,7 +8,8 @@
 				<p class="footer-contact"><?php the_field('office_address', 'option'); ?><br />
 					<?php the_field('office_city', 'option'); ?>, <?php the_field('office_state', 'option'); ?> <?php the_field('office_zip', 'option'); ?><br />
 					p <?php the_field('phone_number', 'option'); ?><br />
-					f <?php the_field('fax_number', 'option'); ?></p>
+					f <?php the_field('fax_number', 'option'); ?><br />
+					<?php the_field('office_hours', 'option'); ?></p>
 				<ul class="footer-social">
 					<li>
 						<a href="<?php the_field('facebook_link', 'option'); ?>">

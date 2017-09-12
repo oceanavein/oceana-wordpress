@@ -117,6 +117,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_59b7a2887b075",
+            "label": "Office Hours",
+            "name": "office_hours",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_59804d324d30f",
             "label": "Office Address",
             "name": "office_address",
@@ -193,6 +212,22 @@
             "maxlength": ""
         },
         {
+            "key": "field_59b7a3310b5b6",
+            "label": "Directions Link",
+            "name": "directions_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_598043a93010a",
             "label": "Facebook Link",
             "name": "facebook_link",
@@ -258,5 +293,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1503919835
+    "modified": 1505207116
 }
