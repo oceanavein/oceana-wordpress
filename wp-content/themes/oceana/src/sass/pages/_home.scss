@@ -103,6 +103,18 @@
 	}
 }
 
+.home-veins__image {
+	@include bp-min-width($large) {
+		text-align: center;
+	}
+}
+
+.home-veins__image img {
+	@include bp-min-width($large) {
+		max-width: 538px;
+	}
+}
+
 .home-location {
 	background-color: $blue;
 }
