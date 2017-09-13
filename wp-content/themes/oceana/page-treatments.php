@@ -45,7 +45,7 @@
 		        <h2 class="title__h3"><?php the_sub_field('title'); ?></h2>
 		        <div class="body-content">
 		          <?php the_sub_field('description'); ?>
-		          <p><a href="" class="cta-link">Learn More</a></p>
+		          <p><a href="<?php the_sub_field('page_link'); ?>" class="cta-link">Learn More</a></p>
 		        </div>
 		      </div>
 		    <?php endwhile; ?>
