@@ -23,7 +23,7 @@
 <section class="education-causes">
   <div class="container">
 
-    <div class="flex-row">
+    <div class="flex-row flex-row__center">
       <div class="education-causes__image col-span-6 shadow-image">
 				<?php
 					$image_id = get_field('causes_section_image');
