@@ -81,6 +81,25 @@
             ]
         },
         {
+            "key": "field_59b98e9d34434",
+            "label": "Hero Button Link",
+            "name": "hero_button_link",
+            "type": "page_link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
             "key": "field_59a3d73e7e5bf",
             "label": "Hero Image",
             "name": "hero_image",
@@ -283,6 +302,25 @@
             ]
         },
         {
+            "key": "field_59b98eea34435",
+            "label": "Section 3 CTA Link",
+            "name": "section_3_cta_link",
+            "type": "page_link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
             "key": "field_59a3d9a446026",
             "label": "Section 3 Image",
             "name": "section_3_image",
@@ -369,5 +407,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1503910346
+    "modified": 1505333023
 }

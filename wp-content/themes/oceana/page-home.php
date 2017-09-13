@@ -15,7 +15,7 @@
 			    <?php endwhile; ?>
 				</ul>
 			<?php endif; ?>
-			<p><a href="" class="btn btn--mobile-full-width">Schedule a Free Consultation</a></p>
+			<p><a href="<?php the_field('hero_button_link'); ?>" class="btn btn--mobile-full-width">Schedule a Free Consultation</a></p>
 		</div>
 
 		<div class="home-hero__image">
@@ -86,7 +86,7 @@
 					    <?php endwhile; ?>
 						</ul>
 					<?php endif; ?>
-					<p><a href="" class="cta-link">Schedule a Free Consultation</a></p>
+					<p><a href="<?php the_field('section_3_cta_link'); ?>" class="cta-link">Schedule a Free Consultation</a></p>
 				</div>
 			</div>
 			<div class="home-veins__image col-span-6 shadow-image">

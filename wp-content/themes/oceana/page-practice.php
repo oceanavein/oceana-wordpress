@@ -61,7 +61,7 @@
 				<h2 class="title__h2 section-title"><?php the_field('section_2_title'); ?></h2>
         <div class="section-content">
 					<?php the_field('section_2_content'); ?>
-          <p><a href="" class="cta-link">Contact Dr. Isadore</a></p>
+          <p><a href="<?php the_field('section_2_cta_link'); ?>" class="cta-link">Contact Dr. Isadore</a></p>
         </div>
       </div>
     </div>

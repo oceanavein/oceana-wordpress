@@ -12,7 +12,7 @@
 					<p class="footer-contact">Oceana Vein Specialist<br />
 						<?php the_field('office_address', 'option'); ?><br />
 						<?php the_field('office_city', 'option'); ?>, <?php the_field('office_state', 'option'); ?> <?php the_field('office_zip', 'option'); ?></p>
-					<p><a href="">View Map</a></p>
+					<p><a href="<?php the_field('directions_link', 'option'); ?>" target="_blank">View Map</a></p>
 				</div>
 			</div>
 

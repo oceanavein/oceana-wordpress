@@ -141,6 +141,25 @@
             "new_lines": "wpautop"
         },
         {
+            "key": "field_59b98fb94b0d9",
+            "label": "Section 2 CTA Link",
+            "name": "section_2_cta_link",
+            "type": "page_link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
             "key": "field_59a3e13a9ba3e",
             "label": "Section 2 Image",
             "name": "section_2_image",
@@ -305,5 +324,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1503912370
+    "modified": 1505333198
 }
