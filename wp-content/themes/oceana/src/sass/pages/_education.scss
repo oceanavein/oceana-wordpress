@@ -1,4 +1,17 @@
 
+
+.education-causes__image {
+	@include bp-min-width($medium) {
+		text-align: center;
+	}
+}
+
+.education-causes__image img {
+	@include bp-min-width($medium) {
+		max-width: 538px;
+	}
+}
+
 .education-symptoms__list ul {
 	@include bp-min-width($medium) {
 		display: flex;
