@@ -21,7 +21,7 @@
 						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13355.833641093324!2d-117.3286762!3d33.1889618!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfcc8d4614d4b3db3!2sOceana+Vein+Specialists!5e0!3m2!1sen!2sse!4v1504525936451" width="384" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 					<div class="sidebar-contact sidebar-block">
-						<h4 class="sidebar-contact__title title__h4">Oceana Vein Specialist</h4>
+						<h4 class="sidebar-contact__title title__h4"><?php bloginfo('name'); ?></h4>
 						<p class="sidebar-contact__address"><?php the_field('office_address', 'option'); ?><br />
 							<?php the_field('office_city', 'option'); ?>, <?php the_field('office_state', 'option'); ?> <?php the_field('office_zip', 'option'); ?></p>
 						<p class="sidebar-contact__directions"><a href="<?php the_field('directions_link', 'option'); ?>" target="_blank">Directions</a></p>

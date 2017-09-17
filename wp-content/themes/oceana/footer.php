@@ -4,7 +4,7 @@
 		<div class="container flex-row">
 
 			<div class="col-span-3">
-				<h5 class="title__h5">Ocean Vein Specialists</h5>
+				<h5 class="title__h5"><?php bloginfo('name'); ?></h5>
 				<p class="footer-contact"><?php the_field('office_address', 'option'); ?><br />
 					<?php the_field('office_city', 'option'); ?>, <?php the_field('office_state', 'option'); ?> <?php the_field('office_zip', 'option'); ?><br />
 					p <?php the_field('phone_number', 'option'); ?><br />
