@@ -17,7 +17,9 @@
   position: absolute;
   top: 50%;
   right: 0;
-  padding: 6px 12px;
+  height: 32px;
+  padding: 0 12px;
+  font-family: $sans;
   font-weight: $weight-book;
 
   @include bp-max-width($medium) {
@@ -37,6 +39,7 @@
   z-index: 30;
   background: none;
   border-color: #fff;
+  color: #fff;
 }
 
 .mobile-btn__label.js-is-hidden {
