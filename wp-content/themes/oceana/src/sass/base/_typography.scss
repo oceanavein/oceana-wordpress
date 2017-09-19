@@ -68,11 +68,8 @@ em {
 }
 
 @mixin title__h4 {
+  @include font-size(21px);
   font-weight: $weight-bold;
-
-  @include bp-min-width($medium) {
-    @include font-size(21px);
-  }
 }
 
 .title__h4 {
