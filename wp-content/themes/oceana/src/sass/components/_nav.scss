@@ -60,21 +60,25 @@
 }
 
 .main-nav .menu.js-is-visible {
+  overflow-y: auto;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 20;
+  display: block;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  padding: $base;
+  border-top: $dk-blue solid 72px;
 }
 
 .main-nav .menu > li {
+  @include bp-max-width($large) {
+    margin-bottom: $base;
+  }
+
   @include bp-min-width($large) {
     position: relative;
     margin-left: 40px;
@@ -85,12 +89,15 @@
   overflow: hidden;
   position: relative;
   display: block;
-  padding-bottom: 18px;
-  color: $blue;
 
   @include bp-max-width($large) {
-    @include font-size(24px);
+    @include font-size(20px);
     color: #fff;
+  }
+
+  @include bp-min-width($large) {
+    padding-bottom: 18px;
+    color: $blue;
   }
 }
 
@@ -123,16 +130,18 @@
 // Drop down
 
 .main-nav .sub-menu {
-  transition: opacity .2s .1s ease-in, visibility .2s 0s;
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 10;
-  min-width: 240px;
-  padding: 12px 0;
-  background: $dk-blue;
+  @include bp-min-width($large) {
+    transition: opacity .2s .1s ease-in, visibility .2s 0s;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    min-width: 240px;
+    padding: 12px 0;
+    background: $dk-blue;
+  }
 }
 
 .main-nav .menu > li:hover .sub-menu {
@@ -146,8 +155,12 @@
 
 .main-nav .sub-menu a {
   display: block;
-  padding: 8px 20px;
+  padding: 6px 0;
   color: $pale-blue;
+
+  @include bp-min-width($large) {
+    padding: 8px 20px;
+  }
 }
 
 .main-nav .sub-menu a:hover {

@@ -1,15 +1,19 @@
 jQuery(document).ready(function($) {
 
   var mobileNav = function() {
+    var body = $('body');
     var mobileNavTrigger = $('.mobile-btn');
     var mobileNavContainer = $('.menu');
     var mobileNavBtnLabel = $('.mobile-btn__label');
+    var languageNav = $('.language-nav');
 
     mobileNavTrigger.bind('click', function(e) {
       e.preventDefault();
       $(this).toggleClass('js-is-active');
+      body.toggleClass('js-no-scroll');
       mobileNavContainer.toggleClass('js-is-visible');
       mobileNavBtnLabel.toggleClass('js-is-hidden');
+      languageNav.toggleClass('js-is-visible');
     });
   }
 

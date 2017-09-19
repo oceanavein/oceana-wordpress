@@ -115,6 +115,13 @@
 	}
 }
 
+.home-payment__image {
+	@include bp-min-width($large) {
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
 .home-location {
 	background-color: $blue;
 }

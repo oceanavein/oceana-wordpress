@@ -1,35 +1,59 @@
 
 .language-nav {
-  @include font-size(14px);
-  position: absolute;
-  top: 18px;
-  right: 0;
-  color: $md-grey;
+  @include bp-max-width($xsmall) {
+    display: none;
+    position: fixed;
+    top: 26px;
+    left: 20px;
+    z-index: 30;
+  }
 
-  @include bp-max-width($large) {
+  @include bp-min-width($xsmall) {
+    position: absolute;
+  }
+
+  @include bp-min-max($xsmall, $large) {
+    @include font-size(14px);
     transform: translateY(-50%);
     top: 50%;
-    right: 80px;
-    text-transform: uppercase;
-  }
-
-  @include bp-max-width($medium) {
     right: 100px;
   }
+
+  @include bp-min-max($medium, $large) {
+    right: 80px;
+  }
+
+  @include bp-min-width($large) {
+    @include font-size(14px);
+    top: 18px;
+    right: 0;
+  }
+}
+
+.language-nav.js-is-visible {
+  display: block;
 }
 
 .language-nav ul {
   display: flex;
 }
 
-.language-nav li {
+.language-nav li:last-child {
   margin-left: 20px;
 }
 
 .language-nav a {
-  color: $md-grey;
+  color: $lt-grey;
+
+  @include bp-min-width($xsmall) {
+    color: $md-grey;
+  }
 }
 
 .language-nav .current-lang a {
-  color: $dk-grey;
+  color: #fff;
+
+  @include bp-min-width($xsmall) {
+    color: $dk-grey;
+  }
 }
