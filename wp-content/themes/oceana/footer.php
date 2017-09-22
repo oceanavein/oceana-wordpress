@@ -34,7 +34,7 @@
 					</li>
 				</ul>
 				<p class="footer-copyright">&copy;<?php echo date('Y'); ?> Ocean Vein Specialists<br />
-					<a href="/privacy-policy/">Privacy Policy</a> | <a href="/terms-use/">Terms of Use</a><br />
+					<a href="/privacy-policy/">Privacy Policy</a> | <a href="/terms-of-use/">Terms of Use</a><br />
 					Web design: <a href="http://bradsawicki.com" target="_blank">Brad Sawicki</a></p>
 			</div>
 
