@@ -145,6 +145,16 @@ function wpgood_nf_display_enqueue_scripts(){
 }
 add_action( 'nf_display_enqueue_scripts', 'wpgood_nf_display_enqueue_scripts');
 
+
+// Add Editor role permissions for Ninja Forms
+add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'nf_subs_capabilities' ); // Parent Menu
+add_filter( 'ninja_forms_admin_all_forms_capabilities', 'nf_subs_capabilities' ); // Forms Submenu
+add_filter( 'ninja_forms_admin_submissions_capabilities', 'nf_subs_capabilities' ); // Submissions Submenu
+function nf_subs_capabilities( $cap ) {
+  return 'edit_posts'; // EDIT: User Capability
+}
+
+
 // SVG Uploads
 function custom_mtypes( $m ){
     $m['svg'] = 'image/svg+xml';
