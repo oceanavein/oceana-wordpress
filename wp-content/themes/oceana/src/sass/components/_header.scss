@@ -2,7 +2,7 @@
 .top-banner {
 	padding: 6px;
 	background: $dk-blue;
-	color: white;
+	color: #fff;
 	text-align: center;
 
 	@include bp-min-width($small) {
@@ -14,6 +14,10 @@
 		width: 100%;
 		padding: 12px;
 	}
+}
+
+.top-banner a {
+	color: #fff;
 }
 
 .top-banner__label {
