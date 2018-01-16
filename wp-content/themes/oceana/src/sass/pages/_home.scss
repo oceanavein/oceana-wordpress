@@ -83,6 +83,12 @@
 	}
 }
 
+.home-intro .container {
+	@include bp-min-width($medium) {
+		padding-bottom: $base;
+	}
+}
+
 .home-doctor-grid {
 	@include bp-min-width($large) {
 		align-items: center;
