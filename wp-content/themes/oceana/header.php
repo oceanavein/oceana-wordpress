@@ -27,11 +27,11 @@
 			<div class="logo">
 				<a href="<?php echo pll_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.svg" alt="Oceana Vein Clinic" /></a>
 			</div>
-			<nav class="language-nav">
+			<!-- <nav class="language-nav">
 				<ul>
 					<?php pll_the_languages();?>
 				</ul>
-			</nav>
+			</nav> -->
 			<nav class="main-nav">
 				<button class="mobile-btn btn btn--outline">
 					<span class="mobile-btn__label">Menu</span>
