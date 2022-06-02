@@ -1,13 +1,13 @@
-
 /*
-npm install gulp gulp-sass gulp-autoprefixer gulp-sourcemaps gulp-clean-css jshint gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-newer gulp-changed gulp-rename browser-sync --save-dev
+npm install gulp gulp-sass gulp-autoprefixer gulp-sourcemaps jshint gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-newer gulp-changed gulp-rename browser-sync --save-dev
 */
+
+'use strict';
 
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     sourcemaps = require('gulp-sourcemaps'),
-    cleancss = require('gulp-clean-css'),
     jshint = require('gulp-jshint'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
@@ -17,61 +17,73 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     browserSync = require('browser-sync').create();
 
+sass.compiler = require('node-sass');
 
-gulp.task('browser-sync', function() {
-  browserSync.init({
-    proxy: 'oceana.localhost',
-    browser: 'google chrome'
-  });
-});
+var paths = {
+  styles: {
+    src:  'src/sass/**/*.scss',
+    dest: './'
+  },
+
+  scripts: {
+    src:  'src/js/*.js',
+    dest: 'dist/js/'
+  },
+
+  images: {
+    src:  'src/images/**',
+    dest: 'dist/images/'
+  },
+
+  files: './**/*.php'
+};
 
 
-gulp.task('sass', function () {
-  gulp.src('src/sass/**/*.scss')
+function style() {
+  return gulp.src(paths.styles.src)
     .pipe(sourcemaps.init())
       .pipe(sass().on('error', sass.logError))
-      .pipe(autoprefixer('last 2 version'))
+      .pipe(autoprefixer({
+        cascade: false
+      }))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./'))
+    .pipe(gulp.dest(paths.styles.dest))
     .pipe(browserSync.stream());
-});
+}
 
 
-gulp.task('scripts', function() {
-  return gulp.src('src/js/*.js')
+function scripts() {
+  return gulp.src(paths.scripts.src)
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
     .pipe(concat('main.js'))
-    .pipe(gulp.dest('dist/js'))
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(uglify())
-    .pipe(gulp.dest('dist/js'));
-});
+    .pipe(gulp.dest(paths.scripts.dest));
+}
 
 
-gulp.task('images', function() {
-  return gulp.src('src/images/*')
-    .pipe(newer('dist/images/'))
-    .pipe(changed('dist/images/'))
-    .pipe(imagemin({
-      optimazation: 3,
-      progressive: true,
-      interlaced: true
-    }))
-    .pipe(gulp.dest('dist/images/'));
-});
+function images() {
+  gulp.src(paths.images.src)
+    .pipe(newer(paths.images.dest))
+    .pipe(changed(paths.images.dest))
+    .pipe(imagemin())
+    .pipe(gulp.dest(paths.images.dest));
+}
 
 
-gulp.task('bs-reload', function() {
-  browserSync.reload();
-});
+function watch() {
+  browserSync.init({
+    proxy: 'oceana.local',
+    port: 8000
+  });
+
+  gulp.watch(paths.styles.src, style);
+  gulp.watch(paths.scripts.src, scripts).on('change', browserSync.reload);
+  gulp.watch(paths.images.src, images).on('change', browserSync.reload);
+  gulp.watch(paths.files).on('change', browserSync.reload);
+}
 
 
-gulp.task('watch', ['browser-sync'], function() {
-  gulp.watch('./**/*.php', ['bs-reload']);
-  gulp.watch('src/sass/**/*.scss', ['sass']);
-  gulp.watch('src/js/**/*.js', ['scripts', 'bs-reload']);
-  gulp.watch('src/images/*', ['images', 'bs-reload']);
-});
+exports.style = style;
+exports.scripts = scripts;
+exports.images = images;
+exports.watch = watch;
