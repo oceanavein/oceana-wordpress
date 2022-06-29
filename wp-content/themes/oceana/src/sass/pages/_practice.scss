@@ -1,13 +1,9 @@
 
 .practice-doctor__image {
 	text-align: center;
-}
-
-.practice-doctor__image img {
-	@include img-shadow;
 
 	@include bp-min-width($large) {
-		max-width: 380px;
+		padding: 0 6%;
 	}
 }
 
