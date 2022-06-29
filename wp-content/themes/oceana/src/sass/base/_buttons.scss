@@ -53,6 +53,16 @@ a {
   }
 }
 
+@mixin cta-link--white {
+  font-weight: $weight-bold;
+  color: #fff;
+  border-bottom: 4px solid #fff;
+
+  &:hover {
+    border-color: $blue;
+  }
+}
+
 .btn {
   @include btn;
 }
@@ -71,4 +81,8 @@ a {
 
 .cta-link {
   @include cta-link;
+}
+
+.cta-link--white {
+  @include cta-link--white;
 }

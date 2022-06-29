@@ -27,6 +27,22 @@ em {
   font-style: italic;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-dk-blue {
+  color: $dk-blue;
+}
+
+.text-blue {
+  color: $blue;
+}
+
+.text-white {
+  color: #fff;
+}
+
 @mixin title__h1 {
   @include font-size(36px);
 

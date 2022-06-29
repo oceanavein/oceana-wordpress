@@ -5,7 +5,7 @@ npm install gulp gulp-sass gulp-autoprefixer gulp-sourcemaps jshint gulp-jshint 
 'use strict';
 
 var gulp = require('gulp'),
-    sass = require('gulp-sass'),
+    sass = require('gulp-sass')(require('node-sass')),
     autoprefixer = require('gulp-autoprefixer'),
     sourcemaps = require('gulp-sourcemaps'),
     jshint = require('gulp-jshint'),
