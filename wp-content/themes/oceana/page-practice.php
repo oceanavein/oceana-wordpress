@@ -84,20 +84,22 @@
         </div>
       </div>
       <div class="practice-office__image col-span-6">
-				<?php if( have_rows('section_3_images') ): ?>
-					<div class="practice-office__slider">
-				    <?php while ( have_rows('section_3_images') ) : the_row(); ?>
-							<div class="practice-office__slider-item">
-								<?php
-									$image_id = get_sub_field('image');
-									$src = wp_get_attachment_image_src($image_id, 'section-image');
-									$srcset = wp_get_attachment_image_srcset($image_id, 'section-image');
-								?>
-								<img src="<?=$src[0]?>" srcset="<?=$srcset?>" alt="" />
-							</div>
-				    <?php endwhile; ?>
-					</div>
-				<?php endif; ?>
+				<div class="shadow-image">
+					<?php if( have_rows('section_3_images') ): ?>
+						<div class="practice-office__slider">
+							<?php while ( have_rows('section_3_images') ) : the_row(); ?>
+								<div class="practice-office__slider-item">
+									<?php
+										$image_id = get_sub_field('image');
+										$src = wp_get_attachment_image_src($image_id, 'section-image');
+										$srcset = wp_get_attachment_image_srcset($image_id, 'section-image');
+									?>
+									<img src="<?=$src[0]?>" srcset="<?=$srcset?>" alt="" />
+								</div>
+							<?php endwhile; ?>
+						</div>
+					<?php endif; ?>
+				</div>
       </div>
     </div>
 
