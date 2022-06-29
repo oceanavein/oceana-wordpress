@@ -15,12 +15,14 @@
 		</div>
 
 		<div class="home-hero__image">
-			<?php
-				$image_id = get_field('hero_image');
-				$src = wp_get_attachment_image_src($image_id, 'home-hero');
-				$srcset = wp_get_attachment_image_srcset($image_id, 'home-hero');
-			?>
-			<img src="<?=$src[0]?>" srcset="<?=$srcset?>" alt="<?php the_sub_field('hero_title'); ?>" />
+			<div class="shadow-image">
+				<?php
+					$image_id = get_field('hero_image');
+					$src = wp_get_attachment_image_src($image_id, 'home-hero');
+					$srcset = wp_get_attachment_image_srcset($image_id, 'home-hero');
+				?>
+				<img src="<?=$src[0]?>" srcset="<?=$srcset?>" alt="<?php the_sub_field('hero_title'); ?>" />
+			</div>
 		</div>
 
 	</div>

@@ -15,11 +15,13 @@
 					<?php echo $content; ?>
 				</div>
 			</div>
-			<div class="home-payment__image col-span-5 shadow-image">
-				<img
-					src="<?=$src[0]?>"
-					srcset="<?=$srcset?>"
-					alt="Oceana Vein Clinic" />
+			<div class="home-payment__image col-span-5">
+				<div class="shadow-image">
+					<img
+						src="<?=$src[0]?>"
+						srcset="<?=$srcset?>"
+						alt="Oceana Vein Clinic" />
+				</div>
 			</div>
 		</div>
 

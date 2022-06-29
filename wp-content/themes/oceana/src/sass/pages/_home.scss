@@ -77,12 +77,6 @@
 	}
 }
 
-.home-hero__image img {
-	@include bp-min-width($medium) {
-		@include img-shadow;
-	}
-}
-
 .home-doctor-grid {
 	@include bp-min-width($large) {
 		align-items: center;
@@ -97,24 +91,12 @@
 	}
 }
 
-.home-doctor__image img {
-	@include bp-min-width($large) {
-		max-width: 380px;
-	}
-}
-
 .home-veins__image {
 	@include bp-min-width($large) {
 		text-align: center;
 		padding: 0 10%;
 	}
 }
-
-// .home-veins__image img {
-// 	@include bp-min-width($large) {
-// 		max-width: 538px;
-// 	}
-// }
 
 .vein-badge {
 	overflow: hidden;

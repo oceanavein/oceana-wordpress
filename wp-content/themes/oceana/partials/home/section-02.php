@@ -17,11 +17,13 @@
 					<?php echo $content; ?>
 				</div>
 			</div>
-			<div class="home-doctor__image col-span-5 shadow-image">
-				<img
-					src="<?php echo $src[0]; ?>"
-					srcset="<?php echo $srcset; ?>"
-					alt="Dr. Adam Isadore" />
+			<div class="home-doctor__image col-span-5">
+				<div class="shadow-image">
+					<img
+						src="<?php echo $src[0]; ?>"
+						srcset="<?php echo $srcset; ?>"
+						alt="Dr. Adam Isadore" />
+				</div>
 			</div>
 		</div>
 

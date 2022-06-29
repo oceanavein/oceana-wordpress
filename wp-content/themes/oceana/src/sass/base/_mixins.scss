@@ -20,7 +20,8 @@
 
 // GLOBAL IMAGE SHADOW
 @mixin img-shadow {
-  box-shadow: 0 0 30px rgba(black, .05);
+  box-shadow: 0 30px 60px rgba(black, .05),
+              0 10px 20px rgba(black, .05);
 }
 
 

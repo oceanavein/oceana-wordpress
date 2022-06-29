@@ -24,13 +24,15 @@
   <div class="container">
 
     <div class="flex-row flex-row__center">
-      <div class="education-causes__image col-span-6 shadow-image">
-				<?php
-					$image_id = get_field('causes_section_image');
-					$src = wp_get_attachment_image_src($image_id, 'treatment-image');
-					$srcset = wp_get_attachment_image_srcset($image_id, 'treatment-image');
-				?>
-				<img src="<?=$src[0]?>" srcset="<?=$srcset?>" alt="<?php the_field('section_3_title'); ?>" />
+      <div class="education-causes__image col-span-6">
+        <div class="shadow-image">
+          <?php
+            $image_id = get_field('causes_section_image');
+            $src = wp_get_attachment_image_src($image_id, 'treatment-image');
+            $srcset = wp_get_attachment_image_srcset($image_id, 'treatment-image');
+          ?>
+          <img src="<?=$src[0]?>" srcset="<?=$srcset?>" alt="<?php the_field('section_3_title'); ?>" />
+        </div>
       </div>
       <div class="education-causes__content col-span-6">
         <h2 class="title__h2 section-title"><?php the_field('causes_section_title'); ?></h2>
