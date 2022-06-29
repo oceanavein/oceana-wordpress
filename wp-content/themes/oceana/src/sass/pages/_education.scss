@@ -1,14 +1,7 @@
 
-
 .education-causes__image {
 	@include bp-min-width($medium) {
 		text-align: center;
-	}
-}
-
-.education-causes__image img {
-	@include bp-min-width($medium) {
-		max-width: 538px;
 	}
 }
 

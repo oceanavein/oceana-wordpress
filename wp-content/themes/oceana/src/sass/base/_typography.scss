@@ -177,14 +177,16 @@ div + .section-subtitle {
   margin-bottom: $base;
 
   @include bp-min-width($medium) {
-    display: flex;
-    flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
   }
 }
 
 .section-list li {
   @include bp-min-width($medium) {
-    width: 50%;
+    margin-left: 16px;
+    list-style-type: disc;
+    margin-bottom: 8px;
   }
 }
 

@@ -5,7 +5,7 @@
 			<h1 class="home-hero__title"><?php the_field('hero_title'); ?></h1>
 			<h2 class="home-hero__subtitle title__h3"><?php the_field('hero_subtitle'); ?></h2>
 			<?php if( have_rows('hero_benefits') ): ?>
-				<ul class="home-hero__benefits">
+				<ul class="home-hero__benefits section-list">
 			    <?php while ( have_rows('hero_benefits') ) : the_row(); ?>
 			      <li><?php the_sub_field('benefit'); ?></li>
 			    <?php endwhile; ?>
