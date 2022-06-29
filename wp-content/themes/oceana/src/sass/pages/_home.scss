@@ -89,12 +89,16 @@
 	@include bp-min-width($medium) {
 		order: -1;
 	}
+
+	@include bp-min-width($large) {
+		padding: 0 6%;
+	}
 }
 
 .home-veins__image {
 	@include bp-min-width($large) {
 		text-align: center;
-		padding: 0 10%;
+		padding: 0 12%;
 	}
 }
 
