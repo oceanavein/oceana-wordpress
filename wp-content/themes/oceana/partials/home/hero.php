@@ -15,7 +15,7 @@
 		</div>
 
 		<div class="home-hero__image">
-			<div class="shadow-image">
+			<div class="shadow-image radius-4 overflow-hidden">
 				<?php
 					$image_id = get_field('hero_image');
 					$src = wp_get_attachment_image_src($image_id, 'home-hero');

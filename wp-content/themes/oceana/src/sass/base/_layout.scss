@@ -57,6 +57,14 @@
   }
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .shadow-image {
 	@include img-shadow;
+}
+
+.radius-4 {
+  border-radius: 4px;
 }

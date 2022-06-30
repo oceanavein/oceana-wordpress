@@ -18,7 +18,7 @@
 				</div>
 			</div>
 			<div class="home-doctor__image col-span-5">
-				<div class="shadow-image">
+				<div class="shadow-image radius-4 overflow-hidden">
 					<img
 						src="<?php echo $src[0]; ?>"
 						srcset="<?php echo $srcset; ?>"

@@ -131,7 +131,7 @@
 
 .home-map .appt-form {
 	margin: 0;
-	background: white;
+	background: #fff;
 	color: $dk-grey;
 
 	@include bp-max-width($medium) {
@@ -148,6 +148,10 @@
 
 .home-map .appt-form input:not([type="button"]) {
   border: 1px solid $md-grey;
+}
+
+.home-map .appt-form .submit-wrap input {
+	background-color: $dk-blue;
 }
 
 .home-map .appt-form .nf-error-msg {

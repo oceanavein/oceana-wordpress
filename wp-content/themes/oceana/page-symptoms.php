@@ -49,7 +49,7 @@
 							</div>
 						</div>
 						<div class="symptoms__image col-span-5">
-							<div class="shadow-image">
+							<div class="shadow-image radius-4 overflow-hidden">
 								<?php
 									$image_id = get_sub_field('image');
 									$src = wp_get_attachment_image_src($image_id, 'symptoms-image');

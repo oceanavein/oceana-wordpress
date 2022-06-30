@@ -2,7 +2,7 @@
 .appt-form {
 	align-self: flex-start;
 	padding: $base 20px;
-	background: $md-blue;
+	background: $dk-blue;
 	color: #fff;
 
 	@include bp-max-width($small) {
@@ -71,8 +71,9 @@
 
 .appt-form .submit-wrap input {
 	width: 100%;
+	background-color: $md-blue;
 }
 
 .appt-form .nf-error-msg {
-	color: $pale-blue;
+	color: #fff;
 }
