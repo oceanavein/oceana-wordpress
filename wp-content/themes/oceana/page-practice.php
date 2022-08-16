@@ -89,7 +89,7 @@
       <div class="practice-office__image col-span-6">
 				<div class="shadow-image radius-4 overflow-hidden">
 					<?php if( have_rows('section_3_images') ): ?>
-						<div class="practice-office__slider">
+						<div class="practice-office__slider img-slider">
 							<?php while ( have_rows('section_3_images') ) : the_row(); ?>
 								<div class="practice-office__slider-item">
 									<?php

@@ -28,7 +28,7 @@
 
 <section class="office-images bg__blue">
 	<?php if( have_rows('office_images') ): ?>
-		<div class="office-slider">
+		<div class="office-slider img-slider">
 			<?php while ( have_rows('office_images') ) : the_row(); ?>
 				<div class="office-slider__item">
 					<?php $image = get_sub_field('image'); ?>

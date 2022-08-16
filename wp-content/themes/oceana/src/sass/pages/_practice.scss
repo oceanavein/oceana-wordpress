@@ -32,24 +32,12 @@
 	}
 }
 
+
+.practice-office .slick-arrow {
+	color: $blue;
+}
+
 .practice-office .slick-arrow svg {
-	fill: white;
 	width: 16px;
 	height: 30px;
-}
-
-.practice-office .slick-prev {
-	left: 10px;
-
-	@include bp-min-width($medium) {
-		left: -30px;
-	}
-}
-
-.practice-office .slick-next {
-	right: 10px;
-
-	@include bp-min-width($medium) {
-		right: -30px;
-	}
 }

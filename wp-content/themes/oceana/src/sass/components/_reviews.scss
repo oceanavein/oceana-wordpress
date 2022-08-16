@@ -1,0 +1,39 @@
+
+.reviews-list__item {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+
+  margin: 0 20px;
+
+  @include bp-min-width($medium) {
+    width: 600px;
+  }
+}
+
+.reviews .slick-track {
+  padding-top: 80px;
+  padding-bottom: 160px;
+}
+
+.reviews .slick-arrow {
+  @include horizontal-center;
+  bottom: 80px;
+  border: 1px solid $grey;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.reviews .slick-arrow svg {
+  width: 12px;
+  height: 22px;
+}
+
+.reviews .slick-prev {
+  margin-left: -30px;
+}
+
+.reviews .slick-next {
+  margin-left: 30px;
+}

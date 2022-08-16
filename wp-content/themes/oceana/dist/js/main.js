@@ -47,13 +47,33 @@ jQuery(document).ready(function($) {
     });
   }
 
-  $('.office-slider, .practice-office__slider').slick({
+  $('.img-slider').slick({
     infinite: true,
     speed: 500,
     fade: true,
     cssEase: 'linear',
     prevArrow: '<button class="slick-arrow slick-prev"><svg class="icon-arrow-prev"><use xlink:href="#icon-arrow-prev"></use></svg></button>',
     nextArrow: '<button class="slick-arrow slick-next"><svg class="icon-arrow-next"><use xlink:href="#icon-arrow-next"></use></svg></button>'
+  });
+
+  $('.reviews-list').slick({
+    prevArrow: '<button class="slick-arrow slick-prev"><svg class="icon-arrow-prev"><use xlink:href="#icon-arrow-prev"></use></svg></button>',
+    nextArrow: '<button class="slick-arrow slick-next"><svg class="icon-arrow-next"><use xlink:href="#icon-arrow-next"></use></svg></button>',
+
+    centerMode: true,
+    slidesToShow: 1,
+    variableWidth: true,
+
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerPadding: '120px',
+        }
+      }
+    ]
+
+
   });
 
   $(".body-content").fitVids();

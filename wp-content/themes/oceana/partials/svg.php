@@ -5,14 +5,14 @@
     <path d="M21.14 1.46C14.591.753 6.302-1.706 0 1.972l2.236.857C6.915.251 14.748 1.85 21.174 2.54c6.548.706 14.838 3.165 21.14-.513l-2.237-.857c-4.678 2.579-12.511.98-18.937.29z" fill-rule="evenodd"/>
   </symbol>
 
-  <symbol id="icon-arrow-prev" width="24" height="45" viewBox="0 0 24 45">
+  <symbol id="icon-arrow-prev" viewBox="0 0 24 45">
     <title>Previous</title>
-    <path d="M24 3.038L4.21 22.828 24 42.597l-2.116 2.117L0 22.829 21.884.922z" fill-rule="evenodd"/>
+    <path d="M24 3.038L4.21 22.828 24 42.597l-2.116 2.117L0 22.829 21.884.922z" fill="currentColor"/>
   </symbol>
 
-  <symbol id="icon-arrow-next" width="24" height="45" viewBox="0 0 24 45">
+  <symbol id="icon-arrow-next" viewBox="0 0 24 45">
     <title>Next</title>
-    <path d="M24 22.806L2.116 44.713 0 42.596l19.79-19.79L0 3.038 2.116.922z" fill-rule="evenodd"/>
+    <path d="M24 22.806L2.116 44.713 0 42.596l19.79-19.79L0 3.038 2.116.922z" fill="currentColor"/>
   </symbol>
 
   <symbol id="icon-arrow-down" width="14" height="24" viewBox="0 0 14 24">

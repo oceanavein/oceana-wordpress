@@ -101,27 +101,29 @@
 }
 
 .slick-arrow {
-  @include vertical-center;
   z-index: 10;
   background: none;
 }
 
-.slick-arrow svg {
-  fill: white;
+.img-slider .slick-arrow {
+  @include vertical-center;
+  color: $blue;
+}
+
+.img-slider .slick-arrow svg {
 	width: 16px;
 	height: 30px;
 
   @include bp-min-width($medium) {
-    fill: $dk-blue;
     width: 24px;
     height: 45px;
   }
 }
 
-.slick-prev {
+.img-slider .slick-prev {
   left: 20px;
 }
 
-.slick-next {
+.img-slider .slick-next {
   right: 20px;
 }

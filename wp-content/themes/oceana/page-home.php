@@ -10,6 +10,8 @@
 
 <?php get_template_part('partials/home/section-02'); ?>
 
+<?php get_template_part('partials/reviews'); ?>
+
 <?php get_template_part('partials/home/section-03'); ?>
 
 <?php get_template_part('partials/home/section-04'); ?>

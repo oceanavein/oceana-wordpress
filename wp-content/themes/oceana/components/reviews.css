@@ -1,0 +1,21 @@
+.reviews-list__item {
+  width: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 0 20px; }
+
+.reviews .slick-track {
+  padding-top: 80px;
+  padding-bottom: 160px; }
+
+.reviews .slick-arrow {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px; }
+
+.reviews .slick-arrow svg {
+  width: 12px;
+  height: 22px; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvcmV2aWV3cy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0UsWUFBWTtFQUNaLHNCQUFzQjtFQUN0QixrQkFBa0I7RUFFbEIsY0FBYyxFQUFBOztBQUdoQjtFQUNFLGlCQUFpQjtFQUNqQixxQkFBcUIsRUFBQTs7QUFHdkI7RUFDRSxzQkFBc0I7RUFDdEIsa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxZQUFZLEVBQUE7O0FBR2Q7RUFDRSxXQUFXO0VBQ1gsWUFBWSxFQUFBIiwiZmlsZSI6ImNvbXBvbmVudHMvcmV2aWV3cy5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbi5yZXZpZXdzLWxpc3RfX2l0ZW0ge1xuICB3aWR0aDogNjAwcHg7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG4gIGJvcmRlci1yYWRpdXM6IDhweDtcblxuICBtYXJnaW46IDAgMjBweDtcbn1cblxuLnJldmlld3MgLnNsaWNrLXRyYWNrIHtcbiAgcGFkZGluZy10b3A6IDgwcHg7XG4gIHBhZGRpbmctYm90dG9tOiAxNjBweDtcbn1cblxuLnJldmlld3MgLnNsaWNrLWFycm93IHtcbiAgYm9yZGVyOiAxcHggc29saWQgI2ZmZjtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xuICB3aWR0aDogNDhweDtcbiAgaGVpZ2h0OiA0OHB4O1xufVxuXG4ucmV2aWV3cyAuc2xpY2stYXJyb3cgc3ZnIHtcbiAgd2lkdGg6IDEycHg7XG4gIGhlaWdodDogMjJweDtcbn0iXX0= */
