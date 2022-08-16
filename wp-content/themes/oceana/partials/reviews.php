@@ -19,9 +19,13 @@
 						<?php echo $content; ?>
 					</p>
 
-					<div class="flex">
+					<div class="flex justify-between items-center">
 						<p><?php echo $name; ?></p>
-						<p><?php echo $platform; ?></p>
+						<?php if($platform == 'yelp') { ?>
+							<img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-yelp.svg" alt="Yelp Logo" />
+						<?php } else { ?>
+							<img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-google.svg" alt="Google Logo" />
+						<?php } ?>
 					</div>
 				</div>
 			<?php endwhile; ?>

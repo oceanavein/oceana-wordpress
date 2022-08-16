@@ -1,0 +1,189 @@
+
+.grid-- {
+  &2 {
+		display: grid;
+	  grid-template-columns: repeat(2, 1fr);
+	  gap: 24px 36px;
+  }
+  &3 {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 36px;
+  }
+  &4 {
+		display: grid;
+	  grid-template-columns: repeat(4, 1fr);
+	  gap: 36px;
+  }
+}
+
+@include bp-min-width($small) {
+  .sm\:grid-- {
+		&2 {
+			display: grid;
+		  grid-template-columns: repeat(2, 1fr);
+		  gap: 24px 36px;
+	  }
+	  &3 {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 36px;
+	  }
+	  &4 {
+			display: grid;
+		  grid-template-columns: repeat(4, 1fr);
+		  gap: 36px;
+	  }
+	}
+}
+
+@include bp-min-width($medium) {
+  .md\:grid-- {
+		&2 {
+			display: grid;
+		  grid-template-columns: repeat(2, 1fr);
+		  gap: 24px 36px;
+	  }
+	  &3 {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 36px;
+	  }
+	  &4 {
+			display: grid;
+		  grid-template-columns: repeat(4, 1fr);
+		  gap: 36px;
+	  }
+	}
+}
+
+@include bp-min-width($large) {
+  .lg\:grid-- {
+		&2 {
+			display: grid;
+		  grid-template-columns: repeat(2, 1fr);
+		  gap: 24px 36px;
+	  }
+	  &3 {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 36px;
+	  }
+	  &4 {
+			display: grid;
+		  grid-template-columns: repeat(4, 1fr);
+		  gap: 36px;
+	  }
+	}
+}
+
+.col-span- {
+  &1 {
+		grid-column: span 1 / span 1;
+  }
+  &2 {
+		grid-column: span 2 / span 2;
+  }
+  &3 {
+		grid-column: span 3 / span 3;
+  }
+}
+
+@include bp-min-width($medium) {
+  .md\:col-span- {
+		&1 {
+			grid-column: span 1 / span 1;
+		}
+		&2 {
+			grid-column: span 2 / span 2;
+		}
+		&3 {
+			grid-column: span 3 / span 3;
+		}
+	}
+}
+
+@include bp-min-width($large) {
+  .lg\:col-span- {
+		&1 {
+			grid-column: span 1 / span 1;
+		}
+		&2 {
+			grid-column: span 2 / span 2;
+		}
+		&3 {
+			grid-column: span 3 / span 3;
+		}
+	}
+}
+
+.r-gap--0 {
+	row-gap: 0;
+}
+
+.c-gap--20 {
+	column-gap: 20px;
+}
+
+
+// Flex
+
+.flex {
+  display: flex;
+}
+
+@include bp-min-width($xsmall) {
+  .xsm\:flex {
+    display: flex;
+  }
+}
+
+@include bp-min-width($small) {
+  .sm\:flex {
+    display: flex;
+  }
+}
+
+@include bp-min-width($medium) {
+  .md\:flex {
+    display: flex;
+  }
+}
+
+@include bp-min-width($large) {
+  .lg\:flex {
+    display: flex;
+  }
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+	justify-content: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-baseline {
+  align-items: baseline;
+}
+
+.items-end {
+	align-items: end;
+}
+
+.no-shrink {
+  flex-shrink: 0;
+}
+
+.grow--1 > * {
+  flex-grow: 1;
+}
