@@ -7,9 +7,9 @@
 
 	<h2 class="title__h2 pt-56 text-center"><?php echo $title; ?></h2>
 
-	<?php if( have_rows('reviews_section', 'option') ): ?>
+	<?php if( have_rows('reviews_section_reviews', 'option') ): ?>
     <div class="reviews-list pb-40">
-			<?php while( have_rows('reviews', 'option') ): the_row();
+			<?php while( have_rows('reviews_section_reviews', 'option') ): the_row();
 				$content = get_sub_field('content');
 				$name = get_sub_field('name');
 				$platform = get_sub_field('platform');
