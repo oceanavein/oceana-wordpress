@@ -3,9 +3,9 @@
 	$title = get_field('reviews_section_title', 'option');
 ?>
 
-<section class="reviews bg__pale-blue pt-56">
+<section class="reviews pt-56 ">
 
-	<h2 class="title__h2 pt-56 text-center"><?php echo $title; ?></h2>
+	<h2 class="title__h2 pt-56 text-center text-dk-blue"><?php echo $title; ?></h2>
 
 	<?php if( have_rows('reviews_section_reviews', 'option') ): ?>
     <div class="reviews-list pb-40">

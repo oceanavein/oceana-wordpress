@@ -38,6 +38,18 @@
   background: $pale-blue;
 }
 
+.bg__lt-grey {
+  background: $lt-grey;
+}
+
+.border-t--lt-blue {
+  border-top: 1px solid $lt-blue-2;
+}
+
+.border-t--lt-grey {
+  border-top: 1px solid $lt-grey;
+}
+
 @mixin is-hidden {
   overflow: hidden;
   position: absolute;

@@ -1,6 +1,3 @@
-/**
-Class Naming Structure: block__element--modifier
-**/
 
 $sans: 'Mark', Helvetica, arial, sans-serif;
 
@@ -158,7 +155,7 @@ div + .section-subtitle {
 .bg__blue .body-content h2,
 .bg__blue .body-content h3,
 .bg__blue .body-content h4 {
-  color: white;
+  color: #fff;
 }
 
 .section-content p,
@@ -169,7 +166,7 @@ div + .section-subtitle {
   }
 }
 
-.section-content p:not(:last-child), {
+.section-content p:not(:last-child) {
   margin-bottom: $base;
 }
 

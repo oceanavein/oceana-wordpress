@@ -36,6 +36,8 @@
 
 <?php endwhile; endif; ?>
 
+<?php get_template_part('partials/reviews'); ?>
+
 <?php get_template_part('partials/cta-section'); ?>
 
 <?php get_footer(); ?>
