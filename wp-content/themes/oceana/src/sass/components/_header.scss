@@ -18,6 +18,10 @@
 
 .top-banner a {
 	color: #fff;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .top-banner__label {

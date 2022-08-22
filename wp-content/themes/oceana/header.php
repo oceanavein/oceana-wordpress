@@ -18,7 +18,9 @@
 	<?php get_template_part( 'partials/svg' ); ?>
 
 	<div class="top-banner">
-		<p class="top-banner__label">Schedule an Appointment</p>
+		<p class="top-banner__label">
+			<a href="<?php echo pll_home_url(); ?>contact-us/">Schedule an Appointment</a>
+		</p>
 		<p class="top-banner__phone"><?php the_field('phone_number', 'option'); ?></p>
 	</div>
 
@@ -29,7 +31,7 @@
 			</div>
 			<!-- <nav class="language-nav">
 				<ul>
-					<?php pll_the_languages();?>
+					<?php // pll_the_languages();?>
 				</ul>
 			</nav> -->
 			<nav class="main-nav">
