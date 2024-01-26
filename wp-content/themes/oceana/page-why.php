@@ -10,7 +10,7 @@
 			<div class="flex-row">
 
 				<section class="page-content col-span-8">
-					<h1 class="page-title title__h1"><?php the_title(); ?></h1>
+					<h1 class="page-title text-h1"><?php the_title(); ?></h1>
 					<div class="body-content">
 						<?php the_content(); ?>
 					</div>
@@ -25,9 +25,9 @@
 		</div>
 	</section>
 
-	<section class="why-questions bg__blue">
+	<section class="why-questions bg-blue">
 		<div class="container">
-			<h2 class="section-title title__h3"><?php the_field('questions_section_title'); ?></h2>
+			<h2 class="section-title text-h3"><?php the_field('questions_section_title'); ?></h2>
 			<div class="body-content">
 				<?php the_field('questions_section_content'); ?>
 			</div>

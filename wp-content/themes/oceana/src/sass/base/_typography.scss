@@ -28,7 +28,7 @@ em {
   text-align: center;
 }
 
-.text-dk-blue {
+.text-blue-dk {
   color: $dk-blue;
 }
 
@@ -40,7 +40,11 @@ em {
   color: #fff;
 }
 
-@mixin title__h1 {
+.text-grey-dk {
+  color: $dk-grey;
+}
+
+@mixin text-h1 {
   @include font-size(36px);
 
   @include bp-min-width($medium) {
@@ -49,11 +53,11 @@ em {
   }
 }
 
-.title__h1 {
-  @include title__h1;
+.text-h1 {
+  @include text-h1;
 }
 
-@mixin title__h2 {
+@mixin text-h2 {
   @include font-size(24px);
   line-height: 1.25;
 
@@ -63,11 +67,11 @@ em {
   }
 }
 
-.title__h2 {
-  @include title__h2;
+.text-h2 {
+  @include text-h2;
 }
 
-@mixin title__h3 {
+@mixin text-h3 {
   @include fontUnits(21px, 27px);
 
   @include bp-min-width($medium) {
@@ -76,20 +80,20 @@ em {
   }
 }
 
-.title__h3 {
-  @include title__h3;
+.text-h3 {
+  @include text-h3;
 }
 
-@mixin title__h4 {
+@mixin text-h4 {
   @include font-size(21px);
   font-weight: $weight-bold;
 }
 
-.title__h4 {
-  @include title__h4;
+.text-h4 {
+  @include text-h4;
 }
 
-.title__h5 {
+.text-h5 {
   font-weight: $weight-bold;
   line-height: 1.5;
 }
@@ -116,8 +120,8 @@ em {
   color: $blue;
 }
 
-.bg__blue .section-title,
-.bg__blue .section-subtitle {
+.bg-blue .section-title,
+.bg-blue .section-subtitle {
   color: #fff;
 }
 
@@ -152,9 +156,9 @@ div + .section-subtitle {
   padding-top: 18px;
 }
 
-.bg__blue .body-content h2,
-.bg__blue .body-content h3,
-.bg__blue .body-content h4 {
+.bg-blue .body-content h2,
+.bg-blue .body-content h3,
+.bg-blue .body-content h4 {
   color: #fff;
 }
 

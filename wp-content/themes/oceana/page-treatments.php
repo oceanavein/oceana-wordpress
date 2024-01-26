@@ -2,12 +2,12 @@
 
 <?php get_header(); ?>
 
-<section class="hero page-hero treatments-hero bg__pale-blue">
+<section class="hero page-hero treatments-hero bg-blue-pale">
 	<div class="container">
 
 		<div class="flex-row">
 			<div class="col-span-8">
-				<h1 class="page-title title__h1"><?php the_title(); ?></h1>
+				<h1 class="page-title text-h1"><?php the_title(); ?></h1>
 				<div class="section-content">
 					<?php the_field('hero_content'); ?>
 				</div>
@@ -42,7 +42,7 @@
 			<div class="flex-grid treatments-grid">
 		    <?php while ( have_rows('treatments') ) : the_row(); ?>
 					<div class="col-span-6">
-		        <h2 class="title__h3"><?php the_sub_field('title'); ?></h2>
+		        <h2 class="text-h3"><?php the_sub_field('title'); ?></h2>
 		        <div class="body-content">
 		          <?php the_sub_field('description'); ?>
 		          <p><a href="<?php the_sub_field('page_link'); ?>" class="cta-link">Learn More</a></p>
@@ -55,12 +55,12 @@
   </div>
 </section>
 
-<section class="payment-options bg__pale-blue">
+<section class="payment-options bg-blue-pale">
   <div class="container">
 
 		<div class="flex-grid payment-grid">
 			<div class="col-span-6">
-				<h3 class="section-title title__h2"><?php the_field('payment_section_title'); ?></h3>
+				<h3 class="section-title text-h2"><?php the_field('payment_section_title'); ?></h3>
 				<div class="body-content">
 		      <p><?php the_field('payment_section_content'); ?></p>
 				</div>

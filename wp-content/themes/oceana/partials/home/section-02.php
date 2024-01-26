@@ -12,13 +12,13 @@
 
 		<div class="home-doctor-grid flex-row">
 			<div class="home-doctor__content col-span-7">
-				<h2 class="title__h2 section-title"><?php echo $title; ?></h2>
+				<h2 class="text-h2 section-title"><?php echo $title; ?></h2>
 				<div class="section-content">
 					<?php echo $content; ?>
 				</div>
 			</div>
 			<div class="home-doctor__image col-span-5">
-				<div class="shadow-image radius-4 overflow-hidden">
+				<div class="shadow-image rounded overflow-hidden">
 					<img
 						src="<?php echo $src[0]; ?>"
 						srcset="<?php echo $srcset; ?>"

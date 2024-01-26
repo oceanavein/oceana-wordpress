@@ -54,7 +54,7 @@
 				</ul>
 			</nav> -->
 			<nav class="main-nav">
-				<button class="mobile-btn btn btn--outline">
+				<button class="mobile-btn btn btn-outline">
 					<span class="mobile-btn__label">Menu</span>
 					<span class="mobile-btn__label js-is-hidden">Close</span>
 				</button>

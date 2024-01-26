@@ -2,12 +2,12 @@
 
 <?php get_header(); ?>
 
-<section class="hero page-hero before-after-hero bg__pale-blue">
+<section class="hero page-hero before-after-hero bg-blue-pale">
 	<div class="container">
 
 		<div class="flex-row">
 			<div class="col-span-8">
-				<h1 class="page-title title__h1"><?php the_title(); ?></h1>
+				<h1 class="page-title text-h1"><?php the_title(); ?></h1>
 				<div class="section-content">
 					<?php the_field('hero_content'); ?>
 				</div>
@@ -28,7 +28,7 @@
 			<div class="before-after">
 				<?php while ( have_rows('images') ) : the_row(); ?>
 					<div class="before-after__item">
-						<h2 class="before-after__title title__h3"><?php the_sub_field('title'); ?></h2>
+						<h2 class="before-after__title text-h3"><?php the_sub_field('title'); ?></h2>
 						<p class="before-after__description"><?php the_sub_field('description'); ?></p>
 						<div class="before-after__grid flex-grid">
 							<div class="before-image col-span-6">

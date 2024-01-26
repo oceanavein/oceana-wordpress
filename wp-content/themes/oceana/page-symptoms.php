@@ -2,12 +2,12 @@
 
 <?php get_header(); ?>
 
-<section class="hero page-hero bg__pale-blue">
+<section class="hero page-hero bg-blue-pale">
 	<div class="container">
 
 		<div class="flex-row">
 			<div class="col-span-8">
-				<h1 class="page-title title__h1"><?php the_title(); ?></h1>
+				<h1 class="page-title text-h1"><?php the_title(); ?></h1>
 				<div class="section-content">
 					<?php the_field('hero_content'); ?>
 				</div>
@@ -21,7 +21,7 @@
 	</div>
 </section>
 
-<nav class="symptoms-nav bg__md-blue">
+<nav class="symptoms-nav bg-blue-md">
 	<div class="container">
 		<?php if( have_rows('symptoms') ): ?>
 			<ul>
@@ -43,13 +43,13 @@
 		    <?php while ( have_rows('symptoms') ) : the_row(); ?>
 					<div id="symptom-0<?php echo $count+1; ?>" class="symptoms__item <?php if(!$count): ?>is-visible<?php endif; ?> flex-row">
 						<div class="symptoms__content col-span-7">
-				      <h2 class="title__h2 section-title"><?php the_sub_field('title'); ?></h2>
+				      <h2 class="text-h2 section-title"><?php the_sub_field('title'); ?></h2>
 							<div class="body-content">
 								<?php the_sub_field('description'); ?>
 							</div>
 						</div>
 						<div class="symptoms__image col-span-5">
-							<div class="shadow-image radius-4 overflow-hidden">
+							<div class="shadow-image rounded overflow-hidden">
 								<?php
 									$image_id = get_sub_field('image');
 									$src = wp_get_attachment_image_src($image_id, 'symptoms-image');

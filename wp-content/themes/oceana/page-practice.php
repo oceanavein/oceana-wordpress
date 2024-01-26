@@ -2,13 +2,13 @@
 
 <?php get_header(); ?>
 
-<section class="hero page-hero bg__pale-blue">
+<section class="hero page-hero bg-blue-pale">
 	<div class="container">
 
 		<div class="flex-row">
 			<div class="col-span-8">
-				<h1 class="page-title title__h1"><?php the_title(); ?></h1>
-				<h2 class="page-subtitle title__h3"><?php the_field('hero_subtitle'); ?></h2>
+				<h1 class="page-title text-h1"><?php the_title(); ?></h1>
+				<h2 class="page-subtitle text-h3"><?php the_field('hero_subtitle'); ?></h2>
 				<div class="section-content">
 					<?php the_field('hero_content'); ?>
 				</div>
@@ -22,18 +22,18 @@
 	</div>
 </section>
 
-<section class="practice-venous bg__blue">
+<section class="practice-venous bg-blue">
   <div class="container">
 
     <div class="flex-row flex-row__center">
       <div class="practice-venous__content col-span-6">
-        <h2 class="title__h2 section-title"><?php the_field('section_1_title'); ?></h2>
+        <h2 class="text-h2 section-title"><?php the_field('section_1_title'); ?></h2>
         <div class="section-content">
 					<?php the_field('section_1_content'); ?>
         </div>
       </div>
       <div class="practice-venous__form col-span-6">
-				<div class="shadow-image radius-4 overflow-hidden">
+				<div class="shadow-image rounded overflow-hidden">
 					<?php
 						$image_id = get_field('section_1_image');
 						$src = wp_get_attachment_image_src($image_id, 'section-image');
@@ -55,7 +55,7 @@
 
     <div class="flex-row flex-row__center">
       <div class="practice-doctor__image col-span-5">
-				<div class="shadow-image radius-4 overflow-hidden">
+				<div class="shadow-image rounded overflow-hidden">
 					<?php
 						$image_id = get_field('section_2_image');
 						$src = wp_get_attachment_image_src($image_id, 'head-shot');
@@ -65,7 +65,7 @@
 				</div>
       </div>
       <div class="practice-doctor__content col-span-7">
-				<h2 class="title__h2 section-title"><?php the_field('section_2_title'); ?></h2>
+				<h2 class="text-h2 section-title"><?php the_field('section_2_title'); ?></h2>
         <div class="section-content">
 					<?php the_field('section_2_content'); ?>
           <p><a href="<?php the_field('section_2_cta_link'); ?>" class="cta-link">Contact Dr. Isadore</a></p>
@@ -76,18 +76,18 @@
   </div>
 </section>
 
-<section class="practice-office bg__blue">
+<section class="practice-office bg-blue">
   <div class="container">
 
     <div class="flex-row flex-row__center">
       <div class="practice-office__content col-span-6">
-				<h2 class="title__h2 section-title"><?php the_field('section_3_title'); ?></h2>
+				<h2 class="text-h2 section-title"><?php the_field('section_3_title'); ?></h2>
         <div class="section-content">
 					<?php the_field('section_3_content'); ?>
         </div>
       </div>
       <div class="practice-office__image col-span-6">
-				<div class="shadow-image radius-4 overflow-hidden">
+				<div class="shadow-image rounded overflow-hidden">
 					<?php if( have_rows('section_3_images') ): ?>
 						<div class="practice-office__slider img-slider">
 							<?php while ( have_rows('section_3_images') ) : the_row(); ?>
@@ -114,7 +114,7 @@
 
     <div class="flex-row flex-row__center">
       <div class="practice-finances__content col-span-7">
-				<h2 class="title__h3 section-title"><?php the_field('section_4_title'); ?></h2>
+				<h2 class="text-h3 section-title"><?php the_field('section_4_title'); ?></h2>
         <div class="section-content">
 					<?php the_field('section_4_content'); ?>
         </div>

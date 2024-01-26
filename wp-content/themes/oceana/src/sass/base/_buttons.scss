@@ -9,12 +9,12 @@ a {
   display: inline-block;
   padding: 1.125rem 2rem;
   background: $blue;
-  border-radius: 5px;
+  border-radius: 9999px;
   color: #fff;
   font-weight: $weight-bold;
 }
 
-@mixin btn--dk-blue {
+@mixin btn-dk-blue {
   background: $dk-blue;
 
   &:hover {
@@ -22,7 +22,7 @@ a {
   }
 }
 
-@mixin btn--outline {
+@mixin btn-outline {
   background: #fff;
   border: 1px solid $dk-blue;
   color: $dk-blue;
@@ -67,12 +67,12 @@ a {
   @include btn;
 }
 
-.btn--dk-blue {
-  @include btn--dk-blue;
+.btn-dk-blue {
+  @include btn-dk-blue;
 }
 
-.btn--outline {
-  @include btn--outline;
+.btn-outline {
+  @include btn-outline;
 }
 
 .btn--mobile-full-width {

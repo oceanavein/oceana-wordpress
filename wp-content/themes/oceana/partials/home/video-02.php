@@ -3,10 +3,10 @@
 	$video_embed = get_field('video_2_video');
 ?>
 
-<section class="home-video bg__blue">
+<section class="home-video bg-blue">
 	<div class="container">
 
-		<h2 class="title__h2 text-center mb-32"><?php echo $video_title; ?></h2>
+		<h2 class="text-h2 text-center mb-32"><?php echo $video_title; ?></h2>
 
 		<div class="video-wrapper">
 			<?php echo $video_embed; ?>

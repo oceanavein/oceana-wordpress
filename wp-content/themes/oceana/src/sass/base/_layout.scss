@@ -25,20 +25,24 @@
   }
 }
 
-.bg__blue {
+.bg-white {
+  background: #fff;;
+}
+
+.bg-blue {
   background: $blue;
   color: #fff;
 }
 
-.bg__md-blue {
+.bg-blue-md {
   background: $md-blue;
 }
 
-.bg__pale-blue {
+.bg-blue-pale {
   background: $pale-blue;
 }
 
-.bg__lt-grey {
+.bg-grey-lt {
   background: $lt-grey;
 }
 
@@ -50,22 +54,33 @@
   border-top: 1px solid $lt-grey;
 }
 
-@mixin is-hidden {
-  overflow: hidden;
+@mixin sr-only {
   position: absolute;
-  left: -10000px;
-  top: auto;
   width: 1px;
   height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
-.is-hidden {
-  @include is-hidden;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 .mobile-is-hidden {
   @include bp-max-width($medium) {
-    @include is-hidden;
+    @include sr-only;
   }
 }
 
@@ -73,10 +88,18 @@
   overflow: hidden;
 }
 
-.shadow-image {
-	@include img-shadow;
+.rounded {
+  border-radius: 4px;
 }
 
-.radius-4 {
-  border-radius: 4px;
+.rounded-lg {
+  border-radius: 8px;
+}
+
+.rounded-2xl {
+  border-radius: 16px;
+}
+
+.shadow-image {
+	@include img-shadow;
 }

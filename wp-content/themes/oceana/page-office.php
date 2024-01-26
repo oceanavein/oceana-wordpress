@@ -2,12 +2,12 @@
 
 <?php get_header(); ?>
 
-<section class="office-hero hero page-hero bg__pale-blue">
+<section class="office-hero hero page-hero bg-blue-pale">
 	<div class="container">
 
 		<div class="flex-row">
 			<div class="col-span-4">
-				<h1 class="page-title title__h1"><?php the_title(); ?></h1>
+				<h1 class="page-title text-h1"><?php the_title(); ?></h1>
 				<div class="section-content">
 					<p class="footer-contact">Oceana Vein Specialist<br />
 						<?php the_field('office_address', 'option'); ?><br />
@@ -26,7 +26,7 @@
 	</div>
 </section>
 
-<section class="office-images bg__blue">
+<section class="office-images bg-blue">
 	<?php if( have_rows('office_images') ): ?>
 		<div class="office-slider img-slider">
 			<?php while ( have_rows('office_images') ) : the_row(); ?>

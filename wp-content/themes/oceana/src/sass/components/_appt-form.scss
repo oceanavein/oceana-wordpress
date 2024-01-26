@@ -51,7 +51,7 @@
 	}
 }
 
-.appt-form .title__h4 {
+.appt-form .text-h4 {
 	margin-bottom: 6px;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .appt-form label {
-	@include is-hidden;
+	@include sr-only;
 }
 
 .appt-form input {

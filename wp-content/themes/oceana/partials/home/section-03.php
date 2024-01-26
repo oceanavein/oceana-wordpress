@@ -8,7 +8,7 @@
 	$srcset = wp_get_attachment_image_srcset($image_id, 'treatment-image');
 ?>
 
-<section class="home-veins bg__blue">
+<section class="home-veins bg-blue">
 	<div class="container">
 
 		<div class="flex-row">
@@ -21,7 +21,7 @@
 				</div>
 			</div>
 			<div class="home-veins__content col-span-6">
-				<h2 class="title__h2 mb-24"><?php echo $title; ?></h2>
+				<h2 class="text-h2 mb-24"><?php echo $title; ?></h2>
 				<div class="section-content">
 					<?php echo $content; ?>
 

@@ -1,4 +1,20 @@
 
+.grid {
+	display: grid;
+}
+
+@include bp-min-width($medium) {
+  .md\:grid {
+		display: grid;
+	}
+}
+
+@include bp-min-width($large) {
+  .lg\:grid {
+		display: grid;
+	}
+}
+
 .grid-- {
   &2 {
 		display: grid;

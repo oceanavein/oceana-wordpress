@@ -16,7 +16,7 @@
 				</div>
 			</div>
 			<div class="home-payment__image col-span-5">
-				<div class="shadow-image radius-4 overflow-hidden">
+				<div class="shadow-image rounded overflow-hidden">
 					<img
 						src="<?=$src[0]?>"
 						srcset="<?=$srcset?>"
