@@ -5,13 +5,12 @@
 
 .container {
   width: 100%;
-  max-width: 1272px;
+  max-width: 1312px;
   margin: 0 auto;
   padding: $base 20px;
 
   @include bp-min-width($medium) {
-    padding-top: $base*4;
-    padding-bottom: $base*4;
+    padding: $base*4 40px;
   }
 }
 
@@ -32,6 +31,10 @@
 .bg-blue {
   background: $blue;
   color: #fff;
+}
+
+.bg-blue-dk {
+  background: $dk-blue;
 }
 
 .bg-blue-md {

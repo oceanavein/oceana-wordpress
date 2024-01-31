@@ -24,6 +24,31 @@
                     "display": "row",
                     "sub_fields": [
                         {
+                            "key": "field_65ba7737bc47c",
+                            "label": "Background",
+                            "name": "background",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium"
+                        },
+                        {
                             "key": "field_65b26d187ae6b",
                             "label": "Eyebrow",
                             "name": "eyebrow",
@@ -624,5 +649,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1706702960
+    "modified": 1706719046
 }

@@ -1,4 +1,22 @@
 
+.landing-hero {
+	position: relative;
+}
+
+.landing-hero .container {
+	position: relative;
+	z-index: 99;
+}
+
+.landing-hero img {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: .2;
+}
+
 .landing-form {
 	.nf-field-label {
 		@include sr-only;
@@ -22,4 +40,8 @@
 
 .landing-video iframe {
 	display: block;
+}
+
+.page-template-page-landing .reviews {
+	background-color: $pale-blue;
 }

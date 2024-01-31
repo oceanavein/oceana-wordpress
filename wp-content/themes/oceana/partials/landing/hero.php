@@ -7,29 +7,35 @@
 	$form_star_label = $form['star_label'];
 	$form_subtitle = $form['subtitle'];
 
-	// $image_id = get_sub_field('image');
-	// $image_src = wp_get_attachment_image_src($image_id, 'half-width', true);
-	// $image_srcset = wp_get_attachment_image_srcset($image_id, 'half-width');
+	$image_id = get_sub_field('background');
+	$image_src = wp_get_attachment_image_src($image_id, 'full-width-image', true);
+	$image_srcset = wp_get_attachment_image_srcset($image_id, 'full-width-image');
 ?>
 
-<section class="hero home-hero bg-blue">
+<section class="hero landing-hero bg-blue-dk">
+	<img
+		src="<?php echo $image_src[0]; ?>"
+		srcset="<?php echo esc_attr( $image_srcset ); ?>"
+		loading="lazy"
+	/>
+
 	<div class="container">
 
 		<div class="grid--2">
 			<div class="col-span-1 lg:pr-72 pt-48">
 
 				<?php if($eyebrow): ?>
-					<p class="mb-8 text-h3">
+					<p class="mb-8 text-h3 text-white">
 						<?php echo $eyebrow; ?>
 					</p>
 				<?php endif; ?>
 
-				<h1 class="max-w-lg mb-24 pr-5 text-h1 text-green-dk">
+				<h1 class="max-w-lg mb-24 pr-5 text-h1 text-white">
 					<?php echo $title; ?>
 				</h1>
 
 				<?php if($subtitle): ?>
-					<p class="max-w-lg lg:pr-16 mt-2 text-lg tracking-tight">
+					<p class="max-w-lg lg:pr-16 mt-2 text-lg tracking-tight text-white">
 						<?php echo $subtitle; ?>
 					</p>
 				<?php endif; ?>
