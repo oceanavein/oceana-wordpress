@@ -3,7 +3,7 @@
 	$title = get_field('reviews_section_title', 'option');
 ?>
 
-<section class="reviews pt-56 ">
+<section id="reviews" class="reviews pt-56 ">
 
 	<h2 class="text-h2 pt-56 text-center text-blue-dk"><?php echo $title; ?></h2>
 

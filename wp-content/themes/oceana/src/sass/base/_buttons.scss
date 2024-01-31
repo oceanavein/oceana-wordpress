@@ -6,8 +6,10 @@ a {
 
 @mixin btn {
   display: inline-flex;
+  align-items: center;
   justify-content: center;
-  padding: 1rem 2rem;
+  height: 56px;
+  padding: 0 2rem;
   background: $blue;
   border: 1px solid $blue;
   border-radius: 9999px;

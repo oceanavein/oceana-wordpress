@@ -1,4 +1,24 @@
 
+.landig-header .container {
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.landig-header .logo img {
+	height: 40px;
+}
+
+.landig-header .btn {
+	padding: 0 1.25rem;
+	height: 44px;
+}
+
+.landing-nav {
+	@include absolute-center;
+	bottom: 20px;
+}
+
 .landing-hero {
 	position: relative;
 }

@@ -34,7 +34,7 @@
   }
 ?>
 
-<section class="two-column<?php if($bg_color == "blue-pale"): ?> bg-blue-pale<?php endif; ?>">
+<section id="<?php echo strtolower($title); ?>" class="two-column<?php if($bg_color == "blue-pale"): ?> bg-blue-pale<?php endif; ?>">
 	<div class="container">
 
     <div class="grid--2 gap-10">

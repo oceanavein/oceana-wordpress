@@ -47,7 +47,7 @@ jQuery(document).ready(function($) {
     });
   }
 
-  $('.img-slider').slick({
+  $('.office-slider, .practice-office__slider').slick({
     infinite: true,
     speed: 500,
     fade: true,
@@ -72,9 +72,19 @@ jQuery(document).ready(function($) {
         }
       }
     ]
-
-
   });
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
 
   $(".body-content").fitVids();
 

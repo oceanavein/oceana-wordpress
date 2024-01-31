@@ -8,15 +8,13 @@
 	$form_subtitle = $form['subtitle'];
 
 	$image_id = get_sub_field('background');
-	$image_src = wp_get_attachment_image_src($image_id, 'full-width-image', true);
+	$image_src = wp_get_attachment_image_src($image_id, 'full-width-image-2x', true);
 	$image_srcset = wp_get_attachment_image_srcset($image_id, 'full-width-image');
 ?>
 
-<section class="hero landing-hero bg-blue-dk">
+<section id="hero" class="hero landing-hero bg-blue-dk">
 	<img
 		src="<?php echo $image_src[0]; ?>"
-		srcset="<?php echo esc_attr( $image_srcset ); ?>"
-		loading="lazy"
 	/>
 
 	<div class="container">
