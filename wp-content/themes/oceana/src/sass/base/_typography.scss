@@ -16,7 +16,7 @@ h1,h2,h3,h4,h5 {
   line-height: 1;
 }
 
-strong, b {
+strong, b, .font-bold {
   font-weight: $weight-bold;
 }
 
@@ -50,6 +50,7 @@ em {
   @include bp-min-width($medium) {
     @include font-size(48px);
     font-weight: $weight-light;
+    letter-spacing: -.03em;
   }
 }
 
@@ -77,6 +78,7 @@ em {
   @include bp-min-width($medium) {
     @include fontUnits(30px, 36px);
     font-weight: $weight-light;
+    letter-spacing: -.025em;
   }
 }
 
@@ -96,6 +98,11 @@ em {
 .text-h5 {
   font-weight: $weight-bold;
   line-height: 1.5;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .page-title {

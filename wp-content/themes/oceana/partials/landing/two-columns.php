@@ -1,70 +1,93 @@
 <?php
 	$bg_color = get_sub_field('background_color');
-	$eyebrow = get_sub_field('eyebrow');
 	$title = get_sub_field('title');
-	$subtitle = get_sub_field('subtitle');
+	$content = get_sub_field('content');
+	$list = get_sub_field('list');
+  $list_columns = $list['columns'];
+  $list_items = $list['items'];
+
+	$media = get_sub_field('media');
+  $media_side = $media['side'];
+  $media_width = $media['width'];
+  $media_type = $media['type'];
+
+  if($media_type == 'image') {
+    $image_id = $media['image'];
+    $image_src = wp_get_attachment_image_src($image_id, $media_width, true);
+    $image_srcset = wp_get_attachment_image_srcset($image_id, $media_width);
+  }
+
+  if($media_width == 'five-columns') {
+    if($media_side == 'left') {
+      $colClasses = 'pr-72';
+    } else {
+      $colClasses = 'pl-72';
+    }
+  } elseif ($media_width == 'four-columns') {
+    $colClasses = 'pl-72 pr-72';
+  } else {
+    if($media_side == 'left') {
+      $colClasses = 'pr-40';
+    } else {
+      $colClasses = 'pl-40';
+    }
+  }
 ?>
 
-<section class="content-grid<?php if($bg_color == "tea"): ?> bg-tea<?php endif; ?>">
-	<div class="container max-10-col py-20">
+<section class="two-column<?php if($bg_color == "blue-pale"): ?> bg-blue-pale<?php endif; ?>">
+	<div class="container">
 
-  <div>
-    <?php if($eyebrow): ?>
-      <p class="mb-2 text-eyebrow text-center">
-        <?php echo $eyebrow; ?>
-      </p>
-    <?php endif; ?>
+    <div class="grid--2 gap-10">
 
-    <h2 class="max-6-col text-h2 text-center">
-      <?php echo $title; ?>
-    </h2>
+      <div>
+        <h2 class="mb-16 text-h1 text-blue-dk">
+          <?php echo $title; ?>
+        </h2>
 
-    <?php if($subtitle): ?>
-      <p class="mt-2 text-xl tracking-tight text-center">
-        <?php echo $subtitle; ?>
-      </p>
-    <?php endif; ?>
+        <?php if($content): ?>
+          <p class="mb-32">
+            <?php echo $content; ?>
+          </p>
+        <?php endif; ?>
 
-    <ul class="flex">
-			<li class="mr-32">
-				<a href="#" class="btn">
-					<?php the_field('phone_number', 'option'); ?>
-				</a>
-			</li>
-			<li>
-				<a href="#" class="btn btn-outline">
-          Free Screening
-				</a>
-			</li>
-		</ul>
+        <?php if( $list_items ): ?>
+          <ul class="landing-list mb-32<?php if($list_columns == "two"): ?> columns-2<?php endif; ?>">
+            <?php foreach( $list_items as $list_item ): ?>
+              <?php $item = $list_item['item']; ?>
+              <li class="flex mb-16 text-lg font-bold">
+                <div class="shrink-0 bg-blue-md blue-checkmark">
+                  <svg class="icon-checkmark">
+                    <use xlink:href="#icon-checkmark" />
+                  </svg>
+                </div>
+                <div class="pt-4">
+                  <?php echo $item; ?>
+                </div>
+              </li>
+            <?php endforeach; ?>
+          </ul>
+        <?php endif; ?>
 
-  </div>
+        <?php get_template_part( 'partials/landing/cta-buttons' ); ?>
 
-    <?php if( have_rows('blocks') ): ?>
-      <div class="grid pt-12 <?php echo $grid_class; ?>">
-        <?php while ( have_rows('blocks') ) : the_row();
-          $title = get_sub_field('title');
-          $content = get_sub_field('content');
-          $cta = get_sub_field('cta');
-          $cta_link = $cta['link'];
-          $cta_label = $cta['label'];
-        ?>
-
-          <div class="<?php echo $grid_class; ?>">
-            <h3 class="text-h4 mb-2 text-green-dk"><?php echo $title; ?></h3>
-            <p><?php echo $content; ?></p>
-            <?php if($cta_link): ?>
-              <p class="mt-4">
-                <a href="<?php echo $cta_link; ?>" class="cta-link">
-                  <?php echo $cta_label; ?>
-                </a>
-              </p>
-            <?php endif; ?>
-          </div>
-
-        <?php endwhile; ?>
       </div>
-    <?php endif; ?>
+
+      <div class="<?php echo $colClasses; ?><?php if($media_side == 'left'):?> order-first<?php endif; ?>">
+          <?php if($media_type == 'image') { ?>
+            <div class="overflow-hidden rounded-2xl bg-white img-shadow">
+              <img
+                src="<?php echo $image_src[0]; ?>"
+                srcset="<?php echo esc_attr( $image_srcset ); ?>"
+                loading="lazy"
+              />
+            </div>
+          <?php } else { ?>
+            <script src="https://www.youtube.com/iframe_api"></script>
+            <?php echo $media['video']; ?>
+          <?php } ?>
+      </div>
+
+    </div>
 
 	</div>
 </section>

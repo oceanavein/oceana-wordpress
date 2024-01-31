@@ -5,15 +5,11 @@
 
 .container {
   width: 100%;
-  max-width: 1232px;
+  max-width: 1272px;
   margin: 0 auto;
-
-  @include bp-max-width($medium) {
-    padding: $base 20px;
-  }
+  padding: $base 20px;
 
   @include bp-min-width($medium) {
-    width: 94%;
     padding-top: $base*4;
     padding-bottom: $base*4;
   }
@@ -23,6 +19,10 @@
   @include bp-min-width($large) {
     padding-right: 40px;
   }
+}
+
+.max-8-col {
+  max-width: 850px;
 }
 
 .bg-white {

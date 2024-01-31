@@ -13,7 +13,7 @@ if( have_rows('sections') ):
 			get_template_part( 'partials/landing/two-columns' );
 
 		elseif( get_row_layout() == 'one_column' ):
-			get_template_part( 'partials/landing/one-columns' );
+			get_template_part( 'partials/landing/one-column' );
 
 		elseif( get_row_layout() == 'before_after' ):
 			get_template_part( 'partials/landing/before-after' );

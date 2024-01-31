@@ -115,6 +115,22 @@ add_image_size( 'section-vertical-image-2x', 964, 1248, true );
 add_image_size( 'treatment-image', 516, 516 );
 add_image_size( 'treatment-image-2x', 1032, 1032 );
 
+add_image_size( 'four-columns', 406 );
+add_image_size( 'four-columns-2x', 816 );
+add_image_size( 'four-columns-3x', 1218 );
+
+add_image_size( 'five-columns', 518 );
+add_image_size( 'five-columns-2x', 1036 );
+add_image_size( 'five-columns-3x', 1554 );
+
+add_image_size( 'six-columns', 628 );
+add_image_size( 'six-columns-2x', 1256 );
+add_image_size( 'six-columns-3x', 1884 );
+
+add_image_size( 'landing-before-after', 406, 320, true );
+add_image_size( 'landing-before-after-2x', 816, 640, true );
+add_image_size( 'landing-before-after-3x', 1218, 960, true );
+
 
 // Default blog image
 function get_default_blog_image($size=null){

@@ -7,3 +7,19 @@ svg:not(:root) {
   display: inline-block;
   vertical-align: middle;
 }
+
+.blue-checkmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  border-radius: 32px;
+  color: #fff;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}

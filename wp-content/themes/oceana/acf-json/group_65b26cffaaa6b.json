@@ -172,6 +172,31 @@
                     "display": "row",
                     "sub_fields": [
                         {
+                            "key": "field_65ba37f011032",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "white": "White",
+                                "blue-pale": "Pale Blue"
+                            },
+                            "default_value": "",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "layout": "horizontal",
+                            "save_other_choice": 0
+                        },
+                        {
                             "key": "field_65b273b60f090",
                             "label": "Title",
                             "name": "title",
@@ -207,7 +232,7 @@
                             },
                             "default_value": "",
                             "maxlength": "",
-                            "rows": "",
+                            "rows": 4,
                             "placeholder": "",
                             "new_lines": ""
                         },
@@ -355,9 +380,9 @@
                                         "id": ""
                                     },
                                     "choices": {
-                                        "default": "Default",
-                                        "tight": "Tight",
-                                        "wide": "Wide"
+                                        "five-columns": "Default",
+                                        "four-columns": "Tight",
+                                        "six-columns": "Wide"
                                     },
                                     "default_value": "",
                                     "return_format": "value",
@@ -599,5 +624,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1706197015
+    "modified": 1706702960
 }
