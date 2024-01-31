@@ -41,7 +41,7 @@
 			</div>
 
 			<div class="col-span-1 lg:pr-72">
-				<div class="bg-white p-40 rounded-2xl shadow-image">
+				<div class="bg-blue-pale p-40 rounded-2xl shadow-image">
 					<h2 class="text-blue-dk text-h3 text-center mb-24">
 						<?php echo $form_title; ?>
 					</h2>

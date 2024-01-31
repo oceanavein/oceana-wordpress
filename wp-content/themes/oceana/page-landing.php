@@ -29,4 +29,6 @@ else :
 endif;
 ?>
 
-<?php get_footer(); ?>
+<?php get_template_part('partials/home/map'); ?>
+
+<?php get_footer('landing'); ?>
