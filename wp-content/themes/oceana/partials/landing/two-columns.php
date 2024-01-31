@@ -74,7 +74,7 @@
 
       <div class="<?php echo $colClasses; ?><?php if($media_side == 'left'):?> order-first<?php endif; ?>">
           <?php if($media_type == 'image') { ?>
-            <div class="overflow-hidden rounded-2xl bg-white img-shadow">
+            <div class="overflow-hidden rounded-2xl bg-white shadow-image">
               <img
                 src="<?php echo $image_src[0]; ?>"
                 srcset="<?php echo esc_attr( $image_srcset ); ?>"
@@ -82,8 +82,10 @@
               />
             </div>
           <?php } else { ?>
-            <script src="https://www.youtube.com/iframe_api"></script>
-            <?php echo $media['video']; ?>
+            <div class="landing-video shadow-image">
+              <script src="https://www.youtube.com/iframe_api"></script>
+              <?php echo $media['video']; ?>
+            </div>
           <?php } ?>
       </div>
 
