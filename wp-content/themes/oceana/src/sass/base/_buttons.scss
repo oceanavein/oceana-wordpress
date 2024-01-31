@@ -5,17 +5,21 @@ a {
 }
 
 @mixin btn {
-  @include font-size(18px);
-  display: inline-block;
-  padding: 1.125rem 2rem;
+  display: inline-flex;
+  justify-content: center;
+  padding: 1rem 2rem;
   background: $blue;
+  border: 1px solid $blue;
   border-radius: 9999px;
   color: #fff;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
   font-weight: $weight-bold;
 }
 
 @mixin btn-dk-blue {
   background: $dk-blue;
+  border: 1px solid $dk-blue;
 
   &:hover {
     background-color: $blue;

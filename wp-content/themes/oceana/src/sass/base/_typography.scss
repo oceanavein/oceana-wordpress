@@ -46,6 +46,7 @@ em {
 
 @mixin text-h1 {
   @include font-size(36px);
+  line-height: 1.125;
 
   @include bp-min-width($medium) {
     @include font-size(48px);

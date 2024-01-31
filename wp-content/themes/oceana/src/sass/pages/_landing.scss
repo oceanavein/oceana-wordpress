@@ -1,0 +1,21 @@
+
+.landing-form {
+	.nf-field-label {
+		@include sr-only;
+	}
+
+	input:not([type="submit"]) {
+		border: 1px solid #222;
+	}
+
+	input[type="submit"] {
+		height: 56px;
+		width: 100%;
+		font-size: 1.25rem;
+		padding: 1rem;
+	}
+}
+
+.before-after .btn {
+	border: 1px solid #fff;
+}

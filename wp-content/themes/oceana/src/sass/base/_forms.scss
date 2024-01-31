@@ -100,6 +100,7 @@ select::-ms-expand {
   display: none;
 }
 
+
 /** Buttons ============**/
 
 input[type="submit"],
@@ -109,11 +110,11 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+  font-family: $sans;
 }
 
 .submit-wrap input {
 	@include btn;
-	// @include btn-blue-dk;
 	height: 48px;
 	padding: 0 30px;
 	font-size: 1rem;
@@ -121,7 +122,6 @@ button {
 
 
 /** Errors ============**/
-
 
 .nf-form-fields-required,
 .ninja-forms-req-symbol {

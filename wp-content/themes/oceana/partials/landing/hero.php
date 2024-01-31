@@ -16,35 +16,62 @@
 	<div class="container">
 
 		<div class="grid--2">
-			<div class="col-span-1 pt-16">
+			<div class="col-span-1 lg:pr-72 pt-48">
 
 				<?php if($eyebrow): ?>
-					<p class="mb-2 text-eyebrow">
+					<p class="mb-8 text-h3">
 						<?php echo $eyebrow; ?>
 					</p>
 				<?php endif; ?>
 
-				<h1 class="max-w-lg pr-5 text-h1 text-green-dk">
+				<h1 class="max-w-lg mb-24 pr-5 text-h1 text-green-dk">
 					<?php echo $title; ?>
 				</h1>
 
 				<?php if($subtitle): ?>
-					<p class="max-w-lg pr-5 mt-2 text-xl tracking-tight">
+					<p class="max-w-lg lg:pr-16 mt-2 text-lg tracking-tight">
 						<?php echo $subtitle; ?>
 					</p>
 				<?php endif; ?>
 
 			</div>
 
-			<div class="col-span-1">
-				<div class="bg-white p-20 rounded-2xl">
-					<h2 class="text-blue-dk text-h3 text-center">
+			<div class="col-span-1 lg:pr-72">
+				<div class="bg-white p-40 rounded-2xl">
+					<h2 class="text-blue-dk text-h3 text-center mb-24">
 						<?php echo $form_title; ?>
 					</h2>
-					<p class="text-blue-dk text-center">
-						<?php echo $form_star_label; ?>
-					</p>
-					<p class="text-grey-dk text-center">
+					<div class="flex justify-center items-center text-blue-dk text-center mb-12">
+						<ul class="flex mr-8">
+							<li>
+								<svg class="icon-star icon-24">
+									<use xlink:href="#icon-star" />
+								</svg>
+							</li>
+							<li>
+								<svg class="icon-star icon-24">
+									<use xlink:href="#icon-star" />
+								</svg>
+							</li>
+							<li>
+								<svg class="icon-star icon-24">
+									<use xlink:href="#icon-star" />
+								</svg>
+							</li>
+							<li>
+								<svg class="icon-star icon-24">
+									<use xlink:href="#icon-star" />
+								</svg>
+							</li>
+							<li>
+								<svg class="icon-star icon-24">
+									<use xlink:href="#icon-star" />
+								</svg>
+							</li>
+						</ul>
+						<p class="text-lg font-bold"><?php echo $form_star_label; ?></p>
+					</div>
+					<p class="text-grey-dk text-center mb-24">
 						<?php echo $form_subtitle; ?>
 					</p>
 					<div class="landing-form">
