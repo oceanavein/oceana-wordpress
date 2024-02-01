@@ -82,7 +82,7 @@
               />
             </div>
           <?php } else { ?>
-            <div class="landing-video shadow-image">
+            <div class="landing-video overflow-hidden rounded-2xl shadow-image">
               <script src="https://www.youtube.com/iframe_api"></script>
               <?php echo $media['video']; ?>
             </div>

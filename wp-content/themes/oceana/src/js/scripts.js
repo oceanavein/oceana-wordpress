@@ -86,7 +86,7 @@ jQuery(document).ready(function($) {
   });
 
 
-  $(".body-content").fitVids();
+  $(".body-content, .landing-video").fitVids();
 
   mobileNav();
   symptomsNav();
