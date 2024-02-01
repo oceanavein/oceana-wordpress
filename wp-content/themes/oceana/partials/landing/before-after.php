@@ -20,7 +20,7 @@
             $image_src = wp_get_attachment_image_src($image_id, 'landing-before-after', true);
             $image_srcset = wp_get_attachment_image_srcset($image_id, 'landing-before-after');
           ?>
-          <div class="overflow-hidden rounded-2xl shadow-image">
+          <div class="image-slider__item overflow-hidden rounded-2xl shadow-image">
             <img
               src="<?php echo $image_src[0]; ?>"
               srcset="<?php echo esc_attr( $image_srcset ); ?>"

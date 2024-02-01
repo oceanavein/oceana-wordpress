@@ -102,3 +102,14 @@
 		width: 100%;
   }
 }
+
+.image-slider {
+	overflow-x: auto; /* Enable horizontal scrolling for small screens */
+	white-space: nowrap; /* Keep slides in a single line */
+}
+
+.image-slider__item {
+	@include bp-max-width($small) {
+		min-width: 240px;
+  }
+}
