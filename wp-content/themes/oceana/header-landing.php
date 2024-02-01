@@ -37,7 +37,7 @@
 	<?php get_template_part( 'partials/svg' ); ?>
 
 	<header class="landig-header">
-		<div class="container flex justify-between">
+		<div class="container flex justify-between items-center">
 			<div class="logo">
 				<a href="<?php echo pll_home_url(); ?>">
 					<img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.svg" alt="Oceana Vein Clinic" />

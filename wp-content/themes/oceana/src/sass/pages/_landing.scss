@@ -6,17 +6,32 @@
 }
 
 .landig-header .logo img {
-	height: 40px;
+	height: 32px;
+
+  @include bp-min-width($small) {
+		height: 40px;
+	}
 }
 
 .landig-header .btn {
 	padding: 0 1.25rem;
 	height: 44px;
+
+  @include bp-max-width($small) {
+		padding: 0 1rem;
+		svg {
+			display: none;
+		}
+	}
 }
 
 .landing-nav {
 	@include absolute-center;
 	bottom: 20px;
+
+  @include bp-max-width($medium) {
+		display: none;
+  }
 }
 
 .landing-hero {
@@ -64,4 +79,14 @@
 
 .page-template-page-landing .reviews {
 	background-color: $pale-blue;
+}
+
+.landing-ctas .btn {
+	width: 100%;
+}
+
+.landing-ctas li {
+	@include bp-max-width($medium) {
+		width: 100%;
+  }
 }

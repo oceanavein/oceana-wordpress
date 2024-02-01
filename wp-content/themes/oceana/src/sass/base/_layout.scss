@@ -15,7 +15,7 @@
   width: 100%;
   max-width: 1312px;
   margin: 0 auto;
-  padding: $base 20px;
+  padding: 32px 20px;
 
   @include bp-min-width($medium) {
     padding: $base*4 40px;
@@ -101,6 +101,10 @@
 
 .block {
   display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 .rounded {

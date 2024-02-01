@@ -19,17 +19,17 @@
 
   if($media_width == 'five-columns') {
     if($media_side == 'left') {
-      $colClasses = 'pr-72';
+      $colClasses = 'lg:pr-72';
     } else {
-      $colClasses = 'pl-72';
+      $colClasses = 'lg:pl-72';
     }
   } elseif ($media_width == 'four-columns') {
-    $colClasses = 'pl-72 pr-72';
+    $colClasses = 'lg:pl-72 lg:pr-72';
   } else {
     if($media_side == 'left') {
-      $colClasses = 'pr-40';
+      $colClasses = 'lg:pr-40';
     } else {
-      $colClasses = 'pl-40';
+      $colClasses = 'lg:pl-40';
     }
   }
 ?>
@@ -37,9 +37,9 @@
 <section id="<?php echo strtolower($title); ?>" class="two-column<?php if($bg_color == "blue-pale"): ?> bg-blue-pale<?php endif; ?>">
 	<div class="container">
 
-    <div class="grid--2 gap-10">
+    <div class="lg:grid--2 gap-10">
 
-      <div>
+      <div class="mb-48 lg:mb-0">
         <h2 class="mb-16 text-h1 text-blue-dk">
           <?php echo $title; ?>
         </h2>
@@ -51,7 +51,7 @@
         <?php endif; ?>
 
         <?php if( $list_items ): ?>
-          <ul class="landing-list mb-32<?php if($list_columns == "two"): ?> columns-2<?php endif; ?>">
+          <ul class="landing-list mb-32<?php if($list_columns == "two"): ?> md:columns-2<?php endif; ?>">
             <?php foreach( $list_items as $list_item ): ?>
               <?php $item = $list_item['item']; ?>
               <li class="flex mb-16 text-lg font-bold">

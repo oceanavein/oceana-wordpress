@@ -47,11 +47,11 @@ em {
 @mixin text-h1 {
   @include font-size(36px);
   line-height: 1.125;
+  font-weight: $weight-light;
+  letter-spacing: -.03em;
 
   @include bp-min-width($medium) {
     @include font-size(48px);
-    font-weight: $weight-light;
-    letter-spacing: -.03em;
   }
 }
 

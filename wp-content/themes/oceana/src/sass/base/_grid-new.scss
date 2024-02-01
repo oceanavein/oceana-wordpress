@@ -1,4 +1,12 @@
 
+.gap-5 {
+	gap: 1.25rem;
+}
+
+.gap-10 {
+	gap: 2.5rem;
+}
+
 .grid {
 	display: grid;
 }
@@ -13,10 +21,6 @@
   .lg\:grid {
 		display: grid;
 	}
-}
-
-.gap-10 {
-	gap: 2.5rem;
 }
 
 .grid-- {
@@ -137,14 +141,6 @@
 	}
 }
 
-.r-gap--0 {
-	row-gap: 0;
-}
-
-.c-gap--20 {
-	column-gap: 20px;
-}
-
 
 // Flex
 
@@ -212,6 +208,16 @@
 	order: -9999;
 }
 
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
 .columns-2 {
 	columns: 2;
+}
+
+@include bp-min-width($medium) {
+  .md\:columns-2 {
+		columns: 2;
+  }
 }
