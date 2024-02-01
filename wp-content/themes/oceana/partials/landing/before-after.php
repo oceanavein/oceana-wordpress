@@ -8,12 +8,12 @@
 <section class="section before-after bg-blue">
 	<div class="container">
 
-    <h2 class="max-8-col mx-auto text-h1 text-center mb-72">
+    <h2 class="max-8-col mx-auto text-h1 text-center mb-32 md:mb-72">
       <?php echo $title; ?>
     </h2>
 
     <?php if( $images ): ?>
-      <div class="grid--3 mb-72">
+      <div class="image-slider grid--3 mb-32 md:mb-72">
         <?php foreach( $images as $image ): ?>
           <?php
             $image_id = $image['image'];
@@ -31,7 +31,7 @@
       </div>
     <?php endif; ?>
 
-    <div class="flex justify-center">
+    <div class="md:flex justify-center">
       <?php get_template_part( 'partials/landing/cta-buttons' ); ?>
     </div>
 

@@ -9,7 +9,7 @@
       <?php echo $title; ?>
     </h2>
 
-    <div class="flex justify-center">
+    <div class="md:flex justify-center">
       <?php get_template_part( 'partials/landing/cta-buttons' ); ?>
     </div>
 

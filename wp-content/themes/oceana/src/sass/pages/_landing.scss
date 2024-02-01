@@ -90,3 +90,15 @@
 		width: 100%;
   }
 }
+
+.landing-footer-address {
+	@include bp-min-width($medium) {
+		@include absolute-center;
+	}
+}
+
+.landing-footer .btn {
+	@include bp-max-width($medium) {
+		width: 100%;
+  }
+}

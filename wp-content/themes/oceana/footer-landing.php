@@ -3,17 +3,12 @@
 	<footer class="landing-footer bg-blue">
 		<div class="container">
 
-			<div class="landing-footer-top flex justify-between relative">
-				<div class="logo">
+			<div class="landing-footer-top md:flex justify-between relative">
+				<div class="logo mb-32 md:mb-0 text-center">
 					<img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-white.svg" alt="Oceana Vein Clinic" />
 				</div>
 
-				<div class="absolute-center text-center">
-					<p><?php the_field('office_address', 'option'); ?></p>
-					<p><?php the_field('office_city', 'option'); ?>, <?php the_field('office_state', 'option'); ?> <?php the_field('office_zip', 'option'); ?></p>
-				</div>
-
-				<div>
+				<div class="mb-32 md:mb-0">
 					<a href="tel:<?php the_field('phone_number', 'option'); ?>" class="btn btn-outline items-center">
 						<svg class="icon-phone icon-24 mr-8">
 							<use xlink:href="#icon-phone" />
@@ -22,6 +17,11 @@
 							<?php the_field('phone_number', 'option'); ?>
 						</div>
 					</a>
+				</div>
+
+				<div class="landing-footer-address text-center">
+					<p><?php the_field('office_address', 'option'); ?></p>
+					<p><?php the_field('office_city', 'option'); ?>, <?php the_field('office_state', 'option'); ?> <?php the_field('office_zip', 'option'); ?></p>
 				</div>
 			</div>
 

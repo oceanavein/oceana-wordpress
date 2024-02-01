@@ -12,8 +12,13 @@
 }
 
 .reviews .slick-track {
-  padding-top: 80px;
-  padding-bottom: 160px;
+  padding-top: 40px;
+  padding-bottom: 120px;
+
+  @include bp-min-width($medium) {
+    padding-top: 80px;
+    padding-bottom: 160px;
+  }
 }
 
 .reviews .slick-arrow {
