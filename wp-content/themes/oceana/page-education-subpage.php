@@ -5,7 +5,7 @@
 <section class="hero page-hero bg-blue-pale">
 	<div class="container">
 
-		<div class="flex-row">
+    <div class="md:flex gap-5">
 			<div class="col-span-8">
 				<h1 class="page-title text-h1"><?php the_field('hero_title'); ?></h1>
 				<div class="section-content">
@@ -23,7 +23,7 @@
 <section class="education-causes">
   <div class="container">
 
-    <div class="flex-row flex-row__center">
+    <div class="md:flex gap-5">
       <div class="education-causes__image col-span-6">
         <div class="shadow-image rounded overflow-hidden">
           <?php
@@ -48,7 +48,7 @@
 <section class="education-symptoms bg-blue">
   <div class="container">
 
-    <div class="flex-row">
+    <div class="md:flex gap-5">
       <div class="education-symptoms__content col-span-5">
         <h2 class="text-h3 section-title"><?php the_field('symptoms_section_title'); ?></h2>
         <div class="section-content">
@@ -73,7 +73,7 @@
 <section class="education-treatments">
   <div class="container">
 
-    <div class="flex-row">
+    <div class="md:flex gap-5">
       <div class="education-treatments__content col-span-7">
         <div class="body-content">
 					<?php the_field('treatments_section_content'); ?>
