@@ -5,7 +5,7 @@
 <section class="hero page-hero before-after-hero bg-blue-pale">
 	<div class="container">
 
-		<div class="flex-row">
+		<div class="md:flex gap-5">
 			<div class="col-span-8">
 				<h1 class="page-title text-h1"><?php the_title(); ?></h1>
 				<div class="section-content">

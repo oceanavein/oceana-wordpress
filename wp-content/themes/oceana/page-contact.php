@@ -7,7 +7,7 @@
 	<div class="page-wrapper">
 		<div class="container">
 
-			<div class="flex-row">
+			<div class="md:flex gap-5">
 
 				<section class="page-content col-span-8">
 					<h1 class="page-title text-h1"><?php the_title(); ?></h1>
@@ -29,7 +29,6 @@
 							<?php the_field('phone_number', 'option'); ?><br />
 						<?php the_field('email_address', 'option'); ?></p>
 					</div>
-
 				</aside>
 
 			</div>
@@ -43,7 +42,7 @@
 <section class="payment-options bg-blue-pale">
   <div class="container">
 
-		<div class="flex-grid payment-grid">
+		<div class="md:flex gap-10">
 			<div class="col-span-6">
 				<h3 class="section-title text-h2"><?php the_field('payment_section_title', $page->ID); ?></h3>
 				<div class="body-content">

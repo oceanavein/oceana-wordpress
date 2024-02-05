@@ -32,14 +32,17 @@
 
 <section class="treatments-image">
 	<?php $image = get_field('hero_image'); ?>
-	<img src="<?php echo $image["sizes"]['full-width-image']; ?>" srcset="<?php echo $image["sizes"]['full-width-image']; ?> 1000w, <?php echo $image["sizes"]['full-width-image-2x']; ?> 2000w" alt="Oceana Vein Clinic Office" />
+	<img src="<?php echo $image["sizes"]['full-width-image']; ?>"
+				srcset="<?php echo $image["sizes"]['full-width-image']; ?> 1000w,
+				<?php echo $image["sizes"]['full-width-image-2x']; ?> 2000w"
+				alt="Oceana Vein Clinic Office" />
 </section>
 
 <section id="treatments-list" class="treatments-list">
   <div class="container">
 
 		<?php if( have_rows('treatments') ): ?>
-			<div class="flex-grid treatments-grid">
+			<div class="md:flex gap-10 treatments-grid">
 		    <?php while ( have_rows('treatments') ) : the_row(); ?>
 					<div class="col-span-6">
 		        <h2 class="text-h3"><?php the_sub_field('title'); ?></h2>
@@ -58,7 +61,7 @@
 <section class="payment-options bg-blue-pale">
   <div class="container">
 
-		<div class="flex-grid payment-grid">
+		<div class="md:flex gap-10">
 			<div class="col-span-6">
 				<h3 class="section-title text-h2"><?php the_field('payment_section_title'); ?></h3>
 				<div class="body-content">
