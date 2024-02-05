@@ -5,7 +5,7 @@
 <section class="hero page-hero bg-blue-pale">
 	<div class="container">
 
-		<div class="flex-row">
+		<div class="md:flex gap-5">
 			<div class="col-span-8">
 				<h1 class="page-title text-h1"><?php the_title(); ?></h1>
 				<h2 class="page-subtitle text-h3"><?php the_field('hero_subtitle'); ?></h2>
@@ -25,7 +25,7 @@
 <section class="practice-venous bg-blue">
   <div class="container">
 
-    <div class="flex-row flex-row__center">
+		<div class="md:flex gap-5 items-center">
       <div class="practice-venous__content col-span-6">
         <h2 class="text-h2 section-title"><?php the_field('section_1_title'); ?></h2>
         <div class="section-content">
@@ -53,7 +53,7 @@
 <section class="practice-doctor">
   <div class="container">
 
-    <div class="flex-row flex-row__center">
+		<div class="md:flex gap-5 items-center">
       <div class="practice-doctor__image col-span-5">
 				<div class="shadow-image rounded overflow-hidden">
 					<?php
@@ -79,7 +79,7 @@
 <section class="practice-office bg-blue">
   <div class="container">
 
-    <div class="flex-row flex-row__center">
+		<div class="md:flex gap-5 items-center">
       <div class="practice-office__content col-span-6">
 				<h2 class="text-h2 section-title"><?php the_field('section_3_title'); ?></h2>
         <div class="section-content">
@@ -112,7 +112,7 @@
 <section class="practice-finances">
   <div class="container">
 
-    <div class="flex-row flex-row__center">
+		<div class="md:flex gap-5 items-center">
       <div class="practice-finances__content col-span-7">
 				<h2 class="text-h3 section-title"><?php the_field('section_4_title'); ?></h2>
         <div class="section-content">
