@@ -11,7 +11,7 @@
 <section class="home-veins bg-blue">
 	<div class="container">
 
-		<div class="flex-row">
+		<div class="md:flex gap-5">
 			<div class="home-veins__image col-span-6">
 				<div class="vein-badge shadow-image">
 					<img

@@ -2,7 +2,7 @@
 
 	<footer class="footer">
 		<div class="container">
-			<div class="flex-row">
+			<div class="md:flex gap-5">
 
 				<div class="col-span-3">
 					<h5 class="text-h5"><?php bloginfo('name'); ?></h5>

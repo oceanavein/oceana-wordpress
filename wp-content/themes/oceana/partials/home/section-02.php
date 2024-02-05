@@ -10,7 +10,7 @@
 <section class="home-doctor">
 	<div class="container">
 
-		<div class="home-doctor-grid flex-row">
+		<div class="home-doctor-grid md:flex gap-10">
 			<div class="home-doctor__content col-span-7">
 				<h2 class="text-h2 section-title"><?php echo $title; ?></h2>
 				<div class="section-content">

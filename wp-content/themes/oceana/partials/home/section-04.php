@@ -9,7 +9,7 @@
 <section class="home-payment">
 	<div class="container">
 
-		<div class="flex-row">
+		<div class="md:flex gap-5">
 			<div class="home-payment__content col-span-7">
 				<div class="body-content">
 					<?php echo $content; ?>
