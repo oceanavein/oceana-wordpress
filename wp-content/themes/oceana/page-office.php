@@ -5,7 +5,7 @@
 <section class="office-hero hero page-hero bg-blue-pale">
 	<div class="container">
 
-		<div class="flex-row">
+		<div class="md:flex gap-5">
 			<div class="col-span-4">
 				<h1 class="page-title text-h1"><?php the_title(); ?></h1>
 				<div class="section-content">
@@ -44,7 +44,7 @@
 <section class="office-content">
   <div class="container">
 
-    <div class="flex-row">
+		<div class="md:flex gap-5">
       <div class="col-span-6">
         <div class="section-content">
 					<?php the_content(); ?>

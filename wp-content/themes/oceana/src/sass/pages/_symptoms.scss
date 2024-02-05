@@ -1,17 +1,7 @@
 
 .symptoms-nav .container {
-	max-width: 1000px;
-	padding-top: $base;
-	padding-bottom: 6px;
-}
-
-.symptoms-nav ul {
-	text-align: center;
-}
-
-.symptoms-nav li {
-	display: inline-block;
-	margin: 0 18px 16px;
+	padding-top: 16px;
+	padding-bottom: 16px;
 }
 
 .symptoms-nav a {
@@ -36,12 +26,6 @@
 
 	@include bp-min-width($medium) {
 		display: flex;
-	}
-}
-
-.symptoms .body-content {
-	@include bp-min-width($large) {
-		padding-right: 30px;
 	}
 }
 

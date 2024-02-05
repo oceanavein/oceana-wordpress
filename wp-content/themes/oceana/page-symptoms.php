@@ -5,7 +5,7 @@
 <section class="hero page-hero bg-blue-pale">
 	<div class="container">
 
-		<div class="flex-row">
+		<div class="md:flex gap-5">
 			<div class="col-span-8">
 				<h1 class="page-title text-h1"><?php the_title(); ?></h1>
 				<div class="section-content">
@@ -24,7 +24,7 @@
 <nav class="symptoms-nav bg-blue-md">
 	<div class="container">
 		<?php if( have_rows('symptoms') ): ?>
-			<ul>
+			<ul class="flex flex-wrap gap-10 justify-center">
 				<?php $count = 0; ?>
 		    <?php while ( have_rows('symptoms') ) : the_row(); ?>
 		      <li><a href="#symptom-0<?php echo $count+1; ?>" <?php if(!$count): ?>class="is-active"<?php endif; ?>><?php the_sub_field('title'); ?></a></li>
@@ -41,10 +41,10 @@
 		<?php if( have_rows('symptoms') ): ?>
 				<?php $count = 0; ?>
 		    <?php while ( have_rows('symptoms') ) : the_row(); ?>
-					<div id="symptom-0<?php echo $count+1; ?>" class="symptoms__item <?php if(!$count): ?>is-visible<?php endif; ?> flex-row">
+					<div id="symptom-0<?php echo $count+1; ?>" class="symptoms__item <?php if(!$count): ?>is-visible<?php endif; ?> md:flex gap-10">
 						<div class="symptoms__content col-span-7">
 				      <h2 class="text-h2 section-title"><?php the_sub_field('title'); ?></h2>
-							<div class="body-content">
+							<div class="body-content md:pr-20">
 								<?php the_sub_field('description'); ?>
 							</div>
 						</div>
