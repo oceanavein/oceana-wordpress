@@ -24,7 +24,7 @@
 <nav class="symptoms-nav bg-blue-md">
 	<div class="container">
 		<?php if( have_rows('symptoms') ): ?>
-			<ul class="flex flex-wrap gap-10 justify-center">
+			<ul class="flex flex-wrap gap-x-10 gap-y-5 justify-center">
 				<?php $count = 0; ?>
 		    <?php while ( have_rows('symptoms') ) : the_row(); ?>
 		      <li><a href="#symptom-0<?php echo $count+1; ?>" <?php if(!$count): ?>class="is-active"<?php endif; ?>><?php the_sub_field('title'); ?></a></li>

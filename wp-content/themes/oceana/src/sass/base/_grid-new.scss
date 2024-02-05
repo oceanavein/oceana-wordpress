@@ -7,6 +7,22 @@
 	gap: 2.5rem;
 }
 
+.gap-x-5 {
+	column-gap: 1.25rem;
+}
+
+.gap-y-5 {
+	row-gap: 1.25rem;
+}
+
+.gap-x-10 {
+	column-gap: 2.5rem;
+}
+
+.gap-y-10 {
+	row-gap: 2.5rem;
+}
+
 .grid {
 	display: grid;
 }
