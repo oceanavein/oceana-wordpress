@@ -30,8 +30,8 @@
 					<div class="before-after__item">
 						<h2 class="before-after__title text-h3"><?php the_sub_field('title'); ?></h2>
 						<p class="before-after__description"><?php the_sub_field('description'); ?></p>
-						<div class="before-after__grid flex-grid">
-							<div class="before-image col-span-6">
+						<div class="before-after__grid md:grid--2">
+							<div class="before-image">
 								<?php $before_image = get_sub_field('before_image'); ?>
 								<img src="<?php echo $before_image["sizes"]['before-after-image']; ?>" srcset="<?php echo $before_image["sizes"]['before-after-image']; ?> 586w, <?php echo $before_image["sizes"]['before-after-image-2x']; ?> 1172w" alt="Oceana Vein Clinic Office - Before Image" />
 							</div>
@@ -40,7 +40,7 @@
 									<use xlink:href="#icon-arrow-next"></use>
 								</svg>
 							</div>
-							<div class="after-image col-span-6">
+							<div class="after-image">
 								<?php $after_image = get_sub_field('after_image'); ?>
 								<img src="<?php echo $after_image["sizes"]['before-after-image']; ?>" srcset="<?php echo $after_image["sizes"]['before-after-image']; ?> 586w, <?php echo $after_image["sizes"]['before-after-image-2x']; ?> 1172w" alt="Oceana Vein Clinic Office - Before Image" />
 							</div>
