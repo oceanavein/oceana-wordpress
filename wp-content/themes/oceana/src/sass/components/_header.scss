@@ -58,23 +58,21 @@
 
 .header .container {
 	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	padding-top: $base;
-	padding-bottom: 0;
 
-	@include bp-max-width($xlarge) {
-		padding-bottom: $base;
-	}
-
-	@include bp-max-width($small) {
+	@include bp-max-width($large) {
 		padding-top: 12px;
 		padding-bottom: 12px;
 	}
 
-	@include bp-min-width($xlarge) {
-		align-items: flex-start;
-		justify-content: space-between;
+	@include bp-min-width($large) {
+		padding-top: $base;
+		padding-bottom: 0;
+	}
+}
+
+.header .log {
+	@include bp-max-width($medium) {
+		margin: 0 auto;font: 1em sans-serif;
 	}
 }
 

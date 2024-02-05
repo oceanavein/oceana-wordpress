@@ -45,23 +45,23 @@
 
 	<header class="header">
 		<div class="container">
-			<div class="logo">
-				<a href="<?php echo pll_home_url(); ?>">
-					<img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.svg" alt="Oceana Vein Clinic" />
-				</a>
+
+			<div class="flex flex-wrap justify-between">
+				<div class="logo">
+					<a href="<?php echo pll_home_url(); ?>">
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.svg" alt="Oceana Vein Clinic" />
+					</a>
+				</div>
+
+				<nav class="main-nav">
+					<button class="mobile-btn btn btn-outline">
+						<span class="mobile-btn__label">Menu</span>
+						<span class="mobile-btn__label js-is-hidden">Close</span>
+					</button>
+					<?php wp_nav_menu( array('theme_location' => 'primary', 'container' => '') ); ?>
+				</nav>
 			</div>
-			<!-- <nav class="language-nav">
-				<ul>
-					<?php // pll_the_languages();?>
-				</ul>
-			</nav> -->
-			<nav class="main-nav">
-				<button class="mobile-btn btn btn-outline">
-					<span class="mobile-btn__label">Menu</span>
-					<span class="mobile-btn__label js-is-hidden">Close</span>
-				</button>
-				<?php wp_nav_menu( array('theme_location' => 'primary', 'container' => '') ); ?>
-			</nav>
+
 		</div>
 	</header>
 

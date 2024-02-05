@@ -113,3 +113,14 @@
 		min-width: 240px;
   }
 }
+
+.landing-map {
+	position: relative;
+	background: $home-map $lt-blue no-repeat 75% -20px;
+	background-size: 1200px;
+
+	@include bp-min-width($medium) {
+		background-position: center center;
+		background-size: cover;
+	}
+}

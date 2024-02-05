@@ -1,9 +1,5 @@
 
 .main-nav {
-  @include bp-max-width($xlarge) {
-    width: 100%;
-  }
-
   @include bp-min-width($large) {
     padding-top: 30px;
   }
@@ -16,15 +12,11 @@
   display: none;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 20px;
   height: 32px;
   padding: 0 12px;
   font-family: $sans;
   font-weight: $weight-book;
-
-  @include bp-max-width($medium) {
-    right: 20px;
-  }
 
   @include bp-max-width($large) {
     display: inline-block;
@@ -83,8 +75,12 @@
   }
 
   @include bp-min-width($large) {
-    position: relative;
     margin-left: 40px;
+  }
+
+  @include bp-min-width($medium) {
+    position: relative;
+    margin-left: 24px;
   }
 }
 
