@@ -5,7 +5,7 @@
 <section class="hero page-hero treatments-hero bg-blue-pale">
 	<div class="container">
 
-		<div class="flex-row">
+		<div class="md:flex gap-5">
 			<div class="col-span-8">
 				<h1 class="page-title text-h1"><?php the_title(); ?></h1>
 				<div class="section-content">
@@ -42,9 +42,9 @@
   <div class="container">
 
 		<?php if( have_rows('treatments') ): ?>
-			<div class="md:flex gap-10 treatments-grid">
+			<div class="md:grid--2 gap-10 treatments-grid">
 		    <?php while ( have_rows('treatments') ) : the_row(); ?>
-					<div class="col-span-6">
+					<div class="mb-24">
 		        <h2 class="text-h3"><?php the_sub_field('title'); ?></h2>
 		        <div class="body-content">
 		          <?php the_sub_field('description'); ?>
