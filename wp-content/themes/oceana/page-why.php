@@ -7,7 +7,7 @@
 	<section class="page-wrapper">
 		<div class="container">
 
-			<div class="flex-row">
+			<div class="md:flex gap-5">
 
 				<section class="page-content col-span-8">
 					<h1 class="page-title text-h1"><?php the_title(); ?></h1>
