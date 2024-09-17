@@ -41,8 +41,11 @@
 		<div class="home-hero__image">
 			<div class="shadow-image rounded overflow-hidden">
 				<img
+					width="754"
+					height="456"
 					src="<?=$src[0]?>"
 					srcset="<?=$srcset?>"
+					sizes="(min-width: 1024px) 754px, 100vw"
 					alt="<?php echo $hero_title; ?>"
 					loading="eager"
 				/>
