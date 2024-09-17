@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width">
 	<?php get_template_part( 'partials/head/preload' ); ?>
+	<?php get_template_part( 'partials/head/favicon' ); ?>
 	<?php wp_head(); ?>
 	<?php get_template_part( 'partials/head/analytics' ); ?>
 </head>
