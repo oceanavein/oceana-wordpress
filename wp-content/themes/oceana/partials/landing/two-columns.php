@@ -83,8 +83,35 @@
             </div>
           <?php } else { ?>
             <div class="landing-video overflow-hidden rounded-2xl shadow-image">
-              <script src="https://www.youtube.com/iframe_api"></script>
-              <?php echo $media['video']; ?>
+            <?php
+              // Load value.
+              $iframe = $media['video'];
+
+              // Use preg_match to find iframe src.
+              preg_match('/src="(.+?)"/', $iframe, $matches);
+              $src = $matches[1];
+
+              // Add extra parameters to src and replace HTML.
+              $params = array(
+                'controls'  => 0,
+                'hd'        => 1,
+                'autohide'  => 1,
+                'rel'       => 0,
+                'modestbranding' => 1
+              );
+              $new_src = add_query_arg($params, $src);
+              $iframe = str_replace($src, $new_src, $iframe);
+
+              // Add extra attributes to iframe HTML.
+              $attributes = 'frameborder="0" loading="lazy"';
+              $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
+
+              // Display customized HTML.
+              echo $iframe;
+            ?>
+
+              <!-- <script src="https://www.youtube.com/iframe_api"></script> -->
+              <?php //echo $media['video']; ?>
             </div>
           <?php } ?>
       </div>
