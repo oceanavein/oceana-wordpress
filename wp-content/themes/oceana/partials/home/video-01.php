@@ -5,7 +5,7 @@
 <section class="home-video bg-blue">
 	<div class="container">
 
-		<h2 class="text-h2 text-center mb-32">
+		<h2 class="text-h2 text-center mb-32 md:pl-40 md:pr-40">
 			<?php echo $video_title; ?>
 		</h2>
 

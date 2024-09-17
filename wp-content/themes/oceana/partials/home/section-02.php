@@ -20,9 +20,14 @@
 			<div class="home-doctor__image col-span-5">
 				<div class="shadow-image rounded overflow-hidden">
 					<img
+						width="352"
+						height="492"
 						src="<?php echo $src[0]; ?>"
 						srcset="<?php echo $srcset; ?>"
-						alt="Dr. Adam Isadore" />
+						alt="Dr. Adam Isadore"
+						loading="lazy"
+						class="w-full"
+					/>
 				</div>
 			</div>
 		</div>

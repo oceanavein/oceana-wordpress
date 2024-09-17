@@ -17,7 +17,9 @@
 					<img
 						src="<?php echo $src[0]; ?>"
 						srcset="<?php echo $srcset; ?>"
-						alt="<?php echo $title; ?>" />
+						alt="<?php echo $title; ?>"
+						loading="lazy"
+					/>
 				</div>
 			</div>
 			<div class="home-veins__content col-span-6">

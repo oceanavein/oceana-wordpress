@@ -18,9 +18,14 @@
 			<div class="home-payment__image col-span-5">
 				<div class="shadow-image rounded overflow-hidden">
 					<img
+						width="432"
+						height="559"
 						src="<?=$src[0]?>"
 						srcset="<?=$srcset?>"
-						alt="Oceana Vein Clinic" />
+						alt="Oceana Vein Clinic"
+						loading="lazy"
+						class="w-full"
+					/>
 				</div>
 			</div>
 		</div>

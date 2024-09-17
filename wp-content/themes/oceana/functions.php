@@ -19,14 +19,6 @@ function tlc_load_scripts() {
 
 	wp_enqueue_script( 'jquery' );
 
-	// Modernizr
-	wp_register_script('modernizr',
-		get_bloginfo('template_url') . '/dist/js/modernizr-custom.js',
-		array(),
-		ENQUEUE_VERSION
-	);
-	wp_enqueue_script('modernizr');
-
 	// fitvids
 	wp_register_script('fitvids',
 		get_bloginfo('template_url') . '/dist/js/jquery.fitvids.js',
@@ -62,6 +54,19 @@ function tlc_load_scripts() {
 	);
 	wp_enqueue_style('main-css');
 }
+
+//Remove Gutenberg Block Library CSS from loading on the frontend
+function remove_wp_block_library_css(){
+	wp_dequeue_style( 'wp-block-library' );
+	wp_dequeue_style( 'wp-block-library-theme' );
+}
+add_action( 'wp_enqueue_scripts', 'remove_wp_block_library_css', 100 );
+
+
+// Remove emoji
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+
 
 add_filter( 'wp_title', 'tlc_filter_wp_title' );
 function tlc_filter_wp_title( $title ) {
