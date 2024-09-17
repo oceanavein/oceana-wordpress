@@ -4,8 +4,9 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width">
+	<?php get_template_part( 'partials/head/preload' ); ?>
 	<?php wp_head(); ?>
-	<?php get_template_part( 'partials/analytics' ); ?>
+	<?php get_template_part( 'partials/head/analytics' ); ?>
 </head>
 <body <?php body_class(); ?>>
 	<?php get_template_part( 'partials/svg' ); ?>

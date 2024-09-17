@@ -47,6 +47,7 @@
 					srcset="<?=$srcset?>"
 					sizes="(min-width: 1024px) 754px, 100vw"
 					alt="<?php echo $hero_title; ?>"
+					fetchpriority="high"
 					loading="eager"
 				/>
 			</div>
