@@ -10,6 +10,7 @@
 	<?php get_template_part( 'partials/head/analytics' ); ?>
 </head>
 <body <?php body_class(); ?>>
+	<!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2X3TZHX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <!-- End Google Tag Manager (noscript) -->
 	<?php get_template_part( 'partials/svg' ); ?>
 
 	<div class="top-banner">

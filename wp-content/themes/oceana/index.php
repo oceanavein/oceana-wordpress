@@ -1,9 +1,18 @@
 <?php get_header(); ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<div class="page-wrapper">
+	<div class="container">
 
-	<h1><?php the_title(); ?></h1>
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<?php endwhile; endif; ?>
+			<h1 class="">
+				<a href="<?php the_permalink(); ?>">
+					<?php the_title(); ?>
+				</a>
+			</h1>
 
+		<?php endwhile; endif; ?>
+
+	</div>
+</div>
 <?php get_footer(); ?>
