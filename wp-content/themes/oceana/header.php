@@ -10,12 +10,13 @@
 	<?php get_template_part( 'partials/head/analytics' ); ?>
 </head>
 <body <?php body_class(); ?>>
-	<!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2X3TZHX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <!-- End Google Tag Manager (noscript) -->
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2X3TZHX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<?php get_template_part( 'partials/svg' ); ?>
 
 	<div class="top-banner">
 		<p class="top-banner__label">
-			<a href="<?php echo pll_home_url(); ?>contact-us/">Schedule an Appointment</a>
+			<a href="<?php echo get_bloginfo( 'url' ); ?>/contact-us/">Schedule an Appointment</a>
 		</p>
 		<p class="top-banner__phone">
 			<?php the_field('phone_number', 'option'); ?>
@@ -27,7 +28,7 @@
 
 			<div class="flex flex-wrap justify-between">
 				<div class="logo">
-					<a href="<?php echo pll_home_url(); ?>">
+					<a href="<?php echo get_bloginfo( 'url' ); ?>">
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.svg" alt="Oceana Vein Clinic" />
 					</a>
 				</div>
@@ -37,7 +38,13 @@
 						<span class="mobile-btn__label">Menu</span>
 						<span class="mobile-btn__label js-is-hidden">Close</span>
 					</button>
-					<?php wp_nav_menu( array('theme_location' => 'primary', 'container' => '') ); ?>
+					<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'primary'
+							)
+						);
+					?>
 				</nav>
 			</div>
 

@@ -88,8 +88,8 @@ em {
 }
 
 @mixin text-h4 {
-  @include font-size(21px);
-  font-weight: $weight-bold;
+  @include font-size(24px);
+  // font-weight: $weight-bold;
 }
 
 .text-h4 {
@@ -104,6 +104,13 @@ em {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.post-cat {
+  font-size: 0.75rem;
+  font-weight: $weight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;;
 }
 
 .page-title {
@@ -221,6 +228,10 @@ div + .section-subtitle {
 .body-content ol:not(:last-child),
 .body-content blockquote:not(:last-child) {
   margin-bottom: 27px;
+}
+
+.body-content hr {
+  display: none;
 }
 
 .page-template-default .body-content a {

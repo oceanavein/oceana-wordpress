@@ -22,9 +22,9 @@
 					<div class="flex justify-between items-center">
 						<p><?php echo $name; ?></p>
 						<?php if($platform == 'yelp') { ?>
-							<img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-yelp.svg" alt="Yelp Logo" />
+							<img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-yelp.svg" alt="Yelp Logo" loading="lazy" />
 						<?php } else { ?>
-							<img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-google.svg" alt="Google Logo" />
+							<img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-google.svg" alt="Google Logo" loading="lazy" />
 						<?php } ?>
 					</div>
 				</div>
