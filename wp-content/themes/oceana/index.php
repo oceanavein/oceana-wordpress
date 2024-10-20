@@ -1,9 +1,17 @@
 <?php get_header(); ?>
 
-<div class="hero relative overflow-hidden bg-blue-pale">
+<?php
+	$title = get_field('blog_title', 'option');
+
+	$avatar_id = get_field('blog_avatar', 'option');
+	$avatar_src = wp_get_attachment_image_src( $avatar_id, 'avatar' );
+	$avatar_srcset = wp_get_attachment_image_srcset( $avatar_id, 'avatar' );
+?>
+
+<div class="hero-blog relative overflow-hidden bg-blue-pale">
 	<div class="container relative z-10">
 		<h1 class="text-h1 text-blue-dk">
-			The Oceana Blog
+			<?php echo $title; ?>
 		</h1>
 	</div>
 

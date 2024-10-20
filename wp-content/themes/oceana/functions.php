@@ -138,6 +138,10 @@ add_image_size( 'post-thumb', 400, 264, true );
 add_image_size( 'post-thumb-2x', 800, 528, true );
 add_image_size( 'post-thumb-3x', 1200, 792, true );
 
+add_image_size( 'avatar', 64, 64, true );
+add_image_size( 'avatar-2x', 128, 128, true );
+add_image_size( 'avatar-3x', 192, 192, true );
+
 
 // Default blog image
 function get_default_blog_image($size=null){

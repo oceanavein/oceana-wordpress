@@ -3,9 +3,75 @@
     "title": "Global",
     "fields": [
         {
+            "key": "field_6714fe4cffe19",
+            "label": "Blog",
+            "name": "blog",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_6714fe52ffe1a",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_6714fe56ffe1b",
+                    "label": "Avatar",
+                    "name": "avatar",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium"
+                }
+            ]
+        },
+        {
             "key": "field_62f227a7e5224",
             "label": "Reviews Section",
             "name": "reviews_section",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -21,6 +87,7 @@
                     "key": "field_62f227b7e5225",
                     "label": "Title",
                     "name": "title",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -40,6 +107,7 @@
                     "key": "field_62e924e8b973a",
                     "label": "Reviews",
                     "name": "reviews",
+                    "aria-label": "",
                     "type": "repeater",
                     "instructions": "",
                     "required": 0,
@@ -53,12 +121,13 @@
                     "min": 0,
                     "max": 0,
                     "layout": "row",
-                    "button_label": "",
+                    "button_label": "Add Row",
                     "sub_fields": [
                         {
                             "key": "field_62e924feb973b",
                             "label": "Content",
                             "name": "content",
+                            "aria-label": "",
                             "type": "textarea",
                             "instructions": "",
                             "required": 0,
@@ -72,12 +141,14 @@
                             "placeholder": "",
                             "maxlength": 300,
                             "rows": 4,
-                            "new_lines": ""
+                            "new_lines": "",
+                            "parent_repeater": "field_62e924e8b973a"
                         },
                         {
                             "key": "field_62e92516b973c",
                             "label": "Name",
                             "name": "name",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -91,12 +162,14 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
-                            "maxlength": ""
+                            "maxlength": "",
+                            "parent_repeater": "field_62e924e8b973a"
                         },
                         {
                             "key": "field_62e9251bb973d",
                             "label": "Platform",
                             "name": "platform",
+                            "aria-label": "",
                             "type": "select",
                             "instructions": "",
                             "required": 0,
@@ -116,9 +189,11 @@
                             "ui": 0,
                             "return_format": "value",
                             "ajax": 0,
-                            "placeholder": ""
+                            "placeholder": "",
+                            "parent_repeater": "field_62e924e8b973a"
                         }
-                    ]
+                    ],
+                    "rows_per_page": 20
                 }
             ]
         },
@@ -126,6 +201,7 @@
             "key": "field_62dfa7bf7bedf",
             "label": "Appointment Form Block",
             "name": "appointment_form_block",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -141,6 +217,7 @@
                     "key": "field_598434eb3a4fc",
                     "label": "Title",
                     "name": "title",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -160,6 +237,7 @@
                     "key": "field_598435013a4fd",
                     "label": "Content",
                     "name": "content",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -181,6 +259,7 @@
             "key": "field_59804d91d46ae",
             "label": "CTA Section Title",
             "name": "cta_section_title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -200,6 +279,7 @@
             "key": "field_5980439530108",
             "label": "Phone Number",
             "name": "phone_number",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -219,6 +299,7 @@
             "key": "field_5980439a30109",
             "label": "Fax Number",
             "name": "fax_number",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -238,6 +319,7 @@
             "key": "field_59a3fecdd8db1",
             "label": "Email Address",
             "name": "email_address",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -257,6 +339,7 @@
             "key": "field_62dfa869d6556",
             "label": "Office",
             "name": "office",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -272,6 +355,7 @@
                     "key": "field_59b7a2887b075",
                     "label": "Hours",
                     "name": "hours",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -291,6 +375,7 @@
                     "key": "field_59804d324d30f",
                     "label": "Address",
                     "name": "address",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -310,6 +395,7 @@
                     "key": "field_59804d3a4d310",
                     "label": "City",
                     "name": "city",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -329,6 +415,7 @@
                     "key": "field_59804d3f4d311",
                     "label": "State",
                     "name": "state",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -348,6 +435,7 @@
                     "key": "field_59804d444d312",
                     "label": "Zip",
                     "name": "zip",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -369,6 +457,7 @@
             "key": "field_59b7a3310b5b6",
             "label": "Directions Link",
             "name": "directions_link",
+            "aria-label": "",
             "type": "url",
             "instructions": "",
             "required": 0,
@@ -385,6 +474,7 @@
             "key": "field_598043a93010a",
             "label": "Facebook Link",
             "name": "facebook_link",
+            "aria-label": "",
             "type": "url",
             "instructions": "",
             "required": 0,
@@ -401,6 +491,7 @@
             "key": "field_598043cc3010b",
             "label": "Twitter Link",
             "name": "twitter_link",
+            "aria-label": "",
             "type": "url",
             "instructions": "",
             "required": 0,
@@ -417,6 +508,7 @@
             "key": "field_598043d13010c",
             "label": "YouTube Link",
             "name": "youtube_link",
+            "aria-label": "",
             "type": "url",
             "instructions": "",
             "required": 0,
@@ -448,5 +540,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1661168473
+    "modified": 1729429094
 }

@@ -127,6 +127,10 @@
   border-radius: 16px;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .shadow-image {
 	@include img-shadow;
 }
