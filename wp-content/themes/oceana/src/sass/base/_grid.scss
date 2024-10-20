@@ -99,8 +99,3 @@ $col:    66px;
   }
 }
 
-.col-span-2 {
-  @include bp-min-width($medium) {
-    width: 16.666%;
-  }
-}
