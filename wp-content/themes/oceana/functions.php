@@ -76,19 +76,17 @@ function tlc_filter_wp_title( $title ) {
 
 // Post Navigation
 function post_navigation() {
-	$prev_page = get_previous_posts_link('<svg class="post-grid--icon icon-arrow-left"><use xlink:href="#icon-arrow-left"></use></svg> Previous Posts');
-	$next_page = get_next_posts_link('More Posts <svg class="post-grid--icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>');
+	$prev_page = get_previous_posts_link('<svg class="w-6 h-6 mr-8"><use xlink:href="#icon-arrow-left"></use></svg> Previous Posts');
+	$next_page = get_next_posts_link('More Posts <svg class="w-6 h-6 ml-8"><use xlink:href="#icon-arrow-right"></use></svg>');
 	if($prev_page || $next_page) {
-		echo '<div class="post-grid-nav">';
+		echo '<div class="flex justify-center mt-48">';
 		if ($prev_page) {
-			echo  '<div class="post-grid-nav--item">' . $prev_page . '</div>';
-		} else {
-			echo '<div class="post-grid-nav--item"><svg class="post-grid-nav--icon icon-arrow-left"><use xlink:href="#icon-arrow-left"></use></svg> Previous Posts</div>';
+			$prev_page = str_replace( '<a', '<a class="btn btn-outline"', $prev_page );
+			echo  '<div>' . $prev_page . '</div>';
 		}
 		if ($next_page) {
-			echo  '<div class="post-grid-nav--item">' . $next_page . '</div>';
-		} else {
-			echo '<div class="post-grid-nav--item">More Posts <svg class="post-grid-nav--icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg></div>';
+			$next_page = str_replace( '<a', '<a class="btn btn-outline"', $next_page );
+			echo  '<div>' . $next_page . '</div>';
 		}
 		echo '</div>';
 	}
