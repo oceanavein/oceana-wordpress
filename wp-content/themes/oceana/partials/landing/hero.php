@@ -19,8 +19,8 @@
 
 	<div class="container">
 
-		<div class="lg:grid--2">
-			<div class="col-span-1 mb-24 lg:mb-0 lg:pr-72 lg:pt-72">
+		<div class="grid lg:grid-cols-2 gap-10">
+			<div class="mb-24 lg:mb-0 lg:pr-72 lg:pt-72">
 
 				<?php if($eyebrow): ?>
 					<p class="mb-8 text-h3 text-white">
@@ -40,7 +40,7 @@
 
 			</div>
 
-			<div class="col-span-1 xl:pr-72">
+			<div class="xl:pr-72">
 				<div class="bg-blue-pale p-20 md:p-40 rounded-2xl shadow-image">
 					<h2 class="text-blue-dk text-h3 text-center mb-12 md:mb-24">
 						<?php echo $form_title; ?>

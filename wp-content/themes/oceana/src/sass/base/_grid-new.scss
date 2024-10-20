@@ -39,80 +39,56 @@
 	}
 }
 
-.grid-- {
+.grid-cols- {
   &2 {
-		display: grid;
 	  grid-template-columns: repeat(2, 1fr);
-	  gap: 24px 36px;
   }
   &3 {
-		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 36px;
   }
   &4 {
-		display: grid;
 	  grid-template-columns: repeat(4, 1fr);
-	  gap: 36px;
   }
 }
 
 @include bp-min-width($small) {
-  .sm\:grid-- {
+  .sm\:grid-cols- {
 		&2 {
-			display: grid;
 		  grid-template-columns: repeat(2, 1fr);
-		  gap: 24px 36px;
 	  }
 	  &3 {
-			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			gap: 36px;
 	  }
 	  &4 {
-			display: grid;
 		  grid-template-columns: repeat(4, 1fr);
-		  gap: 36px;
 	  }
 	}
 }
 
 @include bp-min-width($medium) {
-  .md\:grid-- {
+  .md\:grid-cols- {
 		&2 {
-			display: grid;
 		  grid-template-columns: repeat(2, 1fr);
-		  gap: 24px 36px;
 	  }
 	  &3 {
-			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			gap: 36px;
 	  }
 	  &4 {
-			display: grid;
 		  grid-template-columns: repeat(4, 1fr);
-		  gap: 36px;
 	  }
 	}
 }
 
 @include bp-min-width($large) {
-  .lg\:grid-- {
+  .lg\:grid-cols- {
 		&2 {
-			display: grid;
 		  grid-template-columns: repeat(2, 1fr);
-		  gap: 24px 36px;
 	  }
 	  &3 {
-			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			gap: 36px;
 	  }
 	  &4 {
-			display: grid;
 		  grid-template-columns: repeat(4, 1fr);
-		  gap: 36px;
 	  }
 	}
 }

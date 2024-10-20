@@ -1,10 +1,14 @@
 <?php get_header(); ?>
 
-<div class="hero bg-blue-pale">
-	<div class="container">
+<div class="hero relative overflow-hidden bg-blue-pale">
+	<div class="container relative z-10">
 		<h1 class="text-h1 text-blue-dk">
 			The Oceana Blog
 		</h1>
+	</div>
+
+	<div class="hero-waves">
+		<?php get_template_part( 'partials/svg/bg-waves' ); ?>
 	</div>
 </div>
 
@@ -12,10 +16,10 @@
 	<div class="container">
 
 		<?php if ( have_posts() ): ?>
-			<div class="grid grid--3 gap-8">
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 				<?php while ( have_posts() ): the_post(); ?>
 
-					<div class="post-card ">
+					<div class="post-card">
 						<div class="post-thumb overflow-hidden mb-24 rounded">
 							<?php if ( has_post_thumbnail() ) { ?>
 								<?php

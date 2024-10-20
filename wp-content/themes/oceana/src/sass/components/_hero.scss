@@ -13,3 +13,14 @@
 .page-hero .section-content a {
 	@include cta-link;
 }
+
+.hero-waves {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	max-width: 100%;
+
+	@include bp-min-width($medium) {
+		width: 850px;
+	}
+}

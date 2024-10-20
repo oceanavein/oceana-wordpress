@@ -201,9 +201,10 @@ div + .section-subtitle {
 }
 
 .section-list li {
+  margin-left: 16px;
+  list-style-type: disc;
+
   @include bp-min-width($medium) {
-    margin-left: 16px;
-    list-style-type: disc;
     margin-bottom: 8px;
   }
 }

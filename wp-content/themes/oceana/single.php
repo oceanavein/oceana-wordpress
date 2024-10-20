@@ -6,8 +6,11 @@
 		<div class="container">
 
 			<p class="mb-24">
-				<a href="<?php echo get_bloginfo( 'url' ); ?>/blog/">
-					Back to Blog
+				<a href="<?php echo get_bloginfo( 'url' ); ?>/blog/" class="flex items-center">
+					<svg class="w-6 h-6 mr-8">
+						<use xlink:href="#icon-arrow-left" />
+					</svg>
+					Blog
 				</a>
 			</p>
 

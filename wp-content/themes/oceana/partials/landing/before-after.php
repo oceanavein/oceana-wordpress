@@ -1,8 +1,6 @@
 <?php
 	$title = get_sub_field('title');
 	$images = get_sub_field('images');
-
-  // var_dump($images);
 ?>
 
 <section class="section before-after bg-blue">
@@ -13,7 +11,7 @@
     </h2>
 
     <?php if( $images ): ?>
-      <div class="image-slider grid--3 mb-32 md:mb-72">
+      <div class="image-slider grid grid-cols-3 gap-10 mb-32 md:mb-72">
         <?php foreach( $images as $image ): ?>
           <?php
             $image_id = $image['image'];

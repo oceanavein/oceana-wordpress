@@ -134,9 +134,9 @@ add_image_size( 'landing-before-after', 406, 320, true );
 add_image_size( 'landing-before-after-2x', 816, 640, true );
 add_image_size( 'landing-before-after-3x', 1218, 960, true );
 
-add_image_size( 'post-thumb', 400, 300, true );
-add_image_size( 'post-thumb-2x', 800, 600, true );
-add_image_size( 'post-thumb-3x', 1200, 900, true );
+add_image_size( 'post-thumb', 400, 264, true );
+add_image_size( 'post-thumb-2x', 800, 528, true );
+add_image_size( 'post-thumb-3x', 1200, 792, true );
 
 
 // Default blog image

@@ -42,7 +42,7 @@
   <div class="container">
 
 		<?php if( have_rows('treatments') ): ?>
-			<div class="md:grid--2 gap-10 treatments-grid">
+			<div class="grid md:grid-cols-2 gap-10 treatments-grid">
 		    <?php while ( have_rows('treatments') ) : the_row(); ?>
 					<div class="mb-24">
 		        <h2 class="text-h3"><?php the_sub_field('title'); ?></h2>
