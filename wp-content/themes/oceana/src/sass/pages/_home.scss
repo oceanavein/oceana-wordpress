@@ -28,6 +28,7 @@
 	margin-bottom: 12px;
 	color: $blue;
 	font-weight: $weight-light;
+	letter-spacing: -0.05em;
 
 	@include bp-min-width($medium) {
     @include font-size(72px);

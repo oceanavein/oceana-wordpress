@@ -42,7 +42,9 @@
 
 							if ( ! empty( $categories ) ) {
 								foreach ( $categories as $category ) {
-									echo '<p class="post-cat mb-8">' . esc_html( $category->name ) . '</p>';
+									if( $category->name != "Uncategorized" ) {
+										echo '<p class="post-cat mb-8">' . esc_html( $category->name ) . '</p>';
+									}
 								}
 							} else {
 								echo 'No categories found.';
