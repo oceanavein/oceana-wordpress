@@ -1,21 +1,7 @@
 
-.practice-doctor__image {
-	text-align: center;
-
-	@include bp-min-width($large) {
-		padding: 0 6%;
-	}
-}
-
 .practice-office .container {
 	@include bp-max-width($medium) {
 		padding-bottom: 0;
-	}
-}
-
-.practice-office__content {
-	@include bp-min-width($medium) {
-		padding-right: 60px;
 	}
 }
 
@@ -31,7 +17,6 @@
 		@include img-shadow;
 	}
 }
-
 
 .practice-office .slick-arrow {
 	color: $blue;

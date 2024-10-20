@@ -5,10 +5,14 @@
 <section class="hero page-hero bg-blue-pale">
 	<div class="container">
 
-		<div class="md:flex gap-5">
+		<div class="md:flex gap-10">
 			<div class="col-span-8">
-				<h1 class="page-title text-h1"><?php the_title(); ?></h1>
-				<h2 class="page-subtitle text-h3"><?php the_field('hero_subtitle'); ?></h2>
+				<h1 class="page-title text-h1">
+					<?php the_title(); ?>
+				</h1>
+				<h2 class="page-subtitle text-h3">
+					<?php the_field('hero_subtitle'); ?>
+				</h2>
 				<div class="section-content">
 					<?php the_field('hero_content'); ?>
 				</div>
@@ -25,14 +29,14 @@
 <section class="practice-venous bg-blue">
   <div class="container">
 
-		<div class="md:flex gap-5 items-center">
-      <div class="practice-venous__content col-span-6">
+		<div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="practice-venous__content">
         <h2 class="text-h2 section-title"><?php the_field('section_1_title'); ?></h2>
         <div class="section-content">
 					<?php the_field('section_1_content'); ?>
         </div>
       </div>
-      <div class="practice-venous__form col-span-6">
+      <div class="practice-venous__form">
 				<div class="shadow-image rounded overflow-hidden">
 					<?php
 						$image_id = get_field('section_1_image');
@@ -53,22 +57,32 @@
 <section class="practice-doctor">
   <div class="container">
 
-		<div class="md:flex gap-5 items-center">
-      <div class="practice-doctor__image col-span-5">
+		<div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="practice-doctor__image xl:pl-64 xl:pr-64">
 				<div class="shadow-image rounded overflow-hidden">
 					<?php
 						$image_id = get_field('section_2_image');
 						$src = wp_get_attachment_image_src($image_id, 'head-shot');
 						$srcset = wp_get_attachment_image_srcset($image_id, 'head-shot');
 					?>
-					<img src="<?=$src[0]?>" srcset="<?=$srcset?>" alt="Dr. Adam Isadore" />
+					<img
+						src="<?=$src[0]?>"
+						srcset="<?=$srcset?>"
+						alt="Dr. Adam Isadore"
+					/>
 				</div>
       </div>
-      <div class="practice-doctor__content col-span-7">
-				<h2 class="text-h2 section-title"><?php the_field('section_2_title'); ?></h2>
+      <div class="practice-doctor__content">
+				<h2 class="text-h2 section-title">
+					<?php the_field('section_2_title'); ?>
+				</h2>
         <div class="section-content">
 					<?php the_field('section_2_content'); ?>
-          <p><a href="<?php the_field('section_2_cta_link'); ?>" class="cta-link">Contact Dr. Isadore</a></p>
+          <p>
+						<a href="<?php the_field('section_2_cta_link'); ?>" class="cta-link">
+							Contact Dr. Isadore
+						</a>
+				</p>
         </div>
       </div>
     </div>
@@ -79,15 +93,17 @@
 <section class="practice-office bg-blue">
   <div class="container">
 
-		<div class="md:flex gap-5 items-center">
+		<div class="md:flex gap-10 items-center">
       <div class="practice-office__content col-span-6">
-				<h2 class="text-h2 section-title"><?php the_field('section_3_title'); ?></h2>
+				<h2 class="text-h2 section-title">
+					<?php the_field('section_3_title'); ?>
+				</h2>
         <div class="section-content">
 					<?php the_field('section_3_content'); ?>
         </div>
       </div>
       <div class="practice-office__image col-span-6">
-				<div class="shadow-image rounded overflow-hidden">
+				<div class="w-full shadow-image rounded overflow-hidden">
 					<?php if( have_rows('section_3_images') ): ?>
 						<div class="practice-office__slider img-slider">
 							<?php while ( have_rows('section_3_images') ) : the_row(); ?>
@@ -97,7 +113,11 @@
 										$src = wp_get_attachment_image_src($image_id, 'section-image');
 										$srcset = wp_get_attachment_image_srcset($image_id, 'section-image');
 									?>
-									<img src="<?=$src[0]?>" srcset="<?=$srcset?>" alt="" />
+									<img
+										src="<?=$src[0]?>"
+										srcset="<?=$srcset?>"
+										alt="Oceana Office"
+									/>
 								</div>
 							<?php endwhile; ?>
 						</div>
@@ -112,14 +132,16 @@
 <section class="practice-finances">
   <div class="container">
 
-		<div class="md:flex gap-5 items-center">
-      <div class="practice-finances__content col-span-7">
-				<h2 class="text-h3 section-title"><?php the_field('section_4_title'); ?></h2>
+		<div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="practice-finances__content">
+				<h2 class="text-h3 section-title">
+					<?php the_field('section_4_title'); ?>
+				</h2>
         <div class="section-content">
 					<?php the_field('section_4_content'); ?>
         </div>
       </div>
-      <div class="practice-finances__form col-span-5 flex-end">
+      <div class="practice-finances__form flex justify-center">
 				<?php get_template_part('partials/appointment-form-2'); ?>
       </div>
     </div>

@@ -30,7 +30,6 @@ jQuery(document).ready(function($) {
 
       contentSection.removeClass('is-visible');
       $(navLinkID).addClass('is-visible');
-
     });
   }
 
