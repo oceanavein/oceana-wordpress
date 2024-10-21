@@ -47,6 +47,7 @@
   @include bp-min-width($large) {
     position: relative;
     display: flex;
+    z-index: 20;
   }
 
   @include bp-max-width($xlarge) {
