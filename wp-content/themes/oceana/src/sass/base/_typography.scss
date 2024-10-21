@@ -246,3 +246,69 @@ div + .section-subtitle {
     border-color: $dk-blue;
   }
 }
+
+.post-content {
+	h1, h2 {
+    @include text-h3;
+    margin-bottom: 1rem;
+	}
+
+	h3 {
+    @include text-h4;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+	}
+
+  h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+  }
+
+	p, ul, ol, pre {
+		a {
+      text-decoration: underline;
+
+			&:hover {
+        text-decoration: none;
+			}
+		}
+
+		&:not(:last-child) {
+      margin-bottom: 1.5rem;
+		}
+	}
+
+	ul:not(.block-editor-block-variation-picker__variations) {
+    padding-left: 1.5rem;
+
+		li {
+      list-style-type: disc;
+		}
+
+    li:not(:first-child) {
+      margin-top: .5rem;
+    }
+	}
+
+	ol {
+    padding-left: 1.5rem;
+
+		li {
+      list-style-type: decimal;
+		}
+
+    li:not(:first-child) {
+      margin-top: .5rem;
+    }
+	}
+
+	pre {
+    white-space: pre-wrap;
+	}
+
+  hr {
+    display: none;
+  }
+}
+

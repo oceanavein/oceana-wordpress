@@ -52,7 +52,7 @@
 		<div class="container">
 			<div class="grid grid-cols-3 gap-10">
 
-				<div class="col-span-2 xl:pr-64 body-content">
+				<div class="col-span-2 xl:pr-64 post-content">
 					<?php the_content(); ?>
 				</div>
 
