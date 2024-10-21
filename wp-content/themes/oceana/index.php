@@ -13,6 +13,24 @@
 		<h1 class="text-h1 text-blue-dk">
 			<?php echo $title; ?>
 		</h1>
+
+		<?php
+			$categories = get_categories();
+
+			if ( ! empty( $categories ) ) {
+					echo '<ul class="flex gap-5 mt-16">';
+					foreach ( $categories as $category ) {
+						if( $category->name != "Uncategorized" ) {
+							echo '<li class="post-cat">';
+							echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' . esc_html( $category->name ) . '</a>';
+							echo '</li>';
+						}
+					}
+					echo '</ul>';
+			} else {
+					echo 'No categories found.';
+			}
+		?>
 	</div>
 
 	<div class="hero-waves">
@@ -79,4 +97,5 @@
 
 	</div>
 </div>
+
 <?php get_footer(); ?>

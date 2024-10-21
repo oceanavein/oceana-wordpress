@@ -48,7 +48,6 @@
 			</div>
 		</div>
 
-
 		<div class="container">
 			<div class="grid lg:grid-cols-3 gap-10">
 
