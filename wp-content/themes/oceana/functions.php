@@ -79,7 +79,7 @@ function post_navigation() {
 	$prev_page = get_previous_posts_link('<svg class="w-6 h-6 mr-8"><use xlink:href="#icon-arrow-left"></use></svg> Previous Posts');
 	$next_page = get_next_posts_link('More Posts <svg class="w-6 h-6 ml-8"><use xlink:href="#icon-arrow-right"></use></svg>');
 	if($prev_page || $next_page) {
-		echo '<div class="flex justify-center mt-64">';
+		echo '<div class="flex justify-center mt-48">';
 		if ($prev_page) {
 			$prev_page = str_replace( '<a', '<a class="btn btn-outline"', $prev_page );
 			echo  '<div>' . $prev_page . '</div>';
