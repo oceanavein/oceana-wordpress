@@ -66,6 +66,28 @@
                     "preview_size": "medium"
                 },
                 {
+                    "key": "field_674d76dbd3f91",
+                    "label": "Reviewed By Link",
+                    "name": "reviewed_by_link",
+                    "aria-label": "",
+                    "type": "page_link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": "",
+                    "post_status": "",
+                    "taxonomy": "",
+                    "allow_archives": 1,
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "allow_in_bindings": 0
+                },
+                {
                     "key": "field_674d6ae06c544",
                     "label": "Article Footer",
                     "name": "article_footer",
@@ -605,5 +627,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1733127050
+    "modified": 1733129970
 }

@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <?php
+	$dr_link = get_field('blog_reviewed_by_link', 'option');
 	$avatar_id = get_field('blog_avatar', 'option');
 	$avatar_src = wp_get_attachment_image_src( $avatar_id, 'avatar' );
 	$avatar_srcset = wp_get_attachment_image_srcset( $avatar_id, 'avatar' );
@@ -13,7 +14,7 @@
 			<div class="container relative z-10">
 
 				<p class="mb-24">
-					<a href="<?php echo get_bloginfo( 'url' ); ?>/blog/" class="flex items-center">
+					<a href="<?php echo get_bloginfo( 'url' ); ?>/blog/" class="flex items-center text-grey-dk">
 						<svg class="w-6 h-6 mr-8">
 							<use xlink:href="#icon-arrow-left" />
 						</svg>
@@ -21,7 +22,7 @@
 					</a>
 				</p>
 
-				<h1 class="text-h1 mb-6">
+				<h1 class="max-9-col text-h1 mb-6 text-blue-dk">
 					<?php the_title(); ?>
 				</h1>
 
@@ -37,8 +38,13 @@
 						>
 					</div>
 
-					<div class="text-lg">
-						Dr. Adam Isadore
+					<div>
+						<p class="text-coal">
+							Medically Reviewed by <a href="<?php echo $dr_link; ?>" class="text-coal underline">Dr. Adam Isadore, MD</a>.
+						</p>
+						<p class="text-sm">
+							Vascular and Interventional Radiologist, Oceana Vein Specialists.
+						</p>
 					</div>
 				</div>
 			</div>
