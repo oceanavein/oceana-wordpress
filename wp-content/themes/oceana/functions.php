@@ -130,6 +130,10 @@ add_image_size( 'six-columns', 628 );
 add_image_size( 'six-columns-2x', 1256 );
 add_image_size( 'six-columns-3x', 1884 );
 
+add_image_size( 'eight-columns', 840 );
+add_image_size( 'eight-columns-2x', 1260 );
+add_image_size( 'eight-columns-3x', 1680 );
+
 add_image_size( 'landing-before-after', 406, 320, true );
 add_image_size( 'landing-before-after-2x', 816, 640, true );
 add_image_size( 'landing-before-after-3x', 1218, 960, true );
@@ -141,6 +145,7 @@ add_image_size( 'post-thumb-3x', 1200, 792, true );
 add_image_size( 'avatar', 64, 64, true );
 add_image_size( 'avatar-2x', 128, 128, true );
 add_image_size( 'avatar-3x', 192, 192, true );
+
 
 
 // Default blog image

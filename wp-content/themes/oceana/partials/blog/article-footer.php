@@ -1,7 +1,7 @@
 <?php
 	$image_id = get_field('blog_article_footer_image', 'option');
-	$image_src = wp_get_attachment_image_src( $image_id, 'section-image' );
-	$image_srcset = wp_get_attachment_image_srcset( $image_id, 'section-image' );
+	$image_src = wp_get_attachment_image_src( $image_id, 'eight-columns' );
+	$image_srcset = wp_get_attachment_image_srcset( $image_id, 'eight-columns' );
 
 	$content = get_field('blog_article_footer_content', 'option');
 ?>
@@ -15,7 +15,7 @@
 					<img
 						src="<?php echo $image_src[0]; ?>"
 						srcset="<?php echo $image_srcset; ?>"
-						sizes=""
+						sizes="100vw, (min-width: 1024px) 840px"
 						alt="Dr. Isadore in his Office"
 						class="w-full"
 					>
