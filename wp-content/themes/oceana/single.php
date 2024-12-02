@@ -65,4 +65,6 @@
 
 <?php endwhile; endif; ?>
 
+<?php get_template_part( 'partials/blog/article-footer' ); ?>
+
 <?php get_footer(); ?>
