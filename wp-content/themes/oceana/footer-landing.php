@@ -38,5 +38,7 @@
 	</footer>
 
 	<?php wp_footer(); ?>
+
+	<script defer src="https://connect.podium.com/widget.js#ORG_TOKEN=fc24fbf4-bdc6-482d-ae73-08af745ad156" id="podium-widget" data-organization-api-token="fc24fbf4-bdc6-482d-ae73-08af745ad156"></script>
 </body>
 </html>
